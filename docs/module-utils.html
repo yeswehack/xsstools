@@ -1,0 +1,2025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>utils - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/graphs.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/graph.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav class="nav">
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-utils.html">utils</a><ul class='methods'><li data-type='method'><a href="module-utils.html#.buildUrl">buildUrl</a></li><li data-type='method'><a href="module-utils.html#.createElement">createElement</a></li><li data-type='method'><a href="module-utils.html#.createFrame">createFrame</a></li><li data-type='method'><a href="module-utils.html#.loadUglify">loadUglify</a></li><li data-type='method'><a href="module-utils.html#.randInt">randInt</a></li></ul></li></ul><h3>Classes</h3><ul><li><a href="ClickJacker.html">ClickJacker</a><ul class='methods'><li data-type='method'><a href="ClickJacker.html#addStep">addStep</a></li><li data-type='method'><a href="ClickJacker.html#run">run</a></li></ul></li><li><a href="Exfiltrators.html">Exfiltrators</a><ul class='methods'><li data-type='method'><a href="Exfiltrators.html#.console">console</a></li><li data-type='method'><a href="Exfiltrators.html#.get">get</a></li><li data-type='method'><a href="Exfiltrators.html#.iframe">iframe</a></li><li data-type='method'><a href="Exfiltrators.html#.img">img</a></li><li data-type='method'><a href="Exfiltrators.html#.message">message</a></li><li data-type='method'><a href="Exfiltrators.html#.post">post</a></li><li data-type='method'><a href="Exfiltrators.html#.postJSON">postJSON</a></li><li data-type='method'><a href="Exfiltrators.html#.sendBeacon">sendBeacon</a></li><li data-type='method'><a href="Exfiltrators.html#.style">style</a></li></ul></li><li><a href="MessageHandler.html">MessageHandler</a><ul class='methods'><li data-type='method'><a href="MessageHandler.html#addListener">addListener</a></li><li data-type='method'><a href="MessageHandler.html#listen">listen</a></li><li data-type='method'><a href="MessageHandler.html#logMessages">logMessages</a></li><li data-type='method'><a href="MessageHandler.html#removeListener">removeListener</a></li><li data-type='method'><a href="MessageHandler.html#stop">stop</a></li><li data-type='method'><a href="MessageHandler.html#waitForMessage">waitForMessage</a></li></ul></li><li><a href="Payload.html">Payload</a><ul class='methods'><li data-type='method'><a href="Payload.html#.new">new</a></li><li data-type='method'><a href="Payload.html#addExfiltrator">addExfiltrator</a></li><li data-type='method'><a href="Payload.html#asDOM">asDOM</a></li><li data-type='method'><a href="Payload.html#eval">eval</a></li><li data-type='method'><a href="Payload.html#exfiltrate">exfiltrate</a></li><li data-type='method'><a href="Payload.html#fetch">fetch</a></li><li data-type='method'><a href="Payload.html#fetchDOM">fetchDOM</a></li><li data-type='method'><a href="Payload.html#fetchJSON">fetchJSON</a></li><li data-type='method'><a href="Payload.html#fetchText">fetchText</a></li><li data-type='method'><a href="Payload.html#findBetween">findBetween</a></li><li data-type='method'><a href="Payload.html#forEach">forEach</a></li><li data-type='method'><a href="Payload.html#guard">guard</a></li><li data-type='method'><a href="Payload.html#injectStyle">injectStyle</a></li><li data-type='method'><a href="Payload.html#log">log</a></li><li data-type='method'><a href="Payload.html#map">map</a></li><li data-type='method'><a href="Payload.html#parallel">parallel</a></li><li data-type='method'><a href="Payload.html#passthru">passthru</a></li><li data-type='method'><a href="Payload.html#persist">persist</a></li><li data-type='method'><a href="Payload.html#postMessage">postMessage</a></li><li data-type='method'><a href="Payload.html#postMultipart">postMultipart</a></li><li data-type='method'><a href="Payload.html#querySelector">querySelector</a></li><li data-type='method'><a href="Payload.html#querySelectorAll">querySelectorAll</a></li><li data-type='method'><a href="Payload.html#redirect">redirect</a></li><li data-type='method'><a href="Payload.html#regExtract">regExtract</a></li><li data-type='method'><a href="Payload.html#setExfiltrator">setExfiltrator</a></li><li data-type='method'><a href="Payload.html#startClickLogger">startClickLogger</a></li><li data-type='method'><a href="Payload.html#startKeyLogger">startKeyLogger</a></li><li data-type='method'><a href="Payload.html#wait">wait</a></li></ul></li><li><a href="Wrapper.html">Wrapper</a><ul class='methods'><li data-type='method'><a href="Wrapper.html#.new">new</a></li><li data-type='method'><a href="Wrapper.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_HTML.html">Wrapper_HTML</a><ul class='methods'><li data-type='method'><a href="Wrapper_HTML.html#append">append</a></li><li data-type='method'><a href="Wrapper_HTML.html#dataUrl">dataUrl</a></li><li data-type='method'><a href="Wrapper_HTML.html#dataUrl64">dataUrl64</a></li><li data-type='method'><a href="Wrapper_HTML.html#enclose">enclose</a></li><li data-type='method'><a href="Wrapper_HTML.html#iframe">iframe</a></li><li data-type='method'><a href="Wrapper_HTML.html#innerHTML">innerHTML</a></li><li data-type='method'><a href="Wrapper_HTML.html#prepend">prepend</a></li><li data-type='method'><a href="Wrapper_HTML.html#wrap">wrap</a></li><li data-type='method'><a href="Wrapper_HTML.html#write">write</a></li></ul></li><li><a href="Wrapper_HTMLDataUrl.html">Wrapper_HTMLDataUrl</a><ul class='methods'><li data-type='method'><a href="Wrapper_HTMLDataUrl.html#iframe">iframe</a></li><li data-type='method'><a href="Wrapper_HTMLDataUrl.html#windowOpen">windowOpen</a></li><li data-type='method'><a href="Wrapper_HTMLDataUrl.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_JS.html">Wrapper_JS</a><ul class='methods'><li data-type='method'><a href="Wrapper_JS.html#append">append</a></li><li data-type='method'><a href="Wrapper_JS.html#appendScript">appendScript</a></li><li data-type='method'><a href="Wrapper_JS.html#dataUrl">dataUrl</a></li><li data-type='method'><a href="Wrapper_JS.html#dataUrl64">dataUrl64</a></li><li data-type='method'><a href="Wrapper_JS.html#enclose">enclose</a></li><li data-type='method'><a href="Wrapper_JS.html#evalB64">evalB64</a></li><li data-type='method'><a href="Wrapper_JS.html#evalStringForCharCode">evalStringForCharCode</a></li><li data-type='method'><a href="Wrapper_JS.html#imgError">imgError</a></li><li data-type='method'><a href="Wrapper_JS.html#inputFocus">inputFocus</a></li><li data-type='method'><a href="Wrapper_JS.html#minify">minify</a></li><li data-type='method'><a href="Wrapper_JS.html#prepend">prepend</a></li><li data-type='method'><a href="Wrapper_JS.html#script">script</a></li><li data-type='method'><a href="Wrapper_JS.html#svgLoad">svgLoad</a></li><li data-type='method'><a href="Wrapper_JS.html#templateString">templateString</a></li><li data-type='method'><a href="Wrapper_JS.html#url">url</a></li><li data-type='method'><a href="Wrapper_JS.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_JSDataUrl.html">Wrapper_JSDataUrl</a><ul class='methods'><li data-type='method'><a href="Wrapper_JSDataUrl.html#script">script</a></li><li data-type='method'><a href="Wrapper_JSDataUrl.html#scriptImport">scriptImport</a></li><li data-type='method'><a href="Wrapper_JSDataUrl.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_JSUrl.html">Wrapper_JSUrl</a><ul class='methods'><li data-type='method'><a href="Wrapper_JSUrl.html#embed">embed</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#iframe">iframe</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#object">object</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#redirect">redirect</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#wrap">wrap</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">utils</h1>
+    
+
+    <!--container.tmpl-->
+
+
+
+
+
+<section>
+
+
+
+<header data-tmpl="container.tmpl">
+    
+      <h2>Module: utils</h2>
+        
+    
+
+    
+      <div class="bs-callout bs-callout-default">
+        <h5>Members</h5>
+        <br />
+        <dl class="dl-horizontal methods-members">
+        <dt>Methods</dt><dd><ul>
+            <li><a href="#buildUrl">buildUrl</a></li>
+            
+            <li><a href="#createElement">createElement</a></li>
+            
+            <li><a href="#createFrame">createFrame</a></li>
+            
+            <li><a href="#loadUglify">loadUglify</a></li>
+            
+            <li><a href="#randInt">randInt</a></li>
+            </ul></dd></dl></div>
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="utils.js.html">utils.js</a>:<a href="utils.js.html#line96">96</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".buildUrl">
+      <a href="#params-buildUrl"><span class="type-signature">(static) </span>buildUrl</a><span class="signature">(url, urlParams, hash<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {String}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Create an url with get parameters</p>
+</div>
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-buildUrl">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-buildUrl" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>url</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Base url</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>urlParams</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>object representing parameters</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>hash</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Hash to add</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The full url with parameters and hash</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n * Create an url with get parameters\n *  \n * @param {String} url Base url\n * @param {Object} urlParams object representing parameters\n * @param {String} [hash] Hash to add  \n * @returns {String} The full url with parameters and hash\n */","meta":{"range":[2595,2873],"filename":"utils.js","lineno":96,"columnno":0,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100004577","name":"exports.buildUrl","type":"FunctionDeclaration","paramnames":["url","urlParams","hash"]},"shortpath":"utils.js"},"description":"<p>Create an url with get parameters</p>","params":[{"type":{"names":["String"]},"description":"<p>Base url</p>","name":"url"},{"type":{"names":["Object"]},"description":"<p>object representing parameters</p>","name":"urlParams"},{"type":{"names":["String"]},"optional":true,"description":"<p>Hash to add</p>","name":"hash"}],"returns":[{"type":{"names":["String"]},"description":"<p>The full url with parameters and hash</p>"}],"name":"buildUrl","longname":"module:utils.buildUrl","kind":"function","memberof":"module:utils","scope":"static","___id":"T000002R000350","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".buildUrl","signature":"<span class=\"signature\">(url, urlParams, hash<span class=\"signature-attributes\">opt</span>)</span><span class=\"type-signature\"> &rarr; {String}</span>","ancestors":["<a href=\"module-utils.html\">utils</a>."]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="utils.js.html">utils.js</a>:<a href="utils.js.html#line58">58</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".createElement">
+      <a href="#params-createElement"><span class="type-signature">(static) </span>createElement</a><span class="signature">(tag, attr<span class="signature-attributes">opt</span>, children<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {HTMLElement}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Create an html element with given attributes and children element</p>
+</div>
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-createElement">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-createElement" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>tag</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>Tag name for the element</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>attr</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    null
+                
+                </td>
+            
+
+            <td class="description last"><p>Attributes to add to the elements</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>children</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    []
+                
+                </td>
+            
+
+            <td class="description last"><p>Array of HTMLElement to add as children</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The created html element</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">HTMLElement</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n * Create an html element with given attributes and children element\n * @param {String} tag Tag name for the element \n * @param {Object} [attr=null] Attributes to add to the elements\n * @param {Array} [children=[]] Array of HTMLElement to add as children\n * @returns {HTMLElement} The created html element\n */","meta":{"range":[1557,1934],"filename":"utils.js","lineno":58,"columnno":0,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100004436","name":"exports.createElement","type":"FunctionDeclaration","paramnames":["tag","attr","children"]},"shortpath":"utils.js"},"description":"<p>Create an html element with given attributes and children element</p>","params":[{"type":{"names":["String"]},"description":"<p>Tag name for the element</p>","name":"tag"},{"type":{"names":["Object"]},"optional":true,"defaultvalue":null,"description":"<p>Attributes to add to the elements</p>","name":"attr"},{"type":{"names":["Array"]},"optional":true,"defaultvalue":"[]","description":"<p>Array of HTMLElement to add as children</p>","name":"children"}],"returns":[{"type":{"names":["HTMLElement"]},"description":"<p>The created html element</p>"}],"name":"createElement","longname":"module:utils.createElement","kind":"function","memberof":"module:utils","scope":"static","___id":"T000002R000342","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".createElement","signature":"<span class=\"signature\">(tag, attr<span class=\"signature-attributes\">opt</span>, children<span class=\"signature-attributes\">opt</span>)</span><span class=\"type-signature\"> &rarr; {HTMLElement}</span>","ancestors":["<a href=\"module-utils.html\">utils</a>."]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="utils.js.html">utils.js</a>:<a href="utils.js.html#line140">140</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".createFrame">
+      <a href="#params-createFrame"><span class="type-signature">(static) </span>createFrame</a><span class="signature">(url, name<span class="signature-attributes">opt</span>, sandbox)</span><span class="type-signature"> &rarr; {HTMLElement}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Create a new iframe element</p>
+</div>
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-createFrame">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-createFrame" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>url</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>Url for the frame</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    null
+                
+                </td>
+            
+
+            <td class="description last"><p>name of the frame</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>sandbox</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">SandboxAttributes</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>reverse sandbox option</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The iframe created</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">HTMLElement</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n * Create a new iframe element\n *\n * @param {string} url Url for the frame\n * @param {string} [name=null] name of the frame\n * @param {SandboxAttributes} sandbox reverse sandbox option\n * @returns {HTMLElement} The iframe created\n */","meta":{"range":[4230,5135],"filename":"utils.js","lineno":140,"columnno":0,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100004653","name":"exports.createFrame","type":"FunctionDeclaration","paramnames":["url","name","sandbox"]},"shortpath":"utils.js"},"description":"<p>Create a new iframe element</p>","params":[{"type":{"names":["string"]},"description":"<p>Url for the frame</p>","name":"url"},{"type":{"names":["string"]},"optional":true,"defaultvalue":null,"description":"<p>name of the frame</p>","name":"name"},{"type":{"names":["SandboxAttributes"]},"description":"<p>reverse sandbox option</p>","name":"sandbox"}],"returns":[{"type":{"names":["HTMLElement"]},"description":"<p>The iframe created</p>"}],"name":"createFrame","longname":"module:utils.createFrame","kind":"function","memberof":"module:utils","scope":"static","___id":"T000002R000360","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".createFrame","signature":"<span class=\"signature\">(url, name<span class=\"signature-attributes\">opt</span>, sandbox)</span><span class=\"type-signature\"> &rarr; {HTMLElement}</span>","ancestors":["<a href=\"module-utils.html\">utils</a>."]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="utils.js.html">utils.js</a>:<a href="utils.js.html#line10">10</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".loadUglify">
+      <a href="#params-loadUglify"><span class="type-signature">(static) </span>loadUglify</a><span class="signature">()</span><span class="type-signature"> &rarr; {function}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Load uglify from unpkg.com, required by Wrapper_JS.minify()</p>
+</div>
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-loadUglify">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>the minify function from uglifiyjs</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">function</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n * Load uglify from unpkg.com, required by Wrapper_JS.minify()\n * @returns {Function} the minify function from uglifiyjs\n */","meta":{"range":[184,1103],"filename":"utils.js","lineno":10,"columnno":0,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100004313","name":"exports.loadUglify","type":"FunctionDeclaration","paramnames":[]},"shortpath":"utils.js"},"description":"<p>Load uglify from unpkg.com, required by Wrapper_JS.minify()</p>","returns":[{"type":{"names":["function"]},"description":"<p>the minify function from uglifiyjs</p>"}],"name":"loadUglify","longname":"module:utils.loadUglify","kind":"function","memberof":"module:utils","scope":"static","___id":"T000002R000329","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".loadUglify","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"> &rarr; {function}</span>","ancestors":["<a href=\"module-utils.html\">utils</a>."]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="utils.js.html">utils.js</a>:<a href="utils.js.html#line175">175</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".randInt">
+      <a href="#params-randInt"><span class="type-signature">(static) </span>randInt</a><span class="signature">(min, max)</span><span class="type-signature"> &rarr; {number}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Return a random integer between min and max</p>
+</div>
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-randInt">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-randInt" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>min</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>lower bound</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>max</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>upper bound</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n * Return a random integer between min and max\n * @param {number} min lower bound\n * @param {number} max upper bound\n * @returns {number}\n */","meta":{"range":[5283,5378],"filename":"utils.js","lineno":175,"columnno":0,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100004735","name":"exports.randInt","type":"FunctionDeclaration","paramnames":["min","max"]},"shortpath":"utils.js"},"description":"<p>Return a random integer between min and max</p>","params":[{"type":{"names":["number"]},"description":"<p>lower bound</p>","name":"min"},{"type":{"names":["number"]},"description":"<p>upper bound</p>","name":"max"}],"returns":[{"type":{"names":["number"]}}],"name":"randInt","longname":"module:utils.randInt","kind":"function","memberof":"module:utils","scope":"static","___id":"T000002R000381","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".randInt","signature":"<span class=\"signature\">(min, max)</span><span class=\"type-signature\"> &rarr; {number}</span>","ancestors":["<a href=\"module-utils.html\">utils</a>."]}
+</pre>
+-->
+</div>
+
+        
+    
+
+    
+        <h3 class="subsection-title">Type Definitions</h3>
+
+        
+                <!--members.tmpl-->
+<div class="member-details">
+
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="utils.js.html">utils.js</a>:<a href="utils.js.html#line111">111</a>
+  </code>
+</div>
+
+
+
+<h4 class="name" id="~SandboxAttributes">
+  SandboxAttributes
+</h4>
+
+
+
+
+
+<div>
+
+<!-- details.tmpl -->
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="utils.js.html">utils.js</a>:<a href="utils.js.html#line111">111</a>
+  </code>
+</div>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>allow-downloads-without-user-activation</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>allow-downloads</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>allow-forms</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>allow-modals</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>allow-orientation-lock</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>allow-pointer-lock</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>allow-popups</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>allow-popups-to-escape-sandbox</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>allow-presentation</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>allow-same-origin</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>allow-scripts</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>allow-storage-access-by-user-activation</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>allow-top-navigation</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>allow-top-navigation-by-user-activation</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+            
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on Sun Mar 14 2021 13:45:10 GMT+0100 (Central European Standard Time) using the LOKE theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script>window.addEventListener("DOMContentLoaded", initGraphs)</script>
+</body>
+</html>

@@ -1,0 +1,3090 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Wrapper_JS - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/graphs.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/graph.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav class="nav">
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-utils.html">utils</a><ul class='methods'><li data-type='method'><a href="module-utils.html#.buildUrl">buildUrl</a></li><li data-type='method'><a href="module-utils.html#.createElement">createElement</a></li><li data-type='method'><a href="module-utils.html#.createFrame">createFrame</a></li><li data-type='method'><a href="module-utils.html#.loadUglify">loadUglify</a></li><li data-type='method'><a href="module-utils.html#.randInt">randInt</a></li></ul></li></ul><h3>Classes</h3><ul><li><a href="ClickJacker.html">ClickJacker</a><ul class='methods'><li data-type='method'><a href="ClickJacker.html#addStep">addStep</a></li><li data-type='method'><a href="ClickJacker.html#run">run</a></li></ul></li><li><a href="Exfiltrators.html">Exfiltrators</a><ul class='methods'><li data-type='method'><a href="Exfiltrators.html#.console">console</a></li><li data-type='method'><a href="Exfiltrators.html#.get">get</a></li><li data-type='method'><a href="Exfiltrators.html#.iframe">iframe</a></li><li data-type='method'><a href="Exfiltrators.html#.img">img</a></li><li data-type='method'><a href="Exfiltrators.html#.message">message</a></li><li data-type='method'><a href="Exfiltrators.html#.post">post</a></li><li data-type='method'><a href="Exfiltrators.html#.postJSON">postJSON</a></li><li data-type='method'><a href="Exfiltrators.html#.sendBeacon">sendBeacon</a></li><li data-type='method'><a href="Exfiltrators.html#.style">style</a></li></ul></li><li><a href="MessageHandler.html">MessageHandler</a><ul class='methods'><li data-type='method'><a href="MessageHandler.html#addListener">addListener</a></li><li data-type='method'><a href="MessageHandler.html#listen">listen</a></li><li data-type='method'><a href="MessageHandler.html#logMessages">logMessages</a></li><li data-type='method'><a href="MessageHandler.html#removeListener">removeListener</a></li><li data-type='method'><a href="MessageHandler.html#stop">stop</a></li><li data-type='method'><a href="MessageHandler.html#waitForMessage">waitForMessage</a></li></ul></li><li><a href="Payload.html">Payload</a><ul class='methods'><li data-type='method'><a href="Payload.html#.new">new</a></li><li data-type='method'><a href="Payload.html#addExfiltrator">addExfiltrator</a></li><li data-type='method'><a href="Payload.html#asDOM">asDOM</a></li><li data-type='method'><a href="Payload.html#eval">eval</a></li><li data-type='method'><a href="Payload.html#exfiltrate">exfiltrate</a></li><li data-type='method'><a href="Payload.html#fetch">fetch</a></li><li data-type='method'><a href="Payload.html#fetchDOM">fetchDOM</a></li><li data-type='method'><a href="Payload.html#fetchJSON">fetchJSON</a></li><li data-type='method'><a href="Payload.html#fetchText">fetchText</a></li><li data-type='method'><a href="Payload.html#findBetween">findBetween</a></li><li data-type='method'><a href="Payload.html#forEach">forEach</a></li><li data-type='method'><a href="Payload.html#guard">guard</a></li><li data-type='method'><a href="Payload.html#injectStyle">injectStyle</a></li><li data-type='method'><a href="Payload.html#log">log</a></li><li data-type='method'><a href="Payload.html#map">map</a></li><li data-type='method'><a href="Payload.html#parallel">parallel</a></li><li data-type='method'><a href="Payload.html#passthru">passthru</a></li><li data-type='method'><a href="Payload.html#persist">persist</a></li><li data-type='method'><a href="Payload.html#postMessage">postMessage</a></li><li data-type='method'><a href="Payload.html#postMultipart">postMultipart</a></li><li data-type='method'><a href="Payload.html#querySelector">querySelector</a></li><li data-type='method'><a href="Payload.html#querySelectorAll">querySelectorAll</a></li><li data-type='method'><a href="Payload.html#redirect">redirect</a></li><li data-type='method'><a href="Payload.html#regExtract">regExtract</a></li><li data-type='method'><a href="Payload.html#setExfiltrator">setExfiltrator</a></li><li data-type='method'><a href="Payload.html#startClickLogger">startClickLogger</a></li><li data-type='method'><a href="Payload.html#startKeyLogger">startKeyLogger</a></li><li data-type='method'><a href="Payload.html#wait">wait</a></li></ul></li><li><a href="Wrapper.html">Wrapper</a><ul class='methods'><li data-type='method'><a href="Wrapper.html#.new">new</a></li><li data-type='method'><a href="Wrapper.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_HTML.html">Wrapper_HTML</a><ul class='methods'><li data-type='method'><a href="Wrapper_HTML.html#append">append</a></li><li data-type='method'><a href="Wrapper_HTML.html#dataUrl">dataUrl</a></li><li data-type='method'><a href="Wrapper_HTML.html#dataUrl64">dataUrl64</a></li><li data-type='method'><a href="Wrapper_HTML.html#enclose">enclose</a></li><li data-type='method'><a href="Wrapper_HTML.html#iframe">iframe</a></li><li data-type='method'><a href="Wrapper_HTML.html#innerHTML">innerHTML</a></li><li data-type='method'><a href="Wrapper_HTML.html#prepend">prepend</a></li><li data-type='method'><a href="Wrapper_HTML.html#wrap">wrap</a></li><li data-type='method'><a href="Wrapper_HTML.html#write">write</a></li></ul></li><li><a href="Wrapper_HTMLDataUrl.html">Wrapper_HTMLDataUrl</a><ul class='methods'><li data-type='method'><a href="Wrapper_HTMLDataUrl.html#iframe">iframe</a></li><li data-type='method'><a href="Wrapper_HTMLDataUrl.html#windowOpen">windowOpen</a></li><li data-type='method'><a href="Wrapper_HTMLDataUrl.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_JS.html">Wrapper_JS</a><ul class='methods'><li data-type='method'><a href="Wrapper_JS.html#append">append</a></li><li data-type='method'><a href="Wrapper_JS.html#appendScript">appendScript</a></li><li data-type='method'><a href="Wrapper_JS.html#dataUrl">dataUrl</a></li><li data-type='method'><a href="Wrapper_JS.html#dataUrl64">dataUrl64</a></li><li data-type='method'><a href="Wrapper_JS.html#enclose">enclose</a></li><li data-type='method'><a href="Wrapper_JS.html#evalB64">evalB64</a></li><li data-type='method'><a href="Wrapper_JS.html#evalStringForCharCode">evalStringForCharCode</a></li><li data-type='method'><a href="Wrapper_JS.html#imgError">imgError</a></li><li data-type='method'><a href="Wrapper_JS.html#inputFocus">inputFocus</a></li><li data-type='method'><a href="Wrapper_JS.html#minify">minify</a></li><li data-type='method'><a href="Wrapper_JS.html#prepend">prepend</a></li><li data-type='method'><a href="Wrapper_JS.html#script">script</a></li><li data-type='method'><a href="Wrapper_JS.html#svgLoad">svgLoad</a></li><li data-type='method'><a href="Wrapper_JS.html#templateString">templateString</a></li><li data-type='method'><a href="Wrapper_JS.html#url">url</a></li><li data-type='method'><a href="Wrapper_JS.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_JSDataUrl.html">Wrapper_JSDataUrl</a><ul class='methods'><li data-type='method'><a href="Wrapper_JSDataUrl.html#script">script</a></li><li data-type='method'><a href="Wrapper_JSDataUrl.html#scriptImport">scriptImport</a></li><li data-type='method'><a href="Wrapper_JSDataUrl.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_JSUrl.html">Wrapper_JSUrl</a><ul class='methods'><li data-type='method'><a href="Wrapper_JSUrl.html#embed">embed</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#iframe">iframe</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#object">object</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#redirect">redirect</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#wrap">wrap</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">Wrapper_JS</h1>
+    
+
+    <!--container.tmpl-->
+
+
+
+
+
+<section>
+
+
+
+<header data-tmpl="container.tmpl">
+    
+        <h2>
+        Wrapper_JS
+        </h2>
+        
+            <div class="lead"><p>Represent a payload in javascript format</p></div>
+        
+    
+
+    
+      <div class="bs-callout bs-callout-default">
+        <h5>Members</h5>
+        <br />
+        <dl class="dl-horizontal methods-members">
+        <dt>Methods</dt><dd><ul>
+            <li><a href="#append">append</a></li>
+            
+            <li><a href="#appendScript">appendScript</a></li>
+            
+            <li><a href="#dataUrl">dataUrl</a></li>
+            
+            <li><a href="#dataUrl64">dataUrl64</a></li>
+            
+            <li><a href="#enclose">enclose</a></li>
+            
+            <li><a href="#evalB64">evalB64</a></li>
+            
+            <li><a href="#evalStringForCharCode">evalStringForCharCode</a></li>
+            
+            <li><a href="#imgError">imgError</a></li>
+            
+            <li><a href="#inputFocus">inputFocus</a></li>
+            
+            <li><a href="#minify">minify</a></li>
+            
+            <li><a href="#prepend">prepend</a></li>
+            
+            <li><a href="#script">script</a></li>
+            
+            <li><a href="#svgLoad">svgLoad</a></li>
+            
+            <li><a href="#templateString">templateString</a></li>
+            
+            <li><a href="#url">url</a></li>
+            
+            <li><a href="#wrap">wrap</a></li>
+            </ul></dd></dl></div>
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        <!--method.tmpl-->
+<div class="method-details">
+
+
+
+
+
+    
+    <h3 class="constructor">Constructor</h3>
+    
+
+    
+      <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Wrapper.js.html">Wrapper.js</a>:<a href="Wrapper.js.html#line111">111</a>
+  </code>
+</div>
+
+    
+
+    <h4 class="name" id="Wrapper_JS">
+      <a href="#params-Wrapper_JS"><span class="type-signature"></span>new Wrapper_JS</a><span class="signature">()</span><span class="type-signature"></span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-Wrapper_JS">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n * Represent a payload in javascript format\n * @augments Wrapper\n * @alias Wrapper_JS\n * @class \n * @inheritdoc\n */","meta":{"range":[2878,10133],"filename":"Wrapper.js","lineno":111,"columnno":0,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100003679","name":"Wrapper_JS","type":"ClassDeclaration","paramnames":[]},"shortpath":"Wrapper.js"},"classdesc":"<p>Represent a payload in javascript format</p>","augments":["Wrapper"],"alias":"Wrapper_JS","kind":"class","inheritdoc":"","name":"Wrapper_JS","longname":"Wrapper_JS","scope":"global","___id":"T000003R000009","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"Wrapper_JS","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"></span>","ancestors":[]}
+</pre>
+-->
+</div>
+
+    
+    </div>
+
+    
+        <h3 class="subsection-title">Extends</h3>
+
+        
+
+
+    <ul>
+        <li><a href="Wrapper.html">Wrapper</a></li>
+    </ul>
+
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Wrapper.js.html">Wrapper.js</a>:<a href="Wrapper.js.html#line327">327</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="append">
+      <a href="#params-append"><span class="type-signature"></span>append</a><span class="signature">(sufix)</span><span class="type-signature"> &rarr; {<a href="Wrapper_JS.html">Wrapper_JS</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Add a sufix to a payload</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"},{"readType":"","label":"append(sufix)","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"}]</script>
+</div>
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-append">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-append" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>sufix</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Sufix to add to the current payload</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Wrapper_JS.html">Wrapper_JS</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Add a sufix to a payload\n     * @param {String} sufix Sufix to add to the current payload \n     * @graph $Wrapper_JS -> {} ($current) {} -> $Wrapper_JS\n     * @returns {Wrapper_JS}\n     */","meta":{"range":[9678,9762],"filename":"Wrapper.js","lineno":327,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100003950","name":"Wrapper_JS#append","type":"MethodDefinition","paramnames":["sufix"]},"vars":{"":null},"shortpath":"Wrapper.js"},"description":"<p>Add a sufix to a payload</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_JS.html'>Wrapper_JS</a>\"},{\"readType\":\"\",\"label\":\"append(sufix)\",\"children\":null,\"returnType\":\"\"},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_JS.html'>Wrapper_JS</a>\"}]</script>","params":[{"type":{"names":["String"]},"description":"<p>Sufix to add to the current payload</p>","name":"sufix"}],"graph":[{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"},{"readType":"","label":"append(sufix)","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"}],"returns":[{"type":{"names":["Wrapper_JS"]}}],"name":"append","longname":"Wrapper_JS#append","kind":"function","memberof":"Wrapper_JS","scope":"instance","___id":"T000002R000293","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"append","signature":"<span class=\"signature\">(sufix)</span><span class=\"type-signature\"> &rarr; {<a href=\"Wrapper_JS.html\">Wrapper_JS</a>}</span>","ancestors":["<a href=\"Wrapper_JS.html\">Wrapper_JS</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Wrapper.js.html">Wrapper.js</a>:<a href="Wrapper.js.html#line247">247</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="appendScript">
+      <a href="#params-appendScript"><span class="type-signature"></span>appendScript</a><span class="signature">(selector<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {<a href="Wrapper_JS.html">Wrapper_JS</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Transform any js code into an document.appendChild(script) payload.</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"},{"readType":"","label":"appendScript(selector=\"body\")","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new().eval(() => alert(1))
+const w = Wrapper.new().appendScript()
+const c = w.wrap(p)
+
+eval(c)</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-appendScript">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-appendScript" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>selector</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    "body"
+                
+                </td>
+            
+
+            <td class="description last"><p>Css selector for the parent element</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Wrapper_JS.html">Wrapper_JS</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Transform any js code into an document.appendChild(script) payload.\n     * @param {string} [selector=\"body\"] Css selector for the parent element\n     * @graph  $Wrapper_JS -> {} ($current) {} -> $Wrapper_JS\n     * @example\n     * const p = Payload.new().eval(() => alert(1))\n     * const w = Wrapper.new().appendScript()\n     * const c = w.wrap(p)\n     * \n     * eval(c)\n     * @returns {Wrapper_JS} \n     */","meta":{"range":[6920,7137],"filename":"Wrapper.js","lineno":247,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100003811","name":"Wrapper_JS#appendScript","type":"MethodDefinition","paramnames":["selector"]},"vars":{"":null},"shortpath":"Wrapper.js"},"description":"<p>Transform any js code into an document.appendChild(script) payload.</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_JS.html'>Wrapper_JS</a>\"},{\"readType\":\"\",\"label\":\"appendScript(selector=\\\"body\\\")\",\"children\":null,\"returnType\":\"\"},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_JS.html'>Wrapper_JS</a>\"}]</script>","params":[{"type":{"names":["string"]},"optional":true,"defaultvalue":"\"body\"","description":"<p>Css selector for the parent element</p>","name":"selector"}],"graph":[{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"},{"readType":"","label":"appendScript(selector=\"body\")","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"}],"examples":[{"caption":"","code":"const p = Payload.new().eval(() => alert(1))\nconst w = Wrapper.new().appendScript()\nconst c = w.wrap(p)\n\neval(c)"}],"returns":[{"type":{"names":["Wrapper_JS"]}}],"name":"appendScript","longname":"Wrapper_JS#appendScript","kind":"function","memberof":"Wrapper_JS","scope":"instance","___id":"T000002R000279","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"appendScript","signature":"<span class=\"signature\">(selector<span class=\"signature-attributes\">opt</span>)</span><span class=\"type-signature\"> &rarr; {<a href=\"Wrapper_JS.html\">Wrapper_JS</a>}</span>","ancestors":["<a href=\"Wrapper_JS.html\">Wrapper_JS</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Wrapper.js.html">Wrapper.js</a>:<a href="Wrapper.js.html#line213">213</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="dataUrl">
+      <a href="#params-dataUrl"><span class="type-signature"></span>dataUrl</a><span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Wrapper_JSDataUrl.html">Wrapper_JSDataUrl</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Transform any js code into a data: pseudo url.</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"},{"readType":"","label":"dataUrl()","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_JSDataUrl.html'>Wrapper_JSDataUrl</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new().eval(() => alert(1))
+const w = Wrapper.new().dataUrl()
+
+const s = document.createElement('script')
+s.src = w.wrap(p)
+document.body.appendChild(s)</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-dataUrl">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Wrapper_JSDataUrl.html">Wrapper_JSDataUrl</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Transform any js code into a data: pseudo url.\n     * \n     * @graph  $Wrapper_JS -> {} ($current) {} -> $Wrapper_JSDataUrl\n     * @example\n     * const p = Payload.new().eval(() => alert(1))\n     * const w = Wrapper.new().dataUrl()\n     * \n     * const s = document.createElement('script')\n     * s.src = w.wrap(p)\n     * document.body.appendChild(s)\n     * @returns {Wrapper_JSDataUrl} \n     */","meta":{"range":[5812,5921],"filename":"Wrapper.js","lineno":213,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100003776","name":"Wrapper_JS#dataUrl","type":"MethodDefinition","paramnames":[]},"vars":{"":null},"shortpath":"Wrapper.js"},"description":"<p>Transform any js code into a data: pseudo url.</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_JS.html'>Wrapper_JS</a>\"},{\"readType\":\"\",\"label\":\"dataUrl()\",\"children\":null,\"returnType\":\"\"},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_JSDataUrl.html'>Wrapper_JSDataUrl</a>\"}]</script>","graph":[{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"},{"readType":"","label":"dataUrl()","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_JSDataUrl.html'>Wrapper_JSDataUrl</a>"}],"examples":[{"caption":"","code":"const p = Payload.new().eval(() => alert(1))\nconst w = Wrapper.new().dataUrl()\n\nconst s = document.createElement('script')\ns.src = w.wrap(p)\ndocument.body.appendChild(s)"}],"returns":[{"type":{"names":["Wrapper_JSDataUrl"]}}],"name":"dataUrl","longname":"Wrapper_JS#dataUrl","kind":"function","memberof":"Wrapper_JS","scope":"instance","params":[],"___id":"T000002R000277","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"dataUrl","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"> &rarr; {<a href=\"Wrapper_JSDataUrl.html\">Wrapper_JSDataUrl</a>}</span>","ancestors":["<a href=\"Wrapper_JS.html\">Wrapper_JS</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Wrapper.js.html">Wrapper.js</a>:<a href="Wrapper.js.html#line196">196</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="dataUrl64">
+      <a href="#params-dataUrl64"><span class="type-signature"></span>dataUrl64</a><span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Wrapper_JSDataUrl.html">Wrapper_JSDataUrl</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Transform any js code into a data: base64 encoded pseudo url.</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"},{"readType":"","label":"dataUrl64()","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_JSDataUrl.html'>Wrapper_JSDataUrl</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new().eval(() => alert(1))
+const w = Wrapper.new().dataUrl64()
+
+const s = document.createElement('script')
+s.src = w.wrap(p)
+document.body.appendChild(s)</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-dataUrl64">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Wrapper_JSDataUrl.html">Wrapper_JSDataUrl</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Transform any js code into a data: base64 encoded pseudo url.\n     * \n     * @graph  $Wrapper_JS -> {} ($current) {} -> $Wrapper_JSDataUrl\n     * @example\n     * const p = Payload.new().eval(() => alert(1))\n     * const w = Wrapper.new().dataUrl64()\n     * \n     * const s = document.createElement('script')\n     * s.src = w.wrap(p)\n     * document.body.appendChild(s)\n     * @returns {Wrapper_JSDataUrl} \n     */","meta":{"range":[5281,5394],"filename":"Wrapper.js","lineno":196,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100003762","name":"Wrapper_JS#dataUrl64","type":"MethodDefinition","paramnames":[]},"vars":{"":null},"shortpath":"Wrapper.js"},"description":"<p>Transform any js code into a data: base64 encoded pseudo url.</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_JS.html'>Wrapper_JS</a>\"},{\"readType\":\"\",\"label\":\"dataUrl64()\",\"children\":null,\"returnType\":\"\"},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_JSDataUrl.html'>Wrapper_JSDataUrl</a>\"}]</script>","graph":[{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"},{"readType":"","label":"dataUrl64()","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_JSDataUrl.html'>Wrapper_JSDataUrl</a>"}],"examples":[{"caption":"","code":"const p = Payload.new().eval(() => alert(1))\nconst w = Wrapper.new().dataUrl64()\n\nconst s = document.createElement('script')\ns.src = w.wrap(p)\ndocument.body.appendChild(s)"}],"returns":[{"type":{"names":["Wrapper_JSDataUrl"]}}],"name":"dataUrl64","longname":"Wrapper_JS#dataUrl64","kind":"function","memberof":"Wrapper_JS","scope":"instance","params":[],"___id":"T000002R000276","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"dataUrl64","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"> &rarr; {<a href=\"Wrapper_JSDataUrl.html\">Wrapper_JSDataUrl</a>}</span>","ancestors":["<a href=\"Wrapper_JS.html\">Wrapper_JS</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Wrapper.js.html">Wrapper.js</a>:<a href="Wrapper.js.html#line338">338</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="enclose">
+      <a href="#params-enclose"><span class="type-signature"></span>enclose</a><span class="signature">(prefix, sufix)</span><span class="type-signature"> &rarr; {<a href="Wrapper_JS.html">Wrapper_JS</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Add a prefix and a sufix to a payload</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"},{"readType":"","label":"enclose(prefix, sufix)","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"}]</script>
+</div>
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-enclose">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-enclose" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>prefix</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Prefix to add to the current payload</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>sufix</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Sufix to add to the current payload</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Wrapper_JS.html">Wrapper_JS</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Add a prefix and a sufix to a payload\n     * @param {String} prefix Prefix to add to the current payload \n     * @param {String} sufix Sufix to add to the current payload \n     * @graph $Wrapper_JS -> {} ($current) {} -> $Wrapper_JS\n     * @returns {Wrapper_JS}\n     */","meta":{"range":[10052,10131],"filename":"Wrapper.js","lineno":338,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100003967","name":"Wrapper_JS#enclose","type":"MethodDefinition","paramnames":["prefix","sufix"]},"vars":{"":null},"shortpath":"Wrapper.js"},"description":"<p>Add a prefix and a sufix to a payload</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_JS.html'>Wrapper_JS</a>\"},{\"readType\":\"\",\"label\":\"enclose(prefix, sufix)\",\"children\":null,\"returnType\":\"\"},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_JS.html'>Wrapper_JS</a>\"}]</script>","params":[{"type":{"names":["String"]},"description":"<p>Prefix to add to the current payload</p>","name":"prefix"},{"type":{"names":["String"]},"description":"<p>Sufix to add to the current payload</p>","name":"sufix"}],"graph":[{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"},{"readType":"","label":"enclose(prefix, sufix)","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"}],"returns":[{"type":{"names":["Wrapper_JS"]}}],"name":"enclose","longname":"Wrapper_JS#enclose","kind":"function","memberof":"Wrapper_JS","scope":"instance","___id":"T000002R000294","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"enclose","signature":"<span class=\"signature\">(prefix, sufix)</span><span class=\"type-signature\"> &rarr; {<a href=\"Wrapper_JS.html\">Wrapper_JS</a>}</span>","ancestors":["<a href=\"Wrapper_JS.html\">Wrapper_JS</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Wrapper.js.html">Wrapper.js</a>:<a href="Wrapper.js.html#line144">144</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="evalB64">
+      <a href="#params-evalB64"><span class="type-signature"></span>evalB64</a><span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Wrapper_JS.html">Wrapper_JS</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Transform any js code into an eval(atob()) payload.</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"},{"readType":"","label":"evalB64()","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new().eval(() => alert(1))
+const w = Wrapper.new().evalB64()
+const c = w.wrap(p)
+
+eval(c)</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-evalB64">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Wrapper_JS.html">Wrapper_JS</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Transform any js code into an eval(atob()) payload.\n     * \n     * \n     * @graph  $Wrapper_JS -> {} ($current) {} -> $Wrapper_JS\n     * @example\n     * \n     * const p = Payload.new().eval(() => alert(1))\n     * const w = Wrapper.new().evalB64()\n     * const c = w.wrap(p)\n     * \n     * eval(c)\n     * @returns {Wrapper_JS} \n     */","meta":{"range":[3765,3861],"filename":"Wrapper.js","lineno":144,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100003699","name":"Wrapper_JS#evalB64","type":"MethodDefinition","paramnames":[]},"vars":{"":null},"shortpath":"Wrapper.js"},"description":"<p>Transform any js code into an eval(atob()) payload.</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_JS.html'>Wrapper_JS</a>\"},{\"readType\":\"\",\"label\":\"evalB64()\",\"children\":null,\"returnType\":\"\"},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_JS.html'>Wrapper_JS</a>\"}]</script>","graph":[{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"},{"readType":"","label":"evalB64()","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"}],"examples":[{"caption":"","code":"const p = Payload.new().eval(() => alert(1))\nconst w = Wrapper.new().evalB64()\nconst c = w.wrap(p)\n\neval(c)"}],"returns":[{"type":{"names":["Wrapper_JS"]}}],"name":"evalB64","longname":"Wrapper_JS#evalB64","kind":"function","memberof":"Wrapper_JS","scope":"instance","params":[],"___id":"T000002R000273","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"evalB64","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"> &rarr; {<a href=\"Wrapper_JS.html\">Wrapper_JS</a>}</span>","ancestors":["<a href=\"Wrapper_JS.html\">Wrapper_JS</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Wrapper.js.html">Wrapper.js</a>:<a href="Wrapper.js.html#line162">162</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="evalStringForCharCode">
+      <a href="#params-evalStringForCharCode"><span class="type-signature"></span>evalStringForCharCode</a><span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Wrapper_JS.html">Wrapper_JS</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Transform any js code into an eval(String.fromCharCode(42, 42, ...)) payload.</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"},{"readType":"","label":"evalStringForCharCode()","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new().evalStringForCharCode(() => alert(1))
+const w = Wrapper.new().evalB64()
+const c = w.wrap(p)
+
+eval(c)</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-evalStringForCharCode">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Wrapper_JS.html">Wrapper_JS</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Transform any js code into an eval(String.fromCharCode(42, 42, ...)) payload.\n     * \n     * \n     * @graph  $Wrapper_JS -> {} ($current) {} -> $Wrapper_JS\n     * @example\n     * \n     * const p = Payload.new().evalStringForCharCode(() => alert(1))\n     * const w = Wrapper.new().evalB64()\n     * const c = w.wrap(p)\n     * \n     * eval(c)\n     * @returns {Wrapper_JS} \n     */","meta":{"range":[4260,4419],"filename":"Wrapper.js","lineno":162,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100003717","name":"Wrapper_JS#evalStringForCharCode","type":"MethodDefinition","paramnames":[]},"vars":{"":null},"shortpath":"Wrapper.js"},"description":"<p>Transform any js code into an eval(String.fromCharCode(42, 42, ...)) payload.</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_JS.html'>Wrapper_JS</a>\"},{\"readType\":\"\",\"label\":\"evalStringForCharCode()\",\"children\":null,\"returnType\":\"\"},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_JS.html'>Wrapper_JS</a>\"}]</script>","graph":[{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"},{"readType":"","label":"evalStringForCharCode()","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"}],"examples":[{"caption":"","code":"const p = Payload.new().evalStringForCharCode(() => alert(1))\nconst w = Wrapper.new().evalB64()\nconst c = w.wrap(p)\n\neval(c)"}],"returns":[{"type":{"names":["Wrapper_JS"]}}],"name":"evalStringForCharCode","longname":"Wrapper_JS#evalStringForCharCode","kind":"function","memberof":"Wrapper_JS","scope":"instance","params":[],"___id":"T000002R000274","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"evalStringForCharCode","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"> &rarr; {<a href=\"Wrapper_JS.html\">Wrapper_JS</a>}</span>","ancestors":["<a href=\"Wrapper_JS.html\">Wrapper_JS</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Wrapper.js.html">Wrapper.js</a>:<a href="Wrapper.js.html#line279">279</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="imgError">
+      <a href="#params-imgError"><span class="type-signature"></span>imgError</a><span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Wrapper_HTML.html">Wrapper_HTML</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Transform any js code into a &lt;img onerror&gt; payload.</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"},{"readType":"","label":"imgError()","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_HTML.html'>Wrapper_HTML</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new().eval(() => alert(1))
+const w = Wrapper.new().imgError()
+
+document.body.innerHTML = w.wrap(p)</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-imgError">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Wrapper_HTML.html">Wrapper_HTML</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Transform any js code into a &lt;img onerror&gt; payload.\n     * @graph  $Wrapper_JS -> {} ($current) {} -> $Wrapper_HTML\n     * @example\n     * const p = Payload.new().eval(() => alert(1))\n     * const w = Wrapper.new().imgError()\n     * \n     * document.body.innerHTML = w.wrap(p)\n     * @returns {Wrapper_HTML} \n     */","meta":{"range":[8062,8193],"filename":"Wrapper.js","lineno":279,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100003868","name":"Wrapper_JS#imgError","type":"MethodDefinition","paramnames":[]},"vars":{"":null},"shortpath":"Wrapper.js"},"description":"<p>Transform any js code into a &lt;img onerror&gt; payload.</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_JS.html'>Wrapper_JS</a>\"},{\"readType\":\"\",\"label\":\"imgError()\",\"children\":null,\"returnType\":\"\"},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_HTML.html'>Wrapper_HTML</a>\"}]</script>","graph":[{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"},{"readType":"","label":"imgError()","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_HTML.html'>Wrapper_HTML</a>"}],"examples":[{"caption":"","code":"const p = Payload.new().eval(() => alert(1))\nconst w = Wrapper.new().imgError()\n\ndocument.body.innerHTML = w.wrap(p)"}],"returns":[{"type":{"names":["Wrapper_HTML"]}}],"name":"imgError","longname":"Wrapper_JS#imgError","kind":"function","memberof":"Wrapper_JS","scope":"instance","params":[],"___id":"T000002R000284","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"imgError","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"> &rarr; {<a href=\"Wrapper_HTML.html\">Wrapper_HTML</a>}</span>","ancestors":["<a href=\"Wrapper_JS.html\">Wrapper_JS</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Wrapper.js.html">Wrapper.js</a>:<a href="Wrapper.js.html#line293">293</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="inputFocus">
+      <a href="#params-inputFocus"><span class="type-signature"></span>inputFocus</a><span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Wrapper_HTML.html">Wrapper_HTML</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Transform any js code into a &lt;input onfocus&gt; payload.</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"},{"readType":"","label":"inputFocus()","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_HTML.html'>Wrapper_HTML</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new().eval(() => alert(1))
+const w = Wrapper.new().inputFocus()
+
+document.body.innerHTML = w.wrap(p)</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-inputFocus">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Wrapper_HTML.html">Wrapper_HTML</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Transform any js code into a &lt;input onfocus&gt; payload.\n     * @graph  $Wrapper_JS -> {} ($current) {} -> $Wrapper_HTML\n     * @example\n     * const p = Payload.new().eval(() => alert(1))\n     * const w = Wrapper.new().inputFocus()\n     * \n     * document.body.innerHTML = w.wrap(p)\n     * @returns {Wrapper_HTML} \n     */","meta":{"range":[8541,8676],"filename":"Wrapper.js","lineno":293,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100003888","name":"Wrapper_JS#inputFocus","type":"MethodDefinition","paramnames":[]},"vars":{"":null},"shortpath":"Wrapper.js"},"description":"<p>Transform any js code into a &lt;input onfocus&gt; payload.</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_JS.html'>Wrapper_JS</a>\"},{\"readType\":\"\",\"label\":\"inputFocus()\",\"children\":null,\"returnType\":\"\"},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_HTML.html'>Wrapper_HTML</a>\"}]</script>","graph":[{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"},{"readType":"","label":"inputFocus()","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_HTML.html'>Wrapper_HTML</a>"}],"examples":[{"caption":"","code":"const p = Payload.new().eval(() => alert(1))\nconst w = Wrapper.new().inputFocus()\n\ndocument.body.innerHTML = w.wrap(p)"}],"returns":[{"type":{"names":["Wrapper_HTML"]}}],"name":"inputFocus","longname":"Wrapper_JS#inputFocus","kind":"function","memberof":"Wrapper_JS","scope":"instance","params":[],"___id":"T000002R000288","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"inputFocus","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"> &rarr; {<a href=\"Wrapper_HTML.html\">Wrapper_HTML</a>}</span>","ancestors":["<a href=\"Wrapper_JS.html\">Wrapper_JS</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Wrapper.js.html">Wrapper.js</a>:<a href="Wrapper.js.html#line306">306</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="minify">
+      <a href="#params-minify"><span class="type-signature"></span>minify</a><span class="signature">()</span><span class="type-signature"></span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Minify the js code with uglify-js</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"},{"readType":"","label":"minify()","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new().eval(() => alert(1))
+const w = Wrapper.new().minify()
+
+eval(w.wrap(p))</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-minify">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Minify the js code with uglify-js\n     * @graph  $Wrapper_JS -> {} ($current) {} -> $Wrapper_JS\n     * @example\n     * const p = Payload.new().eval(() => alert(1))\n     * const w = Wrapper.new().minify()\n     * \n     * eval(w.wrap(p))\n     */","meta":{"range":[8939,9171],"filename":"Wrapper.js","lineno":306,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100003906","name":"Wrapper_JS#minify","type":"MethodDefinition","paramnames":[]},"vars":{"":null},"shortpath":"Wrapper.js"},"description":"<p>Minify the js code with uglify-js</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_JS.html'>Wrapper_JS</a>\"},{\"readType\":\"\",\"label\":\"minify()\",\"children\":null,\"returnType\":\"\"},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_JS.html'>Wrapper_JS</a>\"}]</script>","graph":[{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"},{"readType":"","label":"minify()","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"}],"examples":[{"caption":"","code":"const p = Payload.new().eval(() => alert(1))\nconst w = Wrapper.new().minify()\n\neval(w.wrap(p))"}],"name":"minify","longname":"Wrapper_JS#minify","kind":"function","memberof":"Wrapper_JS","scope":"instance","params":[],"___id":"T000002R000291","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"minify","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"></span>","ancestors":["<a href=\"Wrapper_JS.html\">Wrapper_JS</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Wrapper.js.html">Wrapper.js</a>:<a href="Wrapper.js.html#line318">318</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="prepend">
+      <a href="#params-prepend"><span class="type-signature"></span>prepend</a><span class="signature">(prefix)</span><span class="type-signature"> &rarr; {<a href="Wrapper_JS.html">Wrapper_JS</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Add a prefix to a payload</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"},{"readType":"","label":"prepend(prefix)","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"}]</script>
+</div>
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-prepend">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-prepend" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>prefix</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Prefix to add to the current payload</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Wrapper_JS.html">Wrapper_JS</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Add a prefix to a payload\n     * @param {String} prefix Prefix to add to the current payload \n     * @graph $Wrapper_JS -> {} ($current) {} -> $Wrapper_JS\n     * @returns {Wrapper_JS}\n     */","meta":{"range":[9383,9469],"filename":"Wrapper.js","lineno":318,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100003933","name":"Wrapper_JS#prepend","type":"MethodDefinition","paramnames":["prefix"]},"vars":{"":null},"shortpath":"Wrapper.js"},"description":"<p>Add a prefix to a payload</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_JS.html'>Wrapper_JS</a>\"},{\"readType\":\"\",\"label\":\"prepend(prefix)\",\"children\":null,\"returnType\":\"\"},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_JS.html'>Wrapper_JS</a>\"}]</script>","params":[{"type":{"names":["String"]},"description":"<p>Prefix to add to the current payload</p>","name":"prefix"}],"graph":[{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"},{"readType":"","label":"prepend(prefix)","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"}],"returns":[{"type":{"names":["Wrapper_JS"]}}],"name":"prepend","longname":"Wrapper_JS#prepend","kind":"function","memberof":"Wrapper_JS","scope":"instance","___id":"T000002R000292","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"prepend","signature":"<span class=\"signature\">(prefix)</span><span class=\"type-signature\"> &rarr; {<a href=\"Wrapper_JS.html\">Wrapper_JS</a>}</span>","ancestors":["<a href=\"Wrapper_JS.html\">Wrapper_JS</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Wrapper.js.html">Wrapper.js</a>:<a href="Wrapper.js.html#line229">229</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="script">
+      <a href="#params-script"><span class="type-signature"></span>script</a><span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Wrapper_HTML.html">Wrapper_HTML</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Transform any js code into a &amp;ltscript&amp;gt element.</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"},{"readType":"","label":"script()","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_HTML.html'>Wrapper_HTML</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new().eval(() => alert(1))
+const w = Wrapper.new().script()
+
+const i = document.createElement('iframe')
+s.srcdoc = w.wrap(p)
+document.body.appendChild(i)</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-script">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Wrapper_HTML.html">Wrapper_HTML</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Transform any js code into a &ltscript&gt element.\n     * @graph  $Wrapper_JS -> {} ($current) {} -> $Wrapper_HTML\n     * @example\n     * const p = Payload.new().eval(() => alert(1))\n     * const w = Wrapper.new().script()\n     * \n     * const i = document.createElement('iframe')\n     * s.srcdoc = w.wrap(p)\n     * document.body.appendChild(i)\n     * @returns {Wrapper_HTML} \n     */","meta":{"range":[6331,6490],"filename":"Wrapper.js","lineno":229,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100003790","name":"Wrapper_JS#script","type":"MethodDefinition","paramnames":[]},"vars":{"":null},"shortpath":"Wrapper.js"},"description":"<p>Transform any js code into a &amp;ltscript&amp;gt element.</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_JS.html'>Wrapper_JS</a>\"},{\"readType\":\"\",\"label\":\"script()\",\"children\":null,\"returnType\":\"\"},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_HTML.html'>Wrapper_HTML</a>\"}]</script>","graph":[{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"},{"readType":"","label":"script()","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_HTML.html'>Wrapper_HTML</a>"}],"examples":[{"caption":"","code":"const p = Payload.new().eval(() => alert(1))\nconst w = Wrapper.new().script()\n\nconst i = document.createElement('iframe')\ns.srcdoc = w.wrap(p)\ndocument.body.appendChild(i)"}],"returns":[{"type":{"names":["Wrapper_HTML"]}}],"name":"script","longname":"Wrapper_JS#script","kind":"function","memberof":"Wrapper_JS","scope":"instance","params":[],"___id":"T000002R000278","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"script","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"> &rarr; {<a href=\"Wrapper_HTML.html\">Wrapper_HTML</a>}</span>","ancestors":["<a href=\"Wrapper_JS.html\">Wrapper_JS</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Wrapper.js.html">Wrapper.js</a>:<a href="Wrapper.js.html#line265">265</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="svgLoad">
+      <a href="#params-svgLoad"><span class="type-signature"></span>svgLoad</a><span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Wrapper_HTML.html">Wrapper_HTML</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Transform any js code into a &lt;svg onload&gt; payload.</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"},{"readType":"","label":"svgLoad()","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_HTML.html'>Wrapper_HTML</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new().eval(() => alert(1))
+const w = Wrapper.new().svgLoad()
+
+document.body.innerHTML = w.wrap(p)</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-svgLoad">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Wrapper_HTML.html">Wrapper_HTML</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Transform any js code into a &lt;svg onload&gt; payload.\n     * @graph  $Wrapper_JS -> {} ($current) {} -> $Wrapper_HTML\n     * @example\n     * const p = Payload.new().eval(() => alert(1))\n     * const w = Wrapper.new().svgLoad()\n     * \n     * document.body.innerHTML = w.wrap(p)\n     * @returns {Wrapper_HTML} \n     */","meta":{"range":[7609,7718],"filename":"Wrapper.js","lineno":265,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100003852","name":"Wrapper_JS#svgLoad","type":"MethodDefinition","paramnames":[]},"vars":{"":null},"shortpath":"Wrapper.js"},"description":"<p>Transform any js code into a &lt;svg onload&gt; payload.</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_JS.html'>Wrapper_JS</a>\"},{\"readType\":\"\",\"label\":\"svgLoad()\",\"children\":null,\"returnType\":\"\"},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_HTML.html'>Wrapper_HTML</a>\"}]</script>","graph":[{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"},{"readType":"","label":"svgLoad()","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_HTML.html'>Wrapper_HTML</a>"}],"examples":[{"caption":"","code":"const p = Payload.new().eval(() => alert(1))\nconst w = Wrapper.new().svgLoad()\n\ndocument.body.innerHTML = w.wrap(p)"}],"returns":[{"type":{"names":["Wrapper_HTML"]}}],"name":"svgLoad","longname":"Wrapper_JS#svgLoad","kind":"function","memberof":"Wrapper_JS","scope":"instance","params":[],"___id":"T000002R000282","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"svgLoad","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"> &rarr; {<a href=\"Wrapper_HTML.html\">Wrapper_HTML</a>}</span>","ancestors":["<a href=\"Wrapper_JS.html\">Wrapper_JS</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Wrapper.js.html">Wrapper.js</a>:<a href="Wrapper.js.html#line126">126</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="templateString">
+      <a href="#params-templateString"><span class="type-signature"></span>templateString</a><span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Wrapper_JS.html">Wrapper_JS</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Transform any js code into a template string payload without parenthesis.</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"},{"readType":"","label":"templateString()","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new().eval(() => alert(1))
+const w = Wrapper.new().templateString()
+const c = w.wrap(p)
+
+eval(c)</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-templateString">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Wrapper_JS.html">Wrapper_JS</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Transform any js code into a template string payload without parenthesis.\n     * \n     * \n     * @graph  $Wrapper_JS -> {} ($current) {} -> $Wrapper_JS\n     * @example\n     * \n     * const p = Payload.new().eval(() => alert(1))\n     * const w = Wrapper.new().templateString()\n     * const c = w.wrap(p)\n     * \n     * eval(c)\n     * @returns {Wrapper_JS}\n     */","meta":{"range":[3295,3409],"filename":"Wrapper.js","lineno":126,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100003683","name":"Wrapper_JS#templateString","type":"MethodDefinition","paramnames":[]},"vars":{"":null},"shortpath":"Wrapper.js"},"description":"<p>Transform any js code into a template string payload without parenthesis.</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_JS.html'>Wrapper_JS</a>\"},{\"readType\":\"\",\"label\":\"templateString()\",\"children\":null,\"returnType\":\"\"},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_JS.html'>Wrapper_JS</a>\"}]</script>","graph":[{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"},{"readType":"","label":"templateString()","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"}],"examples":[{"caption":"","code":"const p = Payload.new().eval(() => alert(1))\nconst w = Wrapper.new().templateString()\nconst c = w.wrap(p)\n\neval(c)"}],"returns":[{"type":{"names":["Wrapper_JS"]}}],"name":"templateString","longname":"Wrapper_JS#templateString","kind":"function","memberof":"Wrapper_JS","scope":"instance","params":[],"___id":"T000002R000272","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"templateString","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"> &rarr; {<a href=\"Wrapper_JS.html\">Wrapper_JS</a>}</span>","ancestors":["<a href=\"Wrapper_JS.html\">Wrapper_JS</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Wrapper.js.html">Wrapper.js</a>:<a href="Wrapper.js.html#line179">179</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="url">
+      <a href="#params-url"><span class="type-signature"></span>url</a><span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Wrapper_JSUrl.html">Wrapper_JSUrl</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Transform any js code into a javascript: pseudo url.</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"},{"readType":"","label":"url()","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_JSUrl.html'>Wrapper_JSUrl</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new().eval(() => alert(1))
+const w = Wrapper.new().url()
+
+document.location = w.wrap(p)</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-url">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Wrapper_JSUrl.html">Wrapper_JSUrl</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Transform any js code into a javascript: pseudo url.\n     * \n     * \n     * @graph  $Wrapper_JS -> {} ($current) {} -> $Wrapper_JSUrl\n     * @example\n     * \n     * const p = Payload.new().eval(() => alert(1))\n     * const w = Wrapper.new().url()\n     * \n     * document.location = w.wrap(p)\n     * @returns {Wrapper_JSUrl} \n     */","meta":{"range":[4773,4846],"filename":"Wrapper.js","lineno":179,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100003749","name":"Wrapper_JS#url","type":"MethodDefinition","paramnames":[]},"vars":{"":null},"shortpath":"Wrapper.js"},"description":"<p>Transform any js code into a javascript: pseudo url.</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_JS.html'>Wrapper_JS</a>\"},{\"readType\":\"\",\"label\":\"url()\",\"children\":null,\"returnType\":\"\"},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_JSUrl.html'>Wrapper_JSUrl</a>\"}]</script>","graph":[{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"},{"readType":"","label":"url()","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_JSUrl.html'>Wrapper_JSUrl</a>"}],"examples":[{"caption":"","code":"const p = Payload.new().eval(() => alert(1))\nconst w = Wrapper.new().url()\n\ndocument.location = w.wrap(p)"}],"returns":[{"type":{"names":["Wrapper_JSUrl"]}}],"name":"url","longname":"Wrapper_JS#url","kind":"function","memberof":"Wrapper_JS","scope":"instance","params":[],"___id":"T000002R000275","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"url","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"> &rarr; {<a href=\"Wrapper_JSUrl.html\">Wrapper_JSUrl</a>}</span>","ancestors":["<a href=\"Wrapper_JS.html\">Wrapper_JS</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Wrapper.js.html">Wrapper.js</a>:<a href="Wrapper.js.html#line92">92</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="wrap">
+      <a href="#params-wrap"><span class="type-signature"></span>wrap</a><span class="signature">(payload)</span><span class="type-signature"> &rarr; {string}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Wrap a payload or a string and return it a as string</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Wrapper.html'>Wrapper</a>"},{"readType":"","label":"wrap(payload)","children":null,"returnType":""},{"readType":"","label":"String","children":null,"returnType":null}]</script>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new().eval(() => alert(1))
+const w = Wrapper.new()
+const code = w.wrap(p)
+
+eval(code)</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-wrap">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Wrapper.html#wrap">Wrapper#wrap</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-wrap" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>payload</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+|
+
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Payload to wrap</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Wrap a payload or a string and return it a as string\n     * \n     * @param {Payload | String} payload Payload to wrap\n     * @example\n     * \n     * const p = Payload.new().eval(() => alert(1))\n     * const w = Wrapper.new()\n     * const code = w.wrap(p)\n     * \n     * eval(code)\n     * @graph $Wrapper -> {} ($current) {} -> {} (String)\n     * @return {string}\n     */","meta":{"range":[2450,2591],"filename":"Wrapper.js","lineno":92,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100003622","name":"Wrapper#wrap","type":"MethodDefinition","paramnames":["payload"]},"vars":{"":null},"shortpath":"Wrapper.js"},"name":"wrap","longname":"Wrapper_JS#wrap","kind":"function","description":"<p>Wrap a payload or a string and return it a as string</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper.html'>Wrapper</a>\"},{\"readType\":\"\",\"label\":\"wrap(payload)\",\"children\":null,\"returnType\":\"\"},{\"readType\":\"\",\"label\":\"String\",\"children\":null,\"returnType\":null}]</script>","examples":[{"caption":"","code":"const p = Payload.new().eval(() => alert(1))\nconst w = Wrapper.new()\nconst code = w.wrap(p)\n\neval(code)"}],"graph":[{"readType":"","returnType":"","html":"<a href='./Wrapper.html'>Wrapper</a>"},{"readType":"","label":"wrap(payload)","children":null,"returnType":""},{"readType":"","label":"String","children":null,"returnType":null}],"returns":[{"type":{"names":["string"]}}],"memberof":"Wrapper_JS","scope":"instance","params":[{"type":{"names":["Payload","String"]},"description":"<p>Payload to wrap</p>","name":"payload"}],"inherits":"Wrapper#wrap","inherited":true,"___id":"T000002R000384","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"wrap","signature":"<span class=\"signature\">(payload)</span><span class=\"type-signature\"> &rarr; {string}</span>","ancestors":["<a href=\"Wrapper_JS.html\">Wrapper_JS</a>#"]}
+</pre>
+-->
+</div>
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on Sun Mar 14 2021 13:45:10 GMT+0100 (Central European Standard Time) using the LOKE theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script>window.addEventListener("DOMContentLoaded", initGraphs)</script>
+</body>
+</html>

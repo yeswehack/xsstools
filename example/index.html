@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XSS Template</title>
+    <style>
+      :root {
+        --dark: #070707;
+        --light: #ffffff;
+        --primary: #e73541;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        height: 100%;
+        font-family: Helvetica;
+        color: var(--dark);
+        background-color: var(--light);
+      }
+      body {
+        margin: 0;
+        height: 100%;
+        display: grid;
+        grid-template-areas: "title title" "console frames";
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 50% 50%;
+      }
+      body h1 {
+        background: var(--dark);
+        color: var(--light);
+        grid-area: title;
+        padding: 15px;
+        margin: 0;
+        font-size: 1.5em;
+      }
+      section {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        gap: 5px;
+      }
+
+      section h2 {
+        margin: 0;
+      }
+      #console {
+        grid-area: console;
+      }
+
+      #frames {
+        grid-area: frames;
+      }
+
+      #console pre {
+        background: #eee;
+        padding: 5px;
+        flex-grow: 1;
+        overflow: auto;
+        margin: 0;
+      }
+
+      #frames div {
+        flex-grow: 1;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        justify-content: stretch;
+        align-items: stretch;
+        overflow: auto;
+      }
+      #frames iframe {
+        width: 100%;
+        flex-grow: 1;
+        border-width: 1px;
+        grid-column: auto / span 4;
+      }
+
+      #frames iframe:first-child:nth-last-child(n + 5),
+      #frames iframe:first-child:nth-last-child(n + 5) ~ iframe {
+        grid-column: auto / span 2;
+      }
+
+      #frames iframe:first-child:nth-last-child(n + 9),
+      #frames iframe:first-child:nth-last-child(n + 9) ~ iframe {
+        grid-column: auto / span 1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>XSS Template</h1>
+    <section id="console">
+      <h2>Console</h2>
+      <pre></pre>
+    </section>
+    <section id="frames">
+      <h2>Frames</h2>
+      <div></div>
+    </section>
+    <script type="module">
+      import * as xsstools from "./xsstools.min.js"
+      window.xsstools = xsstools
+    </script>
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>

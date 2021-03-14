@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>MessageHandler - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/graphs.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/graph.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav class="nav">
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-utils.html">utils</a><ul class='methods'><li data-type='method'><a href="module-utils.html#.buildUrl">buildUrl</a></li><li data-type='method'><a href="module-utils.html#.createElement">createElement</a></li><li data-type='method'><a href="module-utils.html#.createFrame">createFrame</a></li><li data-type='method'><a href="module-utils.html#.loadUglify">loadUglify</a></li><li data-type='method'><a href="module-utils.html#.randInt">randInt</a></li></ul></li></ul><h3>Classes</h3><ul><li><a href="ClickJacker.html">ClickJacker</a><ul class='methods'><li data-type='method'><a href="ClickJacker.html#addStep">addStep</a></li><li data-type='method'><a href="ClickJacker.html#run">run</a></li></ul></li><li><a href="Exfiltrators.html">Exfiltrators</a><ul class='methods'><li data-type='method'><a href="Exfiltrators.html#.console">console</a></li><li data-type='method'><a href="Exfiltrators.html#.get">get</a></li><li data-type='method'><a href="Exfiltrators.html#.iframe">iframe</a></li><li data-type='method'><a href="Exfiltrators.html#.img">img</a></li><li data-type='method'><a href="Exfiltrators.html#.message">message</a></li><li data-type='method'><a href="Exfiltrators.html#.post">post</a></li><li data-type='method'><a href="Exfiltrators.html#.postJSON">postJSON</a></li><li data-type='method'><a href="Exfiltrators.html#.sendBeacon">sendBeacon</a></li><li data-type='method'><a href="Exfiltrators.html#.style">style</a></li></ul></li><li><a href="MessageHandler.html">MessageHandler</a><ul class='methods'><li data-type='method'><a href="MessageHandler.html#addListener">addListener</a></li><li data-type='method'><a href="MessageHandler.html#listen">listen</a></li><li data-type='method'><a href="MessageHandler.html#logMessages">logMessages</a></li><li data-type='method'><a href="MessageHandler.html#removeListener">removeListener</a></li><li data-type='method'><a href="MessageHandler.html#stop">stop</a></li><li data-type='method'><a href="MessageHandler.html#waitForMessage">waitForMessage</a></li></ul></li><li><a href="Payload.html">Payload</a><ul class='methods'><li data-type='method'><a href="Payload.html#.new">new</a></li><li data-type='method'><a href="Payload.html#addExfiltrator">addExfiltrator</a></li><li data-type='method'><a href="Payload.html#asDOM">asDOM</a></li><li data-type='method'><a href="Payload.html#eval">eval</a></li><li data-type='method'><a href="Payload.html#exfiltrate">exfiltrate</a></li><li data-type='method'><a href="Payload.html#fetch">fetch</a></li><li data-type='method'><a href="Payload.html#fetchDOM">fetchDOM</a></li><li data-type='method'><a href="Payload.html#fetchJSON">fetchJSON</a></li><li data-type='method'><a href="Payload.html#fetchText">fetchText</a></li><li data-type='method'><a href="Payload.html#findBetween">findBetween</a></li><li data-type='method'><a href="Payload.html#forEach">forEach</a></li><li data-type='method'><a href="Payload.html#guard">guard</a></li><li data-type='method'><a href="Payload.html#injectStyle">injectStyle</a></li><li data-type='method'><a href="Payload.html#log">log</a></li><li data-type='method'><a href="Payload.html#map">map</a></li><li data-type='method'><a href="Payload.html#parallel">parallel</a></li><li data-type='method'><a href="Payload.html#passthru">passthru</a></li><li data-type='method'><a href="Payload.html#persist">persist</a></li><li data-type='method'><a href="Payload.html#postMessage">postMessage</a></li><li data-type='method'><a href="Payload.html#postMultipart">postMultipart</a></li><li data-type='method'><a href="Payload.html#querySelector">querySelector</a></li><li data-type='method'><a href="Payload.html#querySelectorAll">querySelectorAll</a></li><li data-type='method'><a href="Payload.html#redirect">redirect</a></li><li data-type='method'><a href="Payload.html#regExtract">regExtract</a></li><li data-type='method'><a href="Payload.html#setExfiltrator">setExfiltrator</a></li><li data-type='method'><a href="Payload.html#startClickLogger">startClickLogger</a></li><li data-type='method'><a href="Payload.html#startKeyLogger">startKeyLogger</a></li><li data-type='method'><a href="Payload.html#wait">wait</a></li></ul></li><li><a href="Wrapper.html">Wrapper</a><ul class='methods'><li data-type='method'><a href="Wrapper.html#.new">new</a></li><li data-type='method'><a href="Wrapper.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_HTML.html">Wrapper_HTML</a><ul class='methods'><li data-type='method'><a href="Wrapper_HTML.html#append">append</a></li><li data-type='method'><a href="Wrapper_HTML.html#dataUrl">dataUrl</a></li><li data-type='method'><a href="Wrapper_HTML.html#dataUrl64">dataUrl64</a></li><li data-type='method'><a href="Wrapper_HTML.html#enclose">enclose</a></li><li data-type='method'><a href="Wrapper_HTML.html#iframe">iframe</a></li><li data-type='method'><a href="Wrapper_HTML.html#innerHTML">innerHTML</a></li><li data-type='method'><a href="Wrapper_HTML.html#prepend">prepend</a></li><li data-type='method'><a href="Wrapper_HTML.html#wrap">wrap</a></li><li data-type='method'><a href="Wrapper_HTML.html#write">write</a></li></ul></li><li><a href="Wrapper_HTMLDataUrl.html">Wrapper_HTMLDataUrl</a><ul class='methods'><li data-type='method'><a href="Wrapper_HTMLDataUrl.html#iframe">iframe</a></li><li data-type='method'><a href="Wrapper_HTMLDataUrl.html#windowOpen">windowOpen</a></li><li data-type='method'><a href="Wrapper_HTMLDataUrl.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_JS.html">Wrapper_JS</a><ul class='methods'><li data-type='method'><a href="Wrapper_JS.html#append">append</a></li><li data-type='method'><a href="Wrapper_JS.html#appendScript">appendScript</a></li><li data-type='method'><a href="Wrapper_JS.html#dataUrl">dataUrl</a></li><li data-type='method'><a href="Wrapper_JS.html#dataUrl64">dataUrl64</a></li><li data-type='method'><a href="Wrapper_JS.html#enclose">enclose</a></li><li data-type='method'><a href="Wrapper_JS.html#evalB64">evalB64</a></li><li data-type='method'><a href="Wrapper_JS.html#evalStringForCharCode">evalStringForCharCode</a></li><li data-type='method'><a href="Wrapper_JS.html#imgError">imgError</a></li><li data-type='method'><a href="Wrapper_JS.html#inputFocus">inputFocus</a></li><li data-type='method'><a href="Wrapper_JS.html#minify">minify</a></li><li data-type='method'><a href="Wrapper_JS.html#prepend">prepend</a></li><li data-type='method'><a href="Wrapper_JS.html#script">script</a></li><li data-type='method'><a href="Wrapper_JS.html#svgLoad">svgLoad</a></li><li data-type='method'><a href="Wrapper_JS.html#templateString">templateString</a></li><li data-type='method'><a href="Wrapper_JS.html#url">url</a></li><li data-type='method'><a href="Wrapper_JS.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_JSDataUrl.html">Wrapper_JSDataUrl</a><ul class='methods'><li data-type='method'><a href="Wrapper_JSDataUrl.html#script">script</a></li><li data-type='method'><a href="Wrapper_JSDataUrl.html#scriptImport">scriptImport</a></li><li data-type='method'><a href="Wrapper_JSDataUrl.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_JSUrl.html">Wrapper_JSUrl</a><ul class='methods'><li data-type='method'><a href="Wrapper_JSUrl.html#embed">embed</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#iframe">iframe</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#object">object</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#redirect">redirect</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#wrap">wrap</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">MessageHandler</h1>
+    
+
+    <!--container.tmpl-->
+
+
+
+
+
+<section>
+
+
+
+<header data-tmpl="container.tmpl">
+    
+        <h2>
+        MessageHandler
+        </h2>
+        
+            <div class="lead"><p>Simple postMessage handler</p></div>
+        
+    
+
+    
+      <div class="bs-callout bs-callout-default">
+        <h5>Members</h5>
+        <br />
+        <dl class="dl-horizontal methods-members">
+        <dt>Methods</dt><dd><ul>
+            <li><a href="#addListener">addListener</a></li>
+            
+            <li><a href="#listen">listen</a></li>
+            
+            <li><a href="#logMessages">logMessages</a></li>
+            
+            <li><a href="#removeListener">removeListener</a></li>
+            
+            <li><a href="#stop">stop</a></li>
+            
+            <li><a href="#waitForMessage">waitForMessage</a></li>
+            </ul></dd></dl></div>
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        <!--method.tmpl-->
+<div class="method-details">
+
+
+
+
+
+    
+    <h3 class="constructor">Constructor</h3>
+    
+
+    
+      <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="MessageHandler.js.html">MessageHandler.js</a>:<a href="MessageHandler.js.html#line6">6</a>
+  </code>
+</div>
+
+    
+
+    <h4 class="name" id="MessageHandler">
+      <a href="#params-MessageHandler"><span class="type-signature"></span>new MessageHandler</a><span class="signature">()</span><span class="type-signature"></span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Create new postMessage handler</p>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>new MessageHandler().addListener(data => console.log(data)).listen()</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-MessageHandler">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n * Simple postMessage handler\n */","meta":{"range":[40,2624],"filename":"MessageHandler.js","lineno":6,"columnno":0,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100000963","name":"MessageHandler","type":"ClassDeclaration","paramnames":[]},"shortpath":"MessageHandler.js"},"name":"MessageHandler","longname":"MessageHandler","kind":"class","classdesc":"<p>Simple postMessage handler</p>","scope":"global","description":"<p>Create new postMessage handler</p>","examples":[{"caption":"","code":"new MessageHandler().addListener(data => console.log(data)).listen()"}],"___id":"T000003R000004","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"MessageHandler","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"></span>","ancestors":[]}
+</pre>
+-->
+</div>
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="MessageHandler.js.html">MessageHandler.js</a>:<a href="MessageHandler.js.html#line86">86</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="addListener">
+      <a href="#params-addListener"><span class="type-signature"></span>addListener</a><span class="signature">(f)</span><span class="type-signature"> &rarr; {this}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Add a callback function to call on all received message</p>
+</div>
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-addListener">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-addListener" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>f</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Function to add to the callback list</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">this</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Add a callback function to call on all received message\n     * @param {Function} f Function to add to the callback list\n     * @returns  {this}\n     */","meta":{"range":[2297,2370],"filename":"MessageHandler.js","lineno":86,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100001150","name":"MessageHandler#addListener","type":"MethodDefinition","paramnames":["f"]},"vars":{"":null},"shortpath":"MessageHandler.js"},"description":"<p>Add a callback function to call on all received message</p>","params":[{"type":{"names":["function"]},"description":"<p>Function to add to the callback list</p>","name":"f"}],"returns":[{"type":{"names":["this"]}}],"name":"addListener","longname":"MessageHandler#addListener","kind":"function","memberof":"MessageHandler","scope":"instance","___id":"T000002R000116","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"addListener","signature":"<span class=\"signature\">(f)</span><span class=\"type-signature\"> &rarr; {this}</span>","ancestors":["<a href=\"MessageHandler.html\">MessageHandler</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="MessageHandler.js.html">MessageHandler.js</a>:<a href="MessageHandler.js.html#line56">56</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="listen">
+      <a href="#params-listen"><span class="type-signature"></span>listen</a><span class="signature">()</span><span class="type-signature"> &rarr; {this}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Start the messageHandler listener</p>
+</div>
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-listen">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">this</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Start the messageHandler listener\n     * @returns {this}\n     */","meta":{"range":[1569,1699],"filename":"MessageHandler.js","lineno":56,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100001099","name":"MessageHandler#listen","type":"MethodDefinition","paramnames":[]},"vars":{"":null},"shortpath":"MessageHandler.js"},"description":"<p>Start the messageHandler listener</p>","returns":[{"type":{"names":["this"]}}],"name":"listen","longname":"MessageHandler#listen","kind":"function","memberof":"MessageHandler","scope":"instance","params":[],"___id":"T000002R000111","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"listen","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"> &rarr; {this}</span>","ancestors":["<a href=\"MessageHandler.html\">MessageHandler</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="MessageHandler.js.html">MessageHandler.js</a>:<a href="MessageHandler.js.html#line76">76</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="logMessages">
+      <a href="#params-logMessages"><span class="type-signature"></span>logMessages</a><span class="signature">(f)</span><span class="type-signature"> &rarr; {this}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Change the logger function, by default the message are printed in the console</p>
+</div>
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-logMessages">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-logMessages" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>f</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The new log function</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">this</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Change the logger function, by default the message are printed in the console \n     * @param {Function} f The new log function\n     * @returns {this}\n     */","meta":{"range":[2059,2124],"filename":"MessageHandler.js","lineno":76,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100001137","name":"MessageHandler#logMessages","type":"MethodDefinition","paramnames":["f"]},"vars":{"":null},"shortpath":"MessageHandler.js"},"description":"<p>Change the logger function, by default the message are printed in the console</p>","params":[{"type":{"names":["function"]},"description":"<p>The new log function</p>","name":"f"}],"returns":[{"type":{"names":["this"]}}],"name":"logMessages","longname":"MessageHandler#logMessages","kind":"function","memberof":"MessageHandler","scope":"instance","___id":"T000002R000114","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"logMessages","signature":"<span class=\"signature\">(f)</span><span class=\"type-signature\"> &rarr; {this}</span>","ancestors":["<a href=\"MessageHandler.html\">MessageHandler</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="MessageHandler.js.html">MessageHandler.js</a>:<a href="MessageHandler.js.html#line95">95</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="removeListener">
+      <a href="#params-removeListener"><span class="type-signature"></span>removeListener</a><span class="signature">(f)</span><span class="type-signature"> &rarr; {this}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Remove a callback function</p>
+</div>
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-removeListener">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-removeListener" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>f</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Function to remove from the callback list</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">this</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Remove a callback function\n     * @param {Function} f Function to remove from the callback list\n     * @returns {this}\n     */","meta":{"range":[2517,2622],"filename":"MessageHandler.js","lineno":95,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100001165","name":"MessageHandler#removeListener","type":"MethodDefinition","paramnames":["f"]},"vars":{"":null},"shortpath":"MessageHandler.js"},"description":"<p>Remove a callback function</p>","params":[{"type":{"names":["function"]},"description":"<p>Function to remove from the callback list</p>","name":"f"}],"returns":[{"type":{"names":["this"]}}],"name":"removeListener","longname":"MessageHandler#removeListener","kind":"function","memberof":"MessageHandler","scope":"instance","___id":"T000002R000117","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"removeListener","signature":"<span class=\"signature\">(f)</span><span class=\"type-signature\"> &rarr; {this}</span>","ancestors":["<a href=\"MessageHandler.html\">MessageHandler</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="MessageHandler.js.html">MessageHandler.js</a>:<a href="MessageHandler.js.html#line65">65</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="stop">
+      <a href="#params-stop"><span class="type-signature"></span>stop</a><span class="signature">()</span><span class="type-signature"> &rarr; {this}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Stop the messageHandler listener</p>
+</div>
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-stop">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">this</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Stop the messageHandler listener\n     * @returns {this}\n     */","meta":{"range":[1784,1879],"filename":"MessageHandler.js","lineno":65,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100001122","name":"MessageHandler#stop","type":"MethodDefinition","paramnames":[]},"vars":{"":null},"shortpath":"MessageHandler.js"},"description":"<p>Stop the messageHandler listener</p>","returns":[{"type":{"names":["this"]}}],"name":"stop","longname":"MessageHandler#stop","kind":"function","memberof":"MessageHandler","scope":"instance","params":[],"___id":"T000002R000113","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"stop","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"> &rarr; {this}</span>","ancestors":["<a href=\"MessageHandler.html\">MessageHandler</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="MessageHandler.js.html">MessageHandler.js</a>:<a href="MessageHandler.js.html#line40">40</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="waitForMessage">
+      <a href="#params-waitForMessage"><span class="type-signature"></span>waitForMessage</a><span class="signature">(filter<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise.&lt;String>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Return a promise that resolve with the next message data.</p>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const mh = new MessageHandler().listen()
+const data = await mh.waitForMessage((data, origin) => origin == "https://victim.example")
+console.log(data) </code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-waitForMessage">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-waitForMessage" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>filter</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>A filter function, taking data and origin as parameter and returning a boolean whether
+or not resolving to the message</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>message data</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;String></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Return a promise that resolve with the next message data.\n     * \n     * @param {Function} [filter]  A filter function, taking data and origin as parameter and returning a boolean whether\n     * or not resolving to the message\n     * @returns {Promise<String>} message data\n     * @example\n     * const mh = new MessageHandler().listen()\n     * const data = await mh.waitForMessage((data, origin) => origin == \"https://victim.example\")\n     * console.log(data) \n     */","meta":{"range":[1141,1483],"filename":"MessageHandler.js","lineno":40,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100001056","name":"MessageHandler#waitForMessage","type":"MethodDefinition","paramnames":["filter"]},"vars":{"":null},"shortpath":"MessageHandler.js"},"description":"<p>Return a promise that resolve with the next message data.</p>","params":[{"type":{"names":["function"]},"optional":true,"description":"<p>A filter function, taking data and origin as parameter and returning a boolean whether\nor not resolving to the message</p>","name":"filter"}],"returns":[{"type":{"names":["Promise.<String>"]},"description":"<p>message data</p>"}],"examples":[{"caption":"","code":"const mh = new MessageHandler().listen()\nconst data = await mh.waitForMessage((data, origin) => origin == \"https://victim.example\")\nconsole.log(data) "}],"name":"waitForMessage","longname":"MessageHandler#waitForMessage","kind":"function","memberof":"MessageHandler","scope":"instance","___id":"T000002R000109","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"waitForMessage","signature":"<span class=\"signature\">(filter<span class=\"signature-attributes\">opt</span>)</span><span class=\"type-signature\"> &rarr; {Promise.&lt;String>}</span>","ancestors":["<a href=\"MessageHandler.html\">MessageHandler</a>#"]}
+</pre>
+-->
+</div>
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on Sun Mar 14 2021 13:45:10 GMT+0100 (Central European Standard Time) using the LOKE theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script>window.addEventListener("DOMContentLoaded", initGraphs)</script>
+</body>
+</html>

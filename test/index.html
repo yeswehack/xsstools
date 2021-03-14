@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mocha</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mocha.css" />
+    <style>
+      .container {
+        position: fixed;
+        width: 0;
+        height: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <iframe name="container" hidden></iframe>
+    <script src="chai.js"></script>
+    <script src="mocha.js"></script>
+    <script>
+      mocha.setup("bdd");
+    </script>
+    <script src="./__test__/all.test.js" type="module"></script>
+    <script type="module">
+      document.addEventListener("DOMContentLoaded", (ev) => {
+        mocha.run();
+      });
+    </script>
+    <iframe class="container" name="container"></iframe>
+  </body>
+</html>

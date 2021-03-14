@@ -1,0 +1,146 @@
+
+
+.graph,.graph .step {
+    position: relative;
+    display: flex;
+    flex-direction: row
+}
+
+.graph {
+    --line-color: rgb(85, 85, 172);
+    --line-width: 2px;
+    --line: var(--line-color) solid var(--line-width);
+    --line-dotted: gray dotted var(--line-width);
+    --step-background: #eee;
+    --line-radius: 10px;
+    --border-radius: var(--line-radius);
+    --step-border: 2px solid black;
+    font-family: Consolas,Monaco,"Andale Mono",monospace;
+    justify-content: space-evenly
+}
+
+.graph .step {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    margin-left: calc(-1*var(--line-width))
+}
+
+.graph .step div:not(.inner):not(.skip) {
+    display: flex;
+    width: auto;
+    position: relative;
+    border-radius: var(--border-radius);
+    background: var(--step-background);
+    align-items: center;
+    border: var(--step-border);
+    padding: 10px 30px;
+    z-index: 2
+}
+
+.graph .step::after,.graph .step::before {
+    position: absolute;
+    border-bottom: var(--line-dotted);
+    width: 50%;
+    top: calc(50% - var(--line-radius));
+    z-index: 1;
+    height: var(--line-radius)
+}
+
+.graph .step::before {
+    left: 0
+}
+
+.graph .step::after {
+    right: 0
+}
+
+.graph .step.next::after,.graph .step.prev::before {
+    content: "";
+    border-bottom: var(--line)
+}
+
+.graph .step.prev:first-child::before {
+    border-bottom-style: dashed
+}
+
+.graph .step.next:last-child::after {
+    border-bottom-style: dashed
+}
+
+.graph .step .skip {
+    position: absolute;
+    top: 0;
+    left: var(--line-radius);
+    width: calc(100% - var(--line-radius)*2);
+    height: calc(50% - var(--line-radius));
+    border: var(--line);
+    border-radius: var(--line-radius) var(--line-radius) 0 0;
+    border-bottom: none
+}
+
+.graph .step .skip::after,.graph .step .skip::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(50% + var(--line-radius));
+    width: var(--line-radius);
+    height: 50%;
+    border-bottom: var(--line)
+}
+
+.graph .step .skip::after {
+    left: 100%;
+    border-left: var(--line);
+    border-bottom-left-radius: var(--line-radius)
+}
+
+.graph .step .skip::before {
+    left: calc(-1*var(--line-radius));
+    border-right: var(--line);
+    border-bottom-right-radius: var(--line-radius)
+}
+
+.graph .step.dotted::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(50% - var(--line-width));
+    height: var(--line-width);
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    border-bottom: var(--line-dotted)
+}
+
+.graph .step .group {
+    padding: 10px 30px
+}
+
+.graph .step .group,.graph .step .group .inner {
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+
+.graph .step .group .inner.async {
+    padding-left: 10px;
+    border-left: 2px solid green
+}
+
+.graph .step .group .inner.async::before {
+    content: "async"
+}
+
+.graph .return-value {
+    margin-left: 5px;
+    margin-bottom: 2em;
+    z-index: 2
+}
+
+.graph .take-value {
+    margin-right: 5px;
+    margin-bottom: 2em;
+    z-index: 2
+}

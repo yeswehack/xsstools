@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Wrapper_HTMLDataUrl - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/graphs.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/graph.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav class="nav">
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-utils.html">utils</a><ul class='methods'><li data-type='method'><a href="module-utils.html#.buildUrl">buildUrl</a></li><li data-type='method'><a href="module-utils.html#.createElement">createElement</a></li><li data-type='method'><a href="module-utils.html#.createFrame">createFrame</a></li><li data-type='method'><a href="module-utils.html#.loadUglify">loadUglify</a></li><li data-type='method'><a href="module-utils.html#.randInt">randInt</a></li></ul></li></ul><h3>Classes</h3><ul><li><a href="ClickJacker.html">ClickJacker</a><ul class='methods'><li data-type='method'><a href="ClickJacker.html#addStep">addStep</a></li><li data-type='method'><a href="ClickJacker.html#run">run</a></li></ul></li><li><a href="Exfiltrators.html">Exfiltrators</a><ul class='methods'><li data-type='method'><a href="Exfiltrators.html#.console">console</a></li><li data-type='method'><a href="Exfiltrators.html#.get">get</a></li><li data-type='method'><a href="Exfiltrators.html#.iframe">iframe</a></li><li data-type='method'><a href="Exfiltrators.html#.img">img</a></li><li data-type='method'><a href="Exfiltrators.html#.message">message</a></li><li data-type='method'><a href="Exfiltrators.html#.post">post</a></li><li data-type='method'><a href="Exfiltrators.html#.postJSON">postJSON</a></li><li data-type='method'><a href="Exfiltrators.html#.sendBeacon">sendBeacon</a></li><li data-type='method'><a href="Exfiltrators.html#.style">style</a></li></ul></li><li><a href="MessageHandler.html">MessageHandler</a><ul class='methods'><li data-type='method'><a href="MessageHandler.html#addListener">addListener</a></li><li data-type='method'><a href="MessageHandler.html#listen">listen</a></li><li data-type='method'><a href="MessageHandler.html#logMessages">logMessages</a></li><li data-type='method'><a href="MessageHandler.html#removeListener">removeListener</a></li><li data-type='method'><a href="MessageHandler.html#stop">stop</a></li><li data-type='method'><a href="MessageHandler.html#waitForMessage">waitForMessage</a></li></ul></li><li><a href="Payload.html">Payload</a><ul class='methods'><li data-type='method'><a href="Payload.html#.new">new</a></li><li data-type='method'><a href="Payload.html#addExfiltrator">addExfiltrator</a></li><li data-type='method'><a href="Payload.html#asDOM">asDOM</a></li><li data-type='method'><a href="Payload.html#eval">eval</a></li><li data-type='method'><a href="Payload.html#exfiltrate">exfiltrate</a></li><li data-type='method'><a href="Payload.html#fetch">fetch</a></li><li data-type='method'><a href="Payload.html#fetchDOM">fetchDOM</a></li><li data-type='method'><a href="Payload.html#fetchJSON">fetchJSON</a></li><li data-type='method'><a href="Payload.html#fetchText">fetchText</a></li><li data-type='method'><a href="Payload.html#findBetween">findBetween</a></li><li data-type='method'><a href="Payload.html#forEach">forEach</a></li><li data-type='method'><a href="Payload.html#guard">guard</a></li><li data-type='method'><a href="Payload.html#injectStyle">injectStyle</a></li><li data-type='method'><a href="Payload.html#log">log</a></li><li data-type='method'><a href="Payload.html#map">map</a></li><li data-type='method'><a href="Payload.html#parallel">parallel</a></li><li data-type='method'><a href="Payload.html#passthru">passthru</a></li><li data-type='method'><a href="Payload.html#persist">persist</a></li><li data-type='method'><a href="Payload.html#postMessage">postMessage</a></li><li data-type='method'><a href="Payload.html#postMultipart">postMultipart</a></li><li data-type='method'><a href="Payload.html#querySelector">querySelector</a></li><li data-type='method'><a href="Payload.html#querySelectorAll">querySelectorAll</a></li><li data-type='method'><a href="Payload.html#redirect">redirect</a></li><li data-type='method'><a href="Payload.html#regExtract">regExtract</a></li><li data-type='method'><a href="Payload.html#setExfiltrator">setExfiltrator</a></li><li data-type='method'><a href="Payload.html#startClickLogger">startClickLogger</a></li><li data-type='method'><a href="Payload.html#startKeyLogger">startKeyLogger</a></li><li data-type='method'><a href="Payload.html#wait">wait</a></li></ul></li><li><a href="Wrapper.html">Wrapper</a><ul class='methods'><li data-type='method'><a href="Wrapper.html#.new">new</a></li><li data-type='method'><a href="Wrapper.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_HTML.html">Wrapper_HTML</a><ul class='methods'><li data-type='method'><a href="Wrapper_HTML.html#append">append</a></li><li data-type='method'><a href="Wrapper_HTML.html#dataUrl">dataUrl</a></li><li data-type='method'><a href="Wrapper_HTML.html#dataUrl64">dataUrl64</a></li><li data-type='method'><a href="Wrapper_HTML.html#enclose">enclose</a></li><li data-type='method'><a href="Wrapper_HTML.html#iframe">iframe</a></li><li data-type='method'><a href="Wrapper_HTML.html#innerHTML">innerHTML</a></li><li data-type='method'><a href="Wrapper_HTML.html#prepend">prepend</a></li><li data-type='method'><a href="Wrapper_HTML.html#wrap">wrap</a></li><li data-type='method'><a href="Wrapper_HTML.html#write">write</a></li></ul></li><li><a href="Wrapper_HTMLDataUrl.html">Wrapper_HTMLDataUrl</a><ul class='methods'><li data-type='method'><a href="Wrapper_HTMLDataUrl.html#iframe">iframe</a></li><li data-type='method'><a href="Wrapper_HTMLDataUrl.html#windowOpen">windowOpen</a></li><li data-type='method'><a href="Wrapper_HTMLDataUrl.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_JS.html">Wrapper_JS</a><ul class='methods'><li data-type='method'><a href="Wrapper_JS.html#append">append</a></li><li data-type='method'><a href="Wrapper_JS.html#appendScript">appendScript</a></li><li data-type='method'><a href="Wrapper_JS.html#dataUrl">dataUrl</a></li><li data-type='method'><a href="Wrapper_JS.html#dataUrl64">dataUrl64</a></li><li data-type='method'><a href="Wrapper_JS.html#enclose">enclose</a></li><li data-type='method'><a href="Wrapper_JS.html#evalB64">evalB64</a></li><li data-type='method'><a href="Wrapper_JS.html#evalStringForCharCode">evalStringForCharCode</a></li><li data-type='method'><a href="Wrapper_JS.html#imgError">imgError</a></li><li data-type='method'><a href="Wrapper_JS.html#inputFocus">inputFocus</a></li><li data-type='method'><a href="Wrapper_JS.html#minify">minify</a></li><li data-type='method'><a href="Wrapper_JS.html#prepend">prepend</a></li><li data-type='method'><a href="Wrapper_JS.html#script">script</a></li><li data-type='method'><a href="Wrapper_JS.html#svgLoad">svgLoad</a></li><li data-type='method'><a href="Wrapper_JS.html#templateString">templateString</a></li><li data-type='method'><a href="Wrapper_JS.html#url">url</a></li><li data-type='method'><a href="Wrapper_JS.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_JSDataUrl.html">Wrapper_JSDataUrl</a><ul class='methods'><li data-type='method'><a href="Wrapper_JSDataUrl.html#script">script</a></li><li data-type='method'><a href="Wrapper_JSDataUrl.html#scriptImport">scriptImport</a></li><li data-type='method'><a href="Wrapper_JSDataUrl.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_JSUrl.html">Wrapper_JSUrl</a><ul class='methods'><li data-type='method'><a href="Wrapper_JSUrl.html#embed">embed</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#iframe">iframe</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#object">object</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#redirect">redirect</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#wrap">wrap</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">Wrapper_HTMLDataUrl</h1>
+    
+
+    <!--container.tmpl-->
+
+
+
+
+
+<section>
+
+
+
+<header data-tmpl="container.tmpl">
+    
+        <h2>
+        Wrapper_HTMLDataUrl
+        </h2>
+        
+            <div class="lead"><p>Represent an HTML payload in data: url format</p></div>
+        
+    
+
+    
+      <div class="bs-callout bs-callout-default">
+        <h5>Members</h5>
+        <br />
+        <dl class="dl-horizontal methods-members">
+        <dt>Methods</dt><dd><ul>
+            <li><a href="#iframe">iframe</a></li>
+            
+            <li><a href="#windowOpen">windowOpen</a></li>
+            
+            <li><a href="#wrap">wrap</a></li>
+            </ul></dd></dl></div>
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        <!--method.tmpl-->
+<div class="method-details">
+
+
+
+
+
+    
+    <h3 class="constructor">Constructor</h3>
+    
+
+    
+      <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Wrapper.js.html">Wrapper.js</a>:<a href="Wrapper.js.html#line458">458</a>
+  </code>
+</div>
+
+    
+
+    <h4 class="name" id="Wrapper_HTMLDataUrl">
+      <a href="#params-Wrapper_HTMLDataUrl"><span class="type-signature"></span>new Wrapper_HTMLDataUrl</a><span class="signature">()</span><span class="type-signature"></span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-Wrapper_HTMLDataUrl">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n * Represent an HTML payload in data: url format\n * @augments Wrapper\n * @alias Wrapper_HTMLDataUrl\n * @class\n * @inheritdoc\n */","meta":{"range":[13508,14607],"filename":"Wrapper.js","lineno":458,"columnno":0,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100004087","name":"Wrapper_HTMLDataUrl","type":"ClassDeclaration","paramnames":[]},"shortpath":"Wrapper.js"},"classdesc":"<p>Represent an HTML payload in data: url format</p>","augments":["Wrapper"],"alias":"Wrapper_HTMLDataUrl","kind":"class","inheritdoc":"","name":"Wrapper_HTMLDataUrl","longname":"Wrapper_HTMLDataUrl","scope":"global","___id":"T000003R000008","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"Wrapper_HTMLDataUrl","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"></span>","ancestors":[]}
+</pre>
+-->
+</div>
+
+    
+    </div>
+
+    
+        <h3 class="subsection-title">Extends</h3>
+
+        
+
+
+    <ul>
+        <li><a href="Wrapper.html">Wrapper</a></li>
+    </ul>
+
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Wrapper.js.html">Wrapper.js</a>:<a href="Wrapper.js.html#line470">470</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="iframe">
+      <a href="#params-iframe"><span class="type-signature"></span>iframe</a><span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Wrapper_HTML.html">Wrapper_HTML</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Transform any html data url into a &lt;iframe src&gt; payload.<br>
+<b> The XSS will trigger on about:blank</b></p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Wrapper_HTMLDataUrl.html'>Wrapper_HTMLDataUrl</a>"},{"readType":"","label":"iframe()","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_HTML.html'>Wrapper_HTML</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new().eval(() => alert(1))
+const w = Wrapper.new().script().dataUrl().iframe()
+
+document.body.innerHTML = w.wrap(p)</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-iframe">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Wrapper_HTML.html">Wrapper_HTML</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Transform any html data url into a &lt;iframe src&gt; payload.<br>\n     * <b> The XSS will trigger on about:blank</b>\n     * @graph  $Wrapper_HTMLDataUrl -> {} ($current) {} -> $Wrapper_HTML\n     * @example\n     * const p = Payload.new().eval(() => alert(1))\n     * const w = Wrapper.new().script().dataUrl().iframe()\n     * \n     * document.body.innerHTML = w.wrap(p)\n     * @returns {Wrapper_HTML} \n     */","meta":{"range":[13980,14088],"filename":"Wrapper.js","lineno":470,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100004091","name":"Wrapper_HTMLDataUrl#iframe","type":"MethodDefinition","paramnames":[]},"vars":{"":null},"shortpath":"Wrapper.js"},"description":"<p>Transform any html data url into a &lt;iframe src&gt; payload.<br>\n<b> The XSS will trigger on about:blank</b></p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_HTMLDataUrl.html'>Wrapper_HTMLDataUrl</a>\"},{\"readType\":\"\",\"label\":\"iframe()\",\"children\":null,\"returnType\":\"\"},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_HTML.html'>Wrapper_HTML</a>\"}]</script>","graph":[{"readType":"","returnType":"","html":"<a href='./Wrapper_HTMLDataUrl.html'>Wrapper_HTMLDataUrl</a>"},{"readType":"","label":"iframe()","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_HTML.html'>Wrapper_HTML</a>"}],"examples":[{"caption":"","code":"const p = Payload.new().eval(() => alert(1))\nconst w = Wrapper.new().script().dataUrl().iframe()\n\ndocument.body.innerHTML = w.wrap(p)"}],"returns":[{"type":{"names":["Wrapper_HTML"]}}],"name":"iframe","longname":"Wrapper_HTMLDataUrl#iframe","kind":"function","memberof":"Wrapper_HTMLDataUrl","scope":"instance","params":[],"___id":"T000002R000308","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"iframe","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"> &rarr; {<a href=\"Wrapper_HTML.html\">Wrapper_HTML</a>}</span>","ancestors":["<a href=\"Wrapper_HTMLDataUrl.html\">Wrapper_HTMLDataUrl</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Wrapper.js.html">Wrapper.js</a>:<a href="Wrapper.js.html#line485">485</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="windowOpen">
+      <a href="#params-windowOpen"><span class="type-signature"></span>windowOpen</a><span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Wrapper_JS.html">Wrapper_JS</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Transform any html data url into a window.open payload.<br>
+<b> The XSS will trigger on about:blank</b></p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Wrapper_HTMLDataUrl.html'>Wrapper_HTMLDataUrl</a>"},{"readType":"","label":"windowOpen()","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new().eval(() => alert(1))
+const w = Wrapper.new().script().dataUrl().windowOpen()
+
+document.body.innerHTML = w.wrap(p)</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-windowOpen">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Wrapper_JS.html">Wrapper_JS</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Transform any html data url into a window.open payload.<br>\n     * <b> The XSS will trigger on about:blank</b>\n     * @graph  $Wrapper_HTMLDataUrl -> {} ($current) {} -> $Wrapper_JS\n     * @example\n     * const p = Payload.new().eval(() => alert(1))\n     * const w = Wrapper.new().script().dataUrl().windowOpen()\n     * \n     * document.body.innerHTML = w.wrap(p)\n     * @returns {Wrapper_JS} \n     */","meta":{"range":[14511,14605],"filename":"Wrapper.js","lineno":485,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100004107","name":"Wrapper_HTMLDataUrl#windowOpen","type":"MethodDefinition","paramnames":[]},"vars":{"":null},"shortpath":"Wrapper.js"},"description":"<p>Transform any html data url into a window.open payload.<br>\n<b> The XSS will trigger on about:blank</b></p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_HTMLDataUrl.html'>Wrapper_HTMLDataUrl</a>\"},{\"readType\":\"\",\"label\":\"windowOpen()\",\"children\":null,\"returnType\":\"\"},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper_JS.html'>Wrapper_JS</a>\"}]</script>","graph":[{"readType":"","returnType":"","html":"<a href='./Wrapper_HTMLDataUrl.html'>Wrapper_HTMLDataUrl</a>"},{"readType":"","label":"windowOpen()","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Wrapper_JS.html'>Wrapper_JS</a>"}],"examples":[{"caption":"","code":"const p = Payload.new().eval(() => alert(1))\nconst w = Wrapper.new().script().dataUrl().windowOpen()\n\ndocument.body.innerHTML = w.wrap(p)"}],"returns":[{"type":{"names":["Wrapper_JS"]}}],"name":"windowOpen","longname":"Wrapper_HTMLDataUrl#windowOpen","kind":"function","memberof":"Wrapper_HTMLDataUrl","scope":"instance","params":[],"___id":"T000002R000310","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"windowOpen","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"> &rarr; {<a href=\"Wrapper_JS.html\">Wrapper_JS</a>}</span>","ancestors":["<a href=\"Wrapper_HTMLDataUrl.html\">Wrapper_HTMLDataUrl</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Wrapper.js.html">Wrapper.js</a>:<a href="Wrapper.js.html#line92">92</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="wrap">
+      <a href="#params-wrap"><span class="type-signature"></span>wrap</a><span class="signature">(payload)</span><span class="type-signature"> &rarr; {string}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Wrap a payload or a string and return it a as string</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Wrapper.html'>Wrapper</a>"},{"readType":"","label":"wrap(payload)","children":null,"returnType":""},{"readType":"","label":"String","children":null,"returnType":null}]</script>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new().eval(() => alert(1))
+const w = Wrapper.new()
+const code = w.wrap(p)
+
+eval(code)</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-wrap">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Wrapper.html#wrap">Wrapper#wrap</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-wrap" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>payload</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+|
+
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Payload to wrap</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Wrap a payload or a string and return it a as string\n     * \n     * @param {Payload | String} payload Payload to wrap\n     * @example\n     * \n     * const p = Payload.new().eval(() => alert(1))\n     * const w = Wrapper.new()\n     * const code = w.wrap(p)\n     * \n     * eval(code)\n     * @graph $Wrapper -> {} ($current) {} -> {} (String)\n     * @return {string}\n     */","meta":{"range":[2450,2591],"filename":"Wrapper.js","lineno":92,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100003622","name":"Wrapper#wrap","type":"MethodDefinition","paramnames":["payload"]},"vars":{"":null},"shortpath":"Wrapper.js"},"name":"wrap","longname":"Wrapper_HTMLDataUrl#wrap","kind":"function","description":"<p>Wrap a payload or a string and return it a as string</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Wrapper.html'>Wrapper</a>\"},{\"readType\":\"\",\"label\":\"wrap(payload)\",\"children\":null,\"returnType\":\"\"},{\"readType\":\"\",\"label\":\"String\",\"children\":null,\"returnType\":null}]</script>","examples":[{"caption":"","code":"const p = Payload.new().eval(() => alert(1))\nconst w = Wrapper.new()\nconst code = w.wrap(p)\n\neval(code)"}],"graph":[{"readType":"","returnType":"","html":"<a href='./Wrapper.html'>Wrapper</a>"},{"readType":"","label":"wrap(payload)","children":null,"returnType":""},{"readType":"","label":"String","children":null,"returnType":null}],"returns":[{"type":{"names":["string"]}}],"memberof":"Wrapper_HTMLDataUrl","scope":"instance","params":[{"type":{"names":["Payload","String"]},"description":"<p>Payload to wrap</p>","name":"payload"}],"inherits":"Wrapper#wrap","inherited":true,"___id":"T000002R000387","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"wrap","signature":"<span class=\"signature\">(payload)</span><span class=\"type-signature\"> &rarr; {string}</span>","ancestors":["<a href=\"Wrapper_HTMLDataUrl.html\">Wrapper_HTMLDataUrl</a>#"]}
+</pre>
+-->
+</div>
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on Sun Mar 14 2021 13:45:10 GMT+0100 (Central European Standard Time) using the LOKE theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script>window.addEventListener("DOMContentLoaded", initGraphs)</script>
+</body>
+</html>

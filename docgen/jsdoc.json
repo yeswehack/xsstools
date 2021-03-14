@@ -1,0 +1,26 @@
+{
+  "tags": {
+    "allowUnknownTags": true
+  },
+
+  "sourceType": "module",
+  "source": {
+    "include": ["./src", "README.md"]
+  },
+  "plugins": ["plugins/markdown", "./jsdocPlugins/xsstools.js"],
+  "opts": {
+    "encoding": "utf8",
+    "destination": "docs/",
+    "recurse": true,
+    "verbose": true,
+    "template": "./xsstools-jsdoc-theme"
+  },
+  "templates": {
+
+    "cleverLinks": true,
+    "monospaceLinks": true,
+    "better-docs": {
+      "name": "xsstools"
+    }
+  }
+}

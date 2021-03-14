@@ -1,0 +1,13 @@
+{
+    "name": "xsstools",
+    "version": "1.0.0",
+    "description": "xsstools, the xss exploitation framework",
+    "module": "src/index.js",
+    "repository": "git@github.com:yeswehack/xsstools.git",
+    "author": "BitK <bitk@yeswehack.com>",
+    "license": "MIT",
+    "scripts": {
+        "docs": "rm -rf docs && jsdoc -c docgen/jsdoc.json",
+        "build": "esbuild src/index.js --bundle --minify --format=esm --outfile=dist/xsstools.min.js"
+    }
+}

